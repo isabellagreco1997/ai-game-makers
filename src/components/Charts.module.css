@@ -1,0 +1,330 @@
+.card {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: clamp(22px, 2.6vw, 30px);
+  border-radius: 22px;
+  background:
+    radial-gradient(90% 60% at 0% 0%, rgba(255, 90, 87, 0.12), transparent 70%),
+    var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-card);
+}
+.wide {
+  grid-column: 1 / -1;
+}
+.card h3 {
+  font-size: clamp(1.2rem, 1.8vw, 1.45rem);
+  letter-spacing: -0.015em;
+  margin-bottom: 6px;
+}
+.card figcaption p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.source {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-underline-offset: 3px;
+}
+.source:hover {
+  color: var(--yellow);
+}
+
+/* ---------------------------------------------------------------- bars */
+.bars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+.bars li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 6px 12px;
+  align-items: center;
+}
+.barLabel {
+  grid-column: 1 / -1;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+.barTrack {
+  height: 16px;
+  border-radius: 6px;
+  background: rgba(255, 243, 227, 0.07);
+  overflow: hidden;
+}
+.barFill {
+  display: block;
+  height: 100%;
+  width: var(--w);
+  border-radius: 6px;
+  transition: width 1200ms cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0ms);
+}
+.hot {
+  background: var(--sunset);
+}
+.cool {
+  background: linear-gradient(90deg, #5fe0c0, #c4fbea);
+}
+.mute {
+  background: rgba(255, 243, 227, 0.35);
+}
+.barValue {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  min-width: 3.2ch;
+  text-align: right;
+}
+
+/* ---------------------------------------------------------------- trend */
+.trend svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.grid {
+  stroke: rgba(255, 243, 227, 0.1);
+  stroke-width: 1;
+}
+.axis {
+  fill: var(--muted);
+  font-size: 12px;
+  font-family: var(--font-body);
+}
+.line {
+  fill: none;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1600ms cubic-bezier(0.3, 0.6, 0.2, 1);
+}
+.hotLine .line {
+  stroke: #ff8b3d;
+}
+.coolLine .line {
+  stroke: #5fe0c0;
+}
+.hotLine circle {
+  fill: #ffd43b;
+}
+.coolLine circle {
+  fill: #c4fbea;
+}
+.dot {
+  transition: opacity 400ms ease var(--d, 0ms);
+}
+.dot text {
+  fill: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+}
+.legend {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+.legend li::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: -1px;
+}
+.hotKey::before {
+  background: #ff8b3d;
+}
+.coolKey::before {
+  background: #5fe0c0;
+}
+
+/* ---------------------------------------------------------------- big stat */
+.big {
+  display: grid;
+  gap: 6px;
+}
+.big b {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  background: var(--sunset);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-variant-numeric: tabular-nums;
+}
+.big span {
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+/* ---------------------------------------------------------------- blocks */
+.blocks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.blocks > div {
+  display: grid;
+  gap: 6px;
+  align-content: start;
+}
+.cells {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  min-height: 76px;
+  align-content: flex-start;
+  margin-bottom: 6px;
+}
+.cells i {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  transition:
+    opacity 300ms ease var(--d, 0ms),
+    scale 300ms ease var(--d, 0ms);
+}
+.blocksHot .cells i {
+  background: var(--yellow);
+}
+.blocksMute .cells i {
+  background: rgba(255, 243, 227, 0.3);
+}
+.blocks b {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.blocks span {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* ---------------------------------------------------------------- timeline */
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  position: relative;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 15px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(255, 243, 227, 0.08), rgba(255, 139, 61, 0.7), rgba(255, 212, 59, 0.9));
+}
+.timeline li {
+  position: relative;
+  padding: 44px 22px 0 0;
+}
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background: var(--yellow);
+  box-shadow: 0 0 0 4px var(--bg-alt), 0 0 16px rgba(255, 212, 59, 0.7);
+}
+.year {
+  font-family: var(--font-pixel);
+  font-size: 0.85rem;
+  color: var(--yellow);
+}
+.timeline h4 {
+  font-size: 1.15rem;
+  margin: 6px 0 8px;
+  letter-spacing: -0.01em;
+}
+.timeline p {
+  margin: 0 0 8px;
+  color: var(--ink-soft);
+  font-size: 0.97rem;
+  line-height: 1.5;
+}
+@media (max-width: 900px) {
+  .timeline {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+  }
+  .timeline::before {
+    left: 7px;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    height: auto;
+    background: linear-gradient(180deg, rgba(255, 243, 227, 0.08), rgba(255, 139, 61, 0.7), rgba(255, 212, 59, 0.9));
+  }
+  .timeline li {
+    padding: 0 0 0 36px;
+  }
+  .timeline li::before {
+    top: 2px;
+  }
+}
+
+/* ---------------------------------------------------------------- start states (only with JS) */
+:global(.fx) [data-chart]:not(:global(.in)) .barFill {
+  width: 0;
+}
+:global(.fx) [data-chart]:not(:global(.in)) .line {
+  stroke-dashoffset: 1;
+}
+:global(.fx) [data-chart]:not(:global(.in)) .dot {
+  opacity: 0;
+}
+:global(.fx) [data-chart]:not(:global(.in)) .cells i {
+  opacity: 0;
+  scale: 0.2;
+}
+@media (prefers-reduced-motion: reduce) {
+  .barFill,
+  .line,
+  .dot,
+  .cells i {
+    transition: none;
+  }
+}

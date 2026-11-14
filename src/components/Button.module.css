@@ -1,0 +1,162 @@
+/* One action colour site-wide: coral. A single tactile touch (the ink lip)
+   keeps the game feel without turning every button into a toy. */
+.btn {
+  --face: var(--yellow);
+  --text: var(--dark);
+  --edge: #c27a12;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 12px 22px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.02rem;
+  line-height: 1.15;
+  color: var(--text);
+  background: var(--face);
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 0 var(--edge), 0 10px 30px -8px rgba(255, 170, 60, 0.55);
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    transform 120ms ease-out,
+    box-shadow 120ms ease-out,
+    background-color 120ms ease-out;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 var(--edge), 0 14px 40px -8px rgba(255, 170, 60, 0.75);
+}
+.btn:hover .arrow {
+  transform: translateX(3px);
+}
+.btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 var(--edge), 0 6px 20px -8px rgba(255, 170, 60, 0.5);
+}
+.btn:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
+}
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  cursor: not-allowed;
+  transform: none;
+  opacity: 0.55;
+  box-shadow: 0 4px 0 var(--edge);
+}
+.btn[aria-busy="true"] {
+  opacity: 1;
+  cursor: progress;
+}
+
+.primary {
+}
+.secondary,
+.small {
+  --face: rgba(255, 243, 227, 0.04);
+  --text: var(--ink);
+  box-shadow: none;
+  border: 1px solid var(--line-strong);
+}
+.secondary:hover,
+.small:hover {
+  box-shadow: none;
+  border-color: rgba(255, 243, 227, 0.6);
+  background: rgba(255, 243, 227, 0.08);
+}
+.secondary:active,
+.small:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+.dark {
+  --face: var(--surface-2);
+  --text: var(--cream);
+  --edge: var(--surface-2);
+  border: 1px solid var(--line-strong);
+  box-shadow: none;
+}
+.dark:hover {
+  box-shadow: none;
+  background: #3a2443;
+}
+.dark:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+:global(.band--dark) .secondary,
+:global(.band--night) .secondary {
+  --text: var(--cream);
+  border-color: rgba(255, 243, 227, 0.35);
+}
+
+.small {
+  min-height: 40px;
+  padding: 7px 14px;
+  font-size: 0.92rem;
+  border-radius: 10px;
+}
+.lg {
+  min-height: 58px;
+  font-size: 1.1rem;
+  padding: 14px 26px;
+}
+
+.label {
+  position: relative;
+}
+.arrow {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 8h11M9 3.5 13.5 8 9 12.5' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 8h11M9 3.5 13.5 8 9 12.5' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  transition: transform 120ms ease-out;
+}
+.play {
+  width: 12px;
+  height: 14px;
+  flex: none;
+  background: currentColor;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+.spinner {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  border: 3px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 700ms linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pending {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.pendingNote {
+  font-size: 0.88rem;
+  color: var(--muted);
+  max-width: 36ch;
+}
+:global(.band--dark) .pendingNote,
+:global(.band--night) .pendingNote {
+  color: rgba(255, 243, 227, 0.7);
+}
+:global(.center) .pending {
+  align-items: center;
+}

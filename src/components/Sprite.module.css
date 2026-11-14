@@ -1,0 +1,51 @@
+.sprite {
+  --u: calc(var(--px) * var(--scale));
+  display: inline-block;
+  width: calc(var(--sw) * var(--u));
+  height: calc(var(--sh) * var(--u));
+  background-repeat: no-repeat;
+  background-size: calc(var(--sw) * var(--frames) * var(--u)) calc(var(--sh) * var(--u));
+  background-position: 0 0;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  flex: none;
+}
+.anim {
+  animation: frames var(--dur) steps(var(--frames)) infinite;
+}
+.flip {
+  transform: scaleX(-1);
+}
+@keyframes frames {
+  to {
+    background-position: calc(var(--sw) * var(--frames) * var(--u) * -1) 0;
+  }
+}
+
+.icon {
+  image-rendering: pixelated;
+  flex: none;
+}
+.icon_sm {
+  width: 32px;
+  height: 32px;
+}
+.icon_md {
+  width: 48px;
+  height: 48px;
+}
+.icon_lg {
+  width: 64px;
+  height: 64px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anim {
+    animation: none;
+  }
+}
+
+.lineIcon {
+  color: var(--yellow);
+  flex: none;
+}

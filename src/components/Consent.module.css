@@ -1,0 +1,68 @@
+.banner {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  z-index: 60;
+  width: min(720px, calc(100vw - 32px));
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line-strong);
+  border-radius: 14px;
+  box-shadow: var(--shadow-card);
+  padding: 16px 18px;
+}
+.banner p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+  flex: none;
+}
+.btn,
+.btnDark {
+  min-height: 44px;
+  padding: 8px 14px;
+  font: inherit;
+  font-weight: 800;
+  border: 2px solid var(--ink);
+  border-radius: 9px;
+  cursor: pointer;
+  background: var(--yellow);
+  color: var(--dark);
+  box-shadow: 0 3px 0 var(--ink);
+}
+.btn:active,
+.btnDark:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 var(--ink);
+}
+.btnDark {
+  background: var(--surface-2);
+  color: var(--ink);
+}
+.btnDark[aria-pressed="true"] {
+  background: var(--yellow);
+  color: var(--dark);
+}
+.controls {
+  display: grid;
+  gap: 12px;
+}
+.state {
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .banner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .actions > * {
+    flex: 1;
+  }
+}

@@ -1,0 +1,115 @@
+.footer {
+  position: relative;
+  background: var(--charcoal);
+  color: var(--cream);
+  padding: 72px 0 28px;
+}
+.ground {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: calc(16 * var(--px));
+  background: url("../../public/art/bricks.png") repeat-x left top / calc(32 * var(--px)) calc(16 * var(--px));
+  image-rendering: pixelated;
+}
+.inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 40px;
+}
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-size: 1.35rem;
+  color: var(--cream);
+  text-decoration: none;
+  margin-bottom: 14px;
+}
+.logo em {
+  font-style: normal;
+  color: var(--coral);
+}
+.brand p {
+  max-width: 44ch;
+  color: rgba(255, 243, 227, 0.82);
+}
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+}
+.social a {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 2px solid rgba(255, 243, 227, 0.4);
+  border-radius: 9px;
+  color: var(--cream);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.social a:hover {
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+.col h2 {
+  font-family: var(--font-pixel);
+  font-weight: 400;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--yellow);
+  margin-bottom: 14px;
+}
+.col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+}
+.col a,
+.col button {
+  display: inline-block;
+  padding: 6px 0;
+  color: var(--cream);
+  text-decoration: none;
+  font: inherit;
+  font-weight: 500;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.col a:hover,
+.col button:hover {
+  color: var(--yellow);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.footer .base {
+  margin-top: 64px;
+  padding-top: 28px;
+  padding-bottom: 8px;
+  border-top: 1px solid rgba(255, 243, 227, 0.14);
+  font-size: 0.9rem;
+  color: rgba(255, 243, 227, 0.6);
+}
+.footer .base p {
+  margin: 0;
+}
+@media (max-width: 760px) {
+  .inner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+  .brand {
+    grid-column: 1 / -1;
+  }
+}

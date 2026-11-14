@@ -1,0 +1,467 @@
+import Link from "next/link";
+import { BacklashChart, ChartGrid, JobsChart, SkillsChart, SteamChart, Takes } from "@/components/AiHate";
+import { Band, Faq, FeatureCard, PriceTag, SceneCard, SectionHead, StepCard } from "@/components/blocks";
+import { Button } from "@/components/Button";
+import { GameReel } from "@/components/GameReel";
+import { Icon } from "@/components/Icon";
+import { FactsGrid, MemberQuotes, PlayerProof } from "@/components/Proof";
+import { WorldGap } from "@/components/WorldBg";
+import { Scene } from "@/components/Scene";
+import { Video } from "@/components/Video";
+import { links, site, videos } from "@/config/site";
+import { GAMES } from "@/content/games";
+import { asset } from "@/lib/asset";
+import { pageMeta } from "@/lib/meta";
+import styles from "./home.module.css";
+
+export const metadata = pageMeta(
+  "AI Game Makers Club | Learn AI by Building Games",
+  "Learn to make your first playable game with AI, practical lessons, feedback from other makers and personal project mentorship.",
+  "/",
+);
+
+const faq = [
+  { q: "Is it really free?", a: <p>Yes. The community and the free course are free to join on Skool. No card needed.</p> },
+  {
+    q: "Do I need to know how to code?",
+    a: <p>No. The lessons start with the basics. You&apos;ll learn to guide AI tools, understand their output and make the creative decisions yourself.</p>,
+  },
+  {
+    q: "Which AI tools will I use?",
+    a: <p>Each lesson names the tools it uses. Some have free tiers and some are paid, so you can decide before you start.</p>,
+  },
+  { q: "What is Skool?", a: <p>Skool is the platform that hosts the community, the lessons and the discussions. You can use it in a browser or the Skool app.</p> },
+  {
+    q: "What's the difference between the free course and the mentorship?",
+    a: (
+      <p>
+        The free course teaches the foundations at your own pace. The <Link href="/mentorship">$299 per month mentorship</Link> is 12 weeks of weekly 1:1
+        guidance on your own game, paid over three months.
+      </p>
+    ),
+  },
+];
+
+export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: site.name,
+    url: site.url,
+    logo: `${site.url}/apple-icon.png`,
+    founder: { "@type": "Person", name: "Isabella" },
+    sameAs: ["https://www.youtube.com/@itsisagreco", "https://isgstudio.itch.io/"],
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
+      {/* 1. Hero: outcome, offer, CTA and the word free in the first screen */}
+      <Scene variant="home" photo photoAlt="Isabella, founder of AI Game Makers, smiling">
+        <span className="eyebrow">AI Game Makers Club</span>
+        <h1 className="display display--xl">
+          Make your game <em>happen.</em>
+        </h1>
+        <p className="plate">Finish your first game with Claude Code and Codex, even if you&apos;ve never written code.</p>
+        <p className="on-sky" style={{ marginTop: 14 }}>
+          Small on purpose, playable, and yours. Learn one step at a time, get feedback from other makers and work towards a game you can
+          share on itch.io.
+        </p>
+        <div className="cta-row">
+          <Button href="/community" size="lg" track="home_hero_start_free">
+            Start Learning for Free
+          </Button>
+          <Button href="#how-it-works" variant="secondary" size="lg" arrow={false}>
+            Explore the Club
+          </Button>
+        </div>
+        <p className="risk">
+          <span>Free community on Skool</span>
+          <span>No card needed</span>
+          <span>Leave anytime</span>
+        </p>
+      </Scene>
+
+      {/* 2. Proof by artifacts: real games, moving */}
+      <GameReel />
+
+      {/* 3. His pain, in his words (docs/AUDIENCE.md) */}
+      <Band tone="cream" labelledBy="pain">
+        <SectionHead
+          id="pain"
+          eyebrow="Sound familiar?"
+          title={
+            <>
+              Most AI games never get <em>finished.</em>
+            </>
+          }
+        />
+        <div className="grid grid--3">
+          <FeatureCard icon="code" title="The fix loop">
+            <p>You asked the AI for a whole game. It half worked, then every fix broke something else, and you lost track of your own project.</p>
+          </FeatureCard>
+          <FeatureCard icon="laptop" title="A folder of beginnings">
+            <p>You started another idea before the first was playable. Now both projects feel too big to finish.</p>
+          </FeatureCard>
+          <FeatureCard icon="eye" title="Art you don&apos;t want to show">
+            <p>It works, but it looks generic. Nobody has played it, and you&apos;re not sure anyone should.</p>
+          </FeatureCard>
+        </div>
+        <p className={styles.turn}>
+          You can learn to keep the scope small, test each step and <strong>finish what you start.</strong>
+        </p>
+      </Band>
+
+      {/* 4. Real players: public reactions to our games */}
+      <Band tone="dusk" labelledBy="players">
+        <SectionHead
+          id="players"
+          eyebrow="People play what we make"
+          title={
+            <>
+              Real players. Real reactions. <em>Real videos.</em>
+            </>
+          }
+          intro="HAPPY DAY is rated 5.0 on itch.io, and three YouTube creators recorded full playthroughs. Everything below is public and links to where it was said."
+        />
+        <PlayerProof />
+      </Band>
+
+      <WorldGap />
+
+      {/* 5. Why now: the technical point of view, with sources */}
+      <Band tone="cream" labelledBy="why-now">
+        <div className={styles.whyHead}>
+          <span className="eyebrow">Why now</span>
+          <h2 id="why-now" className="display display--lg" style={{ margin: "14px 0 18px" }}>
+            Making software just changed. <em>Learn to direct AI now.</em>
+          </h2>
+          <p className="lede">
+            AI coding agents like Claude Code and Codex now write, run and fix code from plain-language instructions. Typing code is no
+            longer the hard part. Knowing what to build, breaking it into steps and judging what comes back is, and that skill compounds
+            the longer you practise it.
+          </p>
+        </div>
+        <FactsGrid />
+        <div className={styles.whyGames}>
+          <h3 className="title-ink">Why learn it through games?</h3>
+          <p>
+            A game touches code, art, sound, design and testing in one small project, and you find out straight away whether it works,
+            because you can play it. The skills travel: directing AI agents, scoping, debugging and shipping are useful far beyond games.
+          </p>
+          <Button href="/community" track="home_why_join">
+            Start Free in Skool
+          </Button>
+        </div>
+      </Band>
+
+      {/* 5b. The AI hate: both sides, with sources */}
+      <Band tone="dusk" id="ai-hate" labelledBy="ai-hate-title">
+        <SectionHead
+          id="ai-hate-title"
+          eyebrow="About the AI backlash"
+          title={
+            <>
+              The backlash is real. <em>So is the shift.</em>
+            </>
+          }
+          intro="Post something made with AI and the comments can turn ugly. The backlash is real, and it is growing. So is the number of people building with these tools. Here is what the data shows on both sides."
+        />
+        <ChartGrid>
+          <BacklashChart />
+          <SteamChart />
+          <JobsChart />
+          <SkillsChart />
+        </ChartGrid>
+        <Takes />
+        <div className="cta-row cta-row--center" style={{ marginTop: 36 }}>
+          <Button href="/ai-and-games" variant="secondary" track="home_ai_hate_read">
+            Read the full breakdown
+          </Button>
+        </div>
+      </Band>
+
+      {/* optional founder video: only when a real one exists */}
+      {videos.founder && (
+        <Band tone="cream" labelledBy="founder-video">
+          <div className={styles.videoRow}>
+            <Video videoId={videos.founder} title="Meet Isabella: what's possible with AI and games" slot="home_founder" />
+            <div>
+              <span className="eyebrow">Founder video</span>
+              <h2 id="founder-video" className="display display--md" style={{ margin: "14px 0 16px" }}>
+                Hi, I'm Isabella. <em>Let me show you what's possible.</em>
+              </h2>
+              <p className="lede">
+                I'm a software engineer and independent game creator. I started AI Game Makers to help creative people turn their ideas
+                into games they can actually play, share and publish.
+              </p>
+            </div>
+          </div>
+        </Band>
+      )}
+
+      <WorldGap />
+
+      {/* 3. Two paths */}
+      <Band tone="cream" labelledBy="paths">
+        <SectionHead
+          id="paths"
+          eyebrow="Choose your path"
+          title={
+            <>
+              Your first game <em>starts small.</em>
+            </>
+          }
+          intro="Whether you have an idea or an unfinished prototype, start with a small game you can actually play."
+        />
+        <div className={styles.paths}>
+          <article className={["card", styles.path, styles.pathFree].join(" ")}>
+            <div className={styles.pathTop}>
+              <span className="badge badge--green">Free</span>
+              <h3 className="title-ink">Start free</h3>
+            </div>
+            <p>Learn the tools step by step, make a small game and share your progress with other makers.</p>
+            <ul className="check-list">
+              <li>A free, beginner-friendly course</li>
+              <li>A community of people building games</li>
+              <li>Shared resources, prompts and workflows</li>
+              <li>Feedback from other makers</li>
+            </ul>
+            <div className={styles.pathCta}>
+              <Button href="/community" track="home_path_free">
+                Join the Free Community
+              </Button>
+              <Link href="/free-course" className={styles.textLink}>
+                See the course
+              </Link>
+            </div>
+          </article>
+
+          <article className={["card", styles.path].join(" ")}>
+            <div className={styles.pathTop}>
+              <span className="badge badge--cream">1:1 mentorship</span>
+              <h3 className="title-ink">Work with me</h3>
+            </div>
+            <p>Plan and build your own game, with one-to-one guidance and structured feedback over 12 weeks.</p>
+            <ul className="check-list">
+              <li>A personal plan for your game</li>
+              <li>12 weekly 45-minute one-to-one calls to work on your game</li>
+              <li>Game design, visuals and storytelling guidance</li>
+              <li>Game reviews, feedback and Skool messages between calls</li>
+              <li>Publishing, marketing and a YouTube showcase if your finished game suits the channel and you agree</li>
+              <li>Recordings, resources and Standard community access</li>
+            </ul>
+            {links.conceptCall && (
+              <p className={styles.pathNote}>
+                <a href={links.conceptCall} target="_blank" rel="noopener noreferrer" data-track="home_concept_call">
+                  Unsure? Book a free call
+                  <span className="sr-only"> (opens in a new tab)</span>
+                </a>
+              </p>
+            )}
+            <div className={styles.pathCta}>
+              <PriceTag>
+                $299 <small>USD per month · three months · $897 total</small>
+              </PriceTag>
+              <Button href="/mentorship" variant="secondary" track="home_path_mentorship">
+                Explore Mentorship
+              </Button>
+            </div>
+          </article>
+        </div>
+      </Band>
+
+      {/* 4. How it works */}
+      <Band tone="dusk" id="how-it-works" labelledBy="how">
+        <SectionHead
+          id="how"
+          eyebrow="How it works"
+          title={
+            <>
+              From idea <em>to playable.</em>
+            </>
+          }
+        />
+        <ol className={["grid grid--3", styles.steps].join(" ")}>
+          <StepCard n="01" title="Learn" icon="books">
+            Understand the tools and techniques through practical, beginner-friendly lessons.
+          </StepCard>
+          <StepCard n="02" title="Build" icon="gamepad">
+            Create characters, environments and gameplay mechanics with AI-assisted workflows.
+          </StepCard>
+          <StepCard n="03" title="Share" icon="share">
+            Test your project, improve the experience and prepare a playable build to share.
+          </StepCard>
+        </ol>
+        <div className="cta-row cta-row--center" style={{ marginTop: 40 }}>
+          <Button href="/community" track="home_how_join">
+            Start Free in Skool
+          </Button>
+        </div>
+      </Band>
+
+      {/* 5. What you can make */}
+      <Band tone="cream" labelledBy="genres">
+        <SectionHead
+          id="genres"
+          eyebrow="What you'll build"
+          title={
+            <>
+              Your ideas. <em>Your games.</em>
+            </>
+          }
+          intro="See how different kinds of games take shape, from their first mechanic to their visual style."
+        />
+        <div className="grid grid--4">
+          <SceneCard scene="scene-platformer" title="Platformers" label="The Last Ember: the hooded runner leaping under a full moon">
+            Movement, jumps and level design that feel good in the hands. Like The Last Ember.
+          </SceneCard>
+          <SceneCard scene="scene-horror" title="Story and horror" label="HAPPY DAY: the birthday table">
+            Atmosphere, puzzles and the tension of the next room. Like HAPPY DAY.
+          </SceneCard>
+          <SceneCard scene="scene-rhythm" title="Rhythm and arcade" label="HELLPOP MAYHEM: the hell city from the opening cutscene">
+            Timing, feedback and juice on every action. Like HELLPOP MAYHEM.
+          </SceneCard>
+          <SceneCard scene="scene-mobile" title="Mobile games" label="Midnight Cat: the black cat flying past the moon">
+            One-finger games made for a phone screen. Like Midnight Cat.
+          </SceneCard>
+        </div>
+        <p className={styles.illusNote}>
+          Every image here is a real frame from a game we made. <Link href="/games">See all our games</Link>
+        </p>
+      </Band>
+
+      {/* 6. Meet the founder */}
+      <Band tone="dusk" labelledBy="founder">
+        <div className={styles.founder}>
+          <div className={styles.founderHead}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={asset("/founder/isabella-480.webp")}
+              alt="Isabella, software engineer and game creator"
+              width={480}
+              height={600}
+              loading="lazy"
+              className={styles.avatar}
+            />
+            <div>
+              <span className="eyebrow">Meet the founder</span>
+              <p className={styles.founderName}>
+                <b>Isabella</b> Software engineer and indie game maker
+              </p>
+            </div>
+          </div>
+          <h2 id="founder" className="display display--lg">
+            Built by a developer who <em>loves making games.</em>
+          </h2>
+          <p className="lede">
+            I&apos;m Isabella, a software engineer with years of professional development experience and a background in game development
+            and design. I combine that experience with modern AI tools to create playable games and share the workflows behind them.
+          </p>
+          <div className="cta-row">
+            <Button href="/about" variant="secondary">
+              More About Me
+            </Button>
+            <Link href="/games" className={styles.textLink}>
+              Play our games
+            </Link>
+            <a href="https://www.youtube.com/@itsisagreco" target="_blank" rel="noopener noreferrer" className={styles.textLink}>
+              Watch the devlogs<span className="sr-only"> (opens in a new tab)</span>
+            </a>
+          </div>
+        </div>      </Band>
+
+      <WorldGap />
+
+      {/* 7. Community */}
+      <Band tone="cream" labelledBy="community-preview">
+        <SectionHead
+          id="community-preview"
+          eyebrow="The community"
+          title={
+            <>
+              You don&apos;t have to <em>build alone.</em>
+            </>
+          }
+          intro="Bring your first idea or a stubborn prototype. Share progress, ask for help and get feedback from people making games too."
+        />
+        <div className={styles.club}>
+          <div className={styles.channels}>
+            <p className={styles.clubLabel}>Inside the club on Skool</p>
+            <ul>
+              {[
+                ["gamepad", "Build Along", "Post your project, step by step, from first idea to playable."],
+                ["sparkles", "Art & Animation", "Characters, sprites and scenes that look intentional, not generic."],
+                ["code", "Help & Fixes", "Stuck in the fix loop? Bring the bug, get unstuck."],
+                ["eye", "Playtest & Showcase", "Other makers play your game and tell you what they found."],
+                ["books", "Studio Notes", "How we build our own games, with the real files and decisions."],
+              ].map(([icon, name, desc]) => (
+                <li key={name}>
+                  <span className={styles.chIcon} aria-hidden="true">
+                    <Icon name={icon} size={20} />
+                  </span>
+                  <span className={styles.chText}>
+                    <b>{name}</b>
+                    <span>{desc}</span>
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className={styles.rhythm}>
+            <div className={styles.rhythmItem}>
+              <Icon name="calendar" size={28} />
+              <div>
+                <b>A live workshop every Sunday</b>
+                <span>A different topic each week. We build it together, live, and you ask as you go.</span>
+              </div>
+            </div>
+            <div className={styles.rhythmItem}>
+              <Icon name="eye" size={28} />
+              <div>
+                <b>Playtests on your game</b>
+                <span>Post a build and hear what other makers noticed while playing.</span>
+              </div>
+            </div>
+            <div className={styles.rhythmItem}>
+              <Icon name="star" size={28} />
+              <div>
+                <b>Build challenges</b>
+                <span>Small, themed challenges that push you to finish something, like the Worst Game Ever Challenge.</span>
+              </div>
+            </div>
+            <Button href="/community" track="home_community_join">
+              Join the Free Community
+            </Button>
+          </div>
+        </div>        <div style={{ marginTop: 28 }}>
+          <MemberQuotes />
+        </div>
+      </Band>
+
+      {/* 8. FAQ */}
+      <Band tone="dusk" labelledBy="faq">
+        <Faq items={faq} />
+      </Band>
+
+      {/* 9. Final CTA */}
+      <Band tone="night" labelledBy="final">
+        <div className="center" style={{ maxWidth: 720, margin: "0 auto" }}>
+          <h2 id="final" className="display display--lg" style={{ marginBottom: 18 }}>
+            Ready to make <em>your game?</em>
+          </h2>
+          <p className="lede" style={{ marginBottom: 30 }}>
+            Start small, make it playable and let other people try it.
+          </p>
+          <div className="cta-row cta-row--center">
+            <Button href="/community" size="lg" track="home_final_join">
+              Start Free in Skool
+            </Button>
+          </div>
+          <p className={styles.finalRisk}>Free to join · No card needed · Leave anytime</p>
+        </div>
+      </Band>
+    </>
+  );
+}

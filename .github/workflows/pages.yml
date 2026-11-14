@@ -1,0 +1,62 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - id: pages
+        uses: actions/configure-pages@v5
+      - run: npm ci
+      - name: Build static site
+        env:
+          # Repo variables (Settings > Secrets and variables > Actions > Variables) override these.
+          NEXT_PUBLIC_BASE_PATH: ${{ vars.BASE_PATH != '' && vars.BASE_PATH || steps.pages.outputs.base_path }}
+          SITE_URL: ${{ vars.SITE_URL != '' && vars.SITE_URL || steps.pages.outputs.base_url }}
+          BRAND_NAME: ${{ vars.BRAND_NAME }}
+          SKOOL_COMMUNITY_URL: ${{ vars.SKOOL_COMMUNITY_URL }}
+          SKOOL_MENTORSHIP_PURCHASE_URL: ${{ vars.SKOOL_MENTORSHIP_PURCHASE_URL }}
+          CONTACT_EMAIL: ${{ vars.CONTACT_EMAIL }}
+          LEGAL_CONTROLLER_NAME: ${{ vars.LEGAL_CONTROLLER_NAME }}
+          LEGAL_CONTROLLER_LOCATION: ${{ vars.LEGAL_CONTROLLER_LOCATION }}
+          FOUNDER_VIDEO_ID: ${{ vars.FOUNDER_VIDEO_ID }}
+          COMMUNITY_VIDEO_ID: ${{ vars.COMMUNITY_VIDEO_ID }}
+          MENTORSHIP_VIDEO_ID: ${{ vars.MENTORSHIP_VIDEO_ID }}
+          INTEREST_VIDEO_ID: ${{ vars.INTEREST_VIDEO_ID }}
+          FORM_ENDPOINT: ${{ vars.FORM_ENDPOINT }}
+          ANALYTICS_PROVIDER: ${{ vars.ANALYTICS_PROVIDER }}
+          PLAUSIBLE_DOMAIN: ${{ vars.PLAUSIBLE_DOMAIN }}
+          GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
+        run: npx next build
+      - run: touch out/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

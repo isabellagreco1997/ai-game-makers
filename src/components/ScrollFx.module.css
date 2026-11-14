@@ -1,0 +1,210 @@
+/* ---------------------------------------------------------------- level progress */
+.bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 70;
+  pointer-events: none;
+}
+.bar span {
+  display: block;
+  height: 100%;
+  background: var(--sunset);
+  transform-origin: 0 50%;
+  box-shadow: 0 0 12px rgba(255, 139, 61, 0.8);
+}
+
+/* Bit flies down a dotted track beside the page on wide screens */
+.companion {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .companion {
+    --px: 2px;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 14px;
+    width: 60px;
+    z-index: 40;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease;
+  }
+  .show {
+    opacity: 1;
+  }
+}
+.track {
+  position: absolute;
+  left: 50%;
+  top: 14%;
+  bottom: 9%;
+  width: 2px;
+  translate: -50% 0;
+  background: repeating-linear-gradient(180deg, rgba(255, 243, 227, 0.22) 0 4px, transparent 4px 12px);
+}
+.bit {
+  position: absolute;
+  left: 0;
+  line-height: 0;
+  transition: top 260ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  filter: drop-shadow(0 0 14px rgba(255, 139, 61, 0.55));
+  animation: hover 2.4s ease-in-out infinite;
+}
+@keyframes hover {
+  50% {
+    translate: 0 -6px;
+  }
+}
+.goal {
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+  width: 22px;
+  height: 36px;
+  object-fit: cover;
+  object-position: 0 0;
+  translate: -30% 0;
+  image-rendering: pixelated;
+  opacity: 0.9;
+}
+
+/* ---------------------------------------------------------------- floating props */
+.floaters {
+  --px: 4px;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+.floater {
+  position: absolute;
+  line-height: 0;
+  opacity: 0.55;
+  will-change: translate;
+}
+.f1 {
+  left: 4%;
+  top: 18%;
+}
+.f2 {
+  right: 6%;
+  top: 30%;
+}
+.f3 {
+  right: 3%;
+  bottom: 16%;
+}
+.f4 {
+  left: 6%;
+  bottom: 22%;
+}
+.f5 {
+  right: 5%;
+  top: 14%;
+}
+.f6 {
+  left: 3%;
+  top: 46%;
+}
+@media (max-width: 1100px) {
+  .floaters {
+    display: none;
+  }
+}
+
+/* ---------------------------------------------------------------- closing landscape */
+.end {
+  --px: 4px;
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  height: calc(64 * var(--px));
+  margin-top: clamp(40px, 6vw, 72px);
+  margin-bottom: calc(-1 * var(--section));
+  overflow: hidden;
+  pointer-events: none;
+}
+.layer {
+  position: absolute;
+  left: -5%;
+  right: -5%;
+  background-repeat: repeat-x;
+  image-rendering: pixelated;
+}
+.far {
+  bottom: calc(26 * var(--px));
+  height: calc(44 * var(--px));
+  background-image: url("../../public/art/pines-far.png");
+  background-size: calc(160 * var(--px)) calc(44 * var(--px));
+  opacity: 0.45;
+}
+.mid {
+  bottom: calc(14 * var(--px));
+  height: calc(52 * var(--px));
+  background-image: url("../../public/art/pines-mid.png");
+  background-size: calc(144 * var(--px)) calc(52 * var(--px));
+  background-position: calc(-50 * var(--px)) 0;
+  opacity: 0.8;
+}
+.near {
+  bottom: calc(8 * var(--px));
+  height: calc(40 * var(--px));
+  background-image: url("../../public/art/pines-near.png");
+  background-size: calc(128 * var(--px)) calc(40 * var(--px));
+  filter: brightness(0.55);
+}
+.ground {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: calc(16 * var(--px));
+  background: url("../../public/art/bricks.png") repeat-x left top / calc(32 * var(--px)) calc(16 * var(--px));
+  image-rendering: pixelated;
+}
+.endBit,
+.endClawd,
+.endFlag {
+  position: absolute;
+  line-height: 0;
+  bottom: calc(16 * var(--px));
+}
+.endBit {
+  left: calc(50% - 260px);
+  bottom: calc(20 * var(--px));
+  animation: hover 2.4s ease-in-out infinite;
+}
+.endClawd {
+  left: calc(50% + 110px);
+}
+.endFlag {
+  right: 8%;
+}
+@media (max-width: 640px) {
+  .end {
+    --px: 3px;
+  }
+  .endBit {
+    left: 8%;
+  }
+  .endClawd {
+    left: auto;
+    right: 26%;
+  }
+  .endFlag {
+    right: 4%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bit,
+  .endBit {
+    animation: none;
+  }
+}

@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+.env
+.env.local
+.env.*.local
+*.tsbuildinfo
+next-env.d.ts
+qa/
+
+# internal working notes, not for the public repo
+docs/
+.claude/
+tools/skool_payload.py
