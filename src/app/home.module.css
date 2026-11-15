@@ -1,3 +1,27 @@
+/* Opportunity examples sit close to the promise, with their context in view. */
+.opportunity {
+  padding: clamp(48px, 6vw, 78px) 24px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(255, 114, 59, .16), transparent 68%), #160c1c;
+  border-top: 1px solid rgba(255, 186, 90, .2);
+}
+.opportunityInner { max-width: 1120px; margin: 0 auto; }
+.opportunityIntro { max-width: 740px; margin-bottom: 28px; }
+.opportunityIntro h2 { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.08; letter-spacing: -.04em; margin: 14px 0; }
+.opportunityIntro h2 em { font-style: normal; color: #ffad45; }
+.opportunityIntro p { color: var(--ink-soft); font-size: 1.08rem; line-height: 1.55; max-width: 60ch; }
+.opportunityGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.opportunityCard { min-width: 0; padding: clamp(22px, 3vw, 32px); border: 1px solid rgba(255, 182, 94, .26); border-radius: 20px; background: linear-gradient(145deg, rgba(255, 139, 61, .09), transparent 45%), #251529; }
+.opportunityLabel { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 14px; color: #ffd866; font-family: var(--font-pixel); font-size: .67rem; letter-spacing: .06em; line-height: 1.6; }
+.opportunityNumber { font-family: var(--font-display); font-weight: 800; font-size: clamp(2.1rem, 3.5vw, 3.45rem); line-height: 1.05; letter-spacing: -.05em; color: #ffb54d; margin: 18px 0; }
+.opportunityNumber span { color: #f77a51; }
+.opportunityNumber small { color: var(--ink-soft); font-family: var(--font-body); font-size: 1rem; font-weight: 500; letter-spacing: 0; white-space: nowrap; }
+.rangeBar { height: 7px; border-radius: 8px; background: rgba(255,255,255,.1); overflow: hidden; }
+.rangeBar span { display: block; width: 100%; height: 100%; background: linear-gradient(90deg,#ffd43b,#ff8b3d,#ff5a57); }
+.opportunityCard > p:not(.opportunityNumber) { color: var(--ink-soft); margin: 17px 0 12px; line-height: 1.5; font-size: .94rem; }
+.opportunityCard a { color: #ffcf79; font-size: .85rem; text-underline-offset: 3px; }
+.opportunityNote { color: var(--ink-soft); font-size: .85rem; line-height: 1.5; margin: 18px 0 0; max-width: 100ch; }
+@media (max-width: 760px) { .opportunity { padding-inline: 20px; } .opportunityGrid { grid-template-columns: 1fr; } }
+
 /* ---------------------------------------------------------------- proof strip */
 .proof {
   padding: 8px 0 clamp(56px, 7vw, 88px);

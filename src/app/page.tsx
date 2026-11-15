@@ -84,6 +84,33 @@ export default function Home() {
         </p>
       </Scene>
 
+      <section className={styles.opportunity} aria-labelledby="opportunity-title">
+        <div className={styles.opportunityInner}>
+          <div className={styles.opportunityIntro}>
+            <span className="eyebrow">Real roles. Real potential.</span>
+            <h2 id="opportunity-title">Your skills could take you <em>further.</em></h2>
+            <p>Companies are looking for people who can build, test and create with AI. These examples show what some remote roles have offered.</p>
+          </div>
+          <div className={styles.opportunityGrid}>
+            <article className={styles.opportunityCard}>
+              <div className={styles.opportunityLabel}><span>AI GAME DEVELOPER</span><span>REMOTE · US</span></div>
+              <p className={styles.opportunityNumber}>$169.6k<span>–</span>$253k <small>/ year</small></p>
+              <div className={styles.rangeBar} aria-hidden="true"><span /></div>
+              <p>Scopely advertised this full-time salary range for an AI-native game developer. The role required game development expertise and is no longer accepting applications.</p>
+              <a href="https://jobs.revolution.com/companies/scopely/jobs/89109797-ai-game-developer-designer-artist-or-engineer" target="_blank" rel="noopener noreferrer">Source: Scopely job listing</a>
+            </article>
+            <article className={styles.opportunityCard}>
+              <div className={styles.opportunityLabel}><span>GAME DEVELOPER · AI TRAINER</span><span>REMOTE · US</span></div>
+              <p className={styles.opportunityNumber}>$125 <small>/ hour</small></p>
+              <div className={styles.rangeBar} aria-hidden="true"><span /></div>
+              <p>Handshake advertised this independent contractor rate for evaluating AI on game development tasks, with at least one year of relevant hands-on experience.</p>
+              <a href="https://jobs.ashbyhq.com/handshake/7d4f5006-c35d-48ae-bebf-fd1dc7acc870" target="_blank" rel="noopener noreferrer">Source: Handshake job listing</a>
+            </article>
+          </div>
+          <p className={styles.opportunityNote}>Examples, not typical or guaranteed earnings. Pay, eligibility and remote availability vary. Contract work depends on project availability; these roles require experience. Build skills and a portfolio one project at a time.</p>
+        </div>
+      </section>
+
       {/* 2. Proof by artifacts: real games, moving */}
       <GameReel />
 
