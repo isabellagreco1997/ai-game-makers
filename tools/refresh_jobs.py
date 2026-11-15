@@ -5,7 +5,7 @@ from html.parser import HTMLParser
 
 ROOT = Path(__file__).resolve().parents[1]
 FILE = ROOT / 'src/content/jobs.json'
-BOARDS = {'epicgames':'Epic Games','riotgames':'Riot Games','roblox':'Roblox','scopely':'Scopely','2k':'2K','escapevelocityentertainmentinc':'Escape Velocity Entertainment','neteasegames':'NetEase Games','gsgcareers':'Ghost Story Games','studiokraftonboard':'KRAFTON Montréal Studio','tripledotstudios':'Tripledot Studios','rushdownstudios':'Rushdown Studios','digitalextremes':'Digital Extremes','wooga':'Wooga','goodjobgames':'Good Job Games'}
+BOARDS = {'epicgames':'Epic Games','riotgames':'Riot Games','roblox':'Roblox','scopely':'Scopely','2k':'2K','escapevelocityentertainmentinc':'Escape Velocity Entertainment','neteasegames':'NetEase Games','gsgcareers':'Ghost Story Games','studiokraftonboard':'KRAFTON Montréal Studio','tripledotstudios':'Tripledot Studios','rushdownstudios':'Rushdown Studios','digitalextremes':'Digital Extremes','wooga':'Wooga','goodjobgames':'Good Job Games','atariinc':'Atari'}
 CITIES = {
  'cary':('United States','North America',35.7915,-78.7811),'montreal':('Canada','North America',45.5019,-73.5674),
  'montréal':('Canada','North America',45.5019,-73.5674),'vancouver':('Canada','North America',49.2827,-123.1207),
@@ -51,7 +51,7 @@ class ListingBlocks(HTMLParser):
    if value:self.blocks.append((order,kind,value))
 
 REQUIRED_HEADING=re.compile(r"(?:requirements?|qualifications?|required skills|what (?:we|you).{0,25}(?:looking for|bring|need)|what you.ll (?:need|bring)|who you are|your (?:profile|skills|experience)|about you|must.have|what you have|you have|you should have|your background|your expertise|your toolkit|your player profile|votre profil|knowledge and experience|knowledge/skills|connaissances/compétences)",re.I)
-PREFERRED_HEADING=re.compile(r"(?:nice.to.have|bonus|preferred|desirable|extra credit|would be a plus|additional (?:skills|qualifications))",re.I)
+PREFERRED_HEADING=re.compile(r"(?:nice.to.have|bonus|preferred|desirable|desired skills|extra credit|would be a plus|additional (?:skills|qualifications))",re.I)
 END_HEADING=re.compile(r"(?:benefits|perks|what we offer|working at|about (?:us|the company|scopely)|equal opportunity|compensation|salary|how to apply|responsibilities|what you.ll do|what you will do|why join|why krafton|pourquoi krafton|our benefits|open to applicants|open in [0-9]+ countries|job expectations|fair employment)",re.I)
 
 def short_requirement(value):
@@ -68,7 +68,7 @@ def mentioned_tools(text):
 
 def extract_requirements(markup, qualifications_only=False, abbreviated=True):
  parser=ListingBlocks();parser.feed(html.unescape(markup or ''));blocks=sorted(parser.blocks)
- mode='required' if qualifications_only else None; result=[];seen=set()
+ mode='required' if qualifications_only else None; result=[];seen=set(); section_has_li=False
  for _,kind,value in blocks:
   # A few sources put bullet characters in a paragraph instead of HTML <li>s.
   if kind=='p' and '•' in value:
@@ -83,11 +83,14 @@ def extract_requirements(markup, qualifications_only=False, abbreviated=True):
    continue
   heading=kind.startswith('h') or (kind=='p' and len(value)<140 and not re.search(r'[.!?]$',value))
   if heading:
-   if PREFERRED_HEADING.search(value): mode='preferred';continue
-   if REQUIRED_HEADING.search(value): mode='required';continue
+   if PREFERRED_HEADING.search(value): mode='preferred';section_has_li=False;continue
+   if REQUIRED_HEADING.search(value): mode='required';section_has_li=False;continue
    if END_HEADING.search(value): mode=None;continue
    if kind.startswith('h') or value.endswith(':') or value.isupper(): mode=None;continue
-  if kind!='li' or mode is None:continue
+   if kind=='p' and len(value.split())<=8 and not value.endswith('.') and (section_has_li or re.search(r'\b(?:skills|qualifications|experience|education|toolkit)\b$',value,re.I)): continue
+  if kind not in ('li','p') or mode is None:continue
+  if kind=='p' and section_has_li: mode=None;continue
+  if kind=='li': section_has_li=True
   clean=value.strip(' •–—:-');short=short_requirement(clean) if abbreviated else clean;key=short.casefold()
   if len(clean)<4 or key in seen:continue
   optional=re.search(r'\b(?:a bonus|a plus|nice to have|preferred|is a plus|desirable)\b',clean,re.I)
@@ -108,13 +111,23 @@ YEARS = re.compile(r"(?<![\d\-–])\b(\d{1,2}|five|six|seven|eight|nine|ten)\s*(
 def senior_role(title, requirements=(), level=''):
  if SENIOR_TITLE.search(title) or SENIOR_LEVEL.search(level or ''): return True
  for item in requirements:
-  if item.get('kind')!='required': continue
+  if item.get('kind')=='preferred': continue
   line=item.get('text','')
   if re.search(r'\bexperience\s*:\s*(?:mid[ -])?senior',line,re.I): return True
   for match in YEARS.finditer(line):
    number=match.group(1).lower(); years=int(number) if number.isdigit() else {'five':5,'six':6,'seven':7,'eight':8,'nine':9,'ten':10}[number]
    if years>=5 and re.search(r'\b(?:experience|professional|minimum|at least|working|worked|practice)\b',line,re.I): return True
  return False
+
+def is_remote_listing(title, location, metadata):
+ if re.search(r'\b(?:on[ -]site|in[ -]office)\b',title,re.I): return False
+ return bool(re.search(r'\bremote\b',title+' '+location,re.I) or metadata.get('Careers Page Remote Eligible')=='Yes')
+
+def remote_locations(location, mode):
+ # Some postings combine remote countries and an onsite office in one listing.
+ if mode == 'Remote eligible' and ';' in location and re.search(r'\bremote\b',location,re.I):
+  return '; '.join(part for part in location.split(';') if re.search(r'\bremote\b',part,re.I))
+ return location
 
 def is_hybrid_listing(title, text, raw_location):
  raw_location=raw_location.lower()
@@ -157,20 +170,22 @@ def refresh():
    workflow=bool(re.search(r'\b(?:experience|proficiency|proficient|hands.on|using|use of)\b.{0,75}\b(?:AI tools|generative AI|AI-powered tools|AI-assisted|LLMs?)\b',text,re.I))
    creative=bool(re.search(r'\b(?:game|gameplay|artist|animat|creative|design|tools programmer)\b',title,re.I))
    explicit_hybrid=is_hybrid_listing(title,text,item.get('location',{}).get('name',''))
+   location=item.get('location',{}).get('name','').strip().replace('BLANK,BLANK,','')
+   meta={x.get('name',''):x.get('value') for x in (item.get('metadata') or []) if isinstance(x,dict)}
+   explicit_onsite=bool(re.search(r'\b(?:on[ -]site|in[ -]office)\b',title,re.I))
+   explicit_remote=is_remote_listing(title,location,meta)
    ai_role=bool(PATTERN.search(title) or (workflow and creative))
-   if not ai_role and not ((explicit_hybrid or EARLY_TITLE.search(title)) and CREATIVE.search(title)): continue
+   if not ai_role and not ((explicit_remote or explicit_hybrid or EARLY_TITLE.search(title)) and CREATIVE.search(title)): continue
    if re.search(r'\b(?:HR systems|enterprise security|enterprise data|enterprise AI|advertis|ads |ad platform)\b',title,re.I): continue
    if not ai_role: category='Game industry - AI mentioned' if PATTERN.search(text) else 'Game industry - AI not specified'
    elif re.search(r'\b(?:NPC|behaviou?r trees?|enemy behaviors?|gameplay AI)\b',text,re.I) and not re.search(r'\b(?:generative AI|LLM|large language model)\b',text,re.I): category='Gameplay AI & NPCs'
    elif workflow and not PATTERN.search(title): category='AI tools in game work'
    else: category='AI & machine learning in gaming'
    skills=[skill for skill in SKILLS if re.search(r'(?<![\w])'+re.escape(skill)+r'(?![\w])',text,re.I)]
-   location=item.get('location',{}).get('name','').strip().replace('BLANK,BLANK,','')
-   meta={x.get('name',''):x.get('value') for x in (item.get('metadata') or []) if isinstance(x,dict)}
    mode='Not specified'; loclower=location.lower()
-   if 'remote' in loclower or ('remote' in title.lower() and not explicit_hybrid): mode='Remote eligible'
+   if explicit_onsite: mode='On-site'
    elif explicit_hybrid: mode='Hybrid'
-   elif meta.get('Careers Page Remote Eligible')=='Yes': mode='Remote eligible'
+   elif explicit_remote: mode='Remote eligible'
    elif meta.get('Careers Page Remote Eligible')=='No': mode='Location based'
    elif re.search(r'\b(?:on-site|onsite|in-office) (?:role|position|work|schedule)\b',text,re.I): mode='On-site'
    matches=[(name,info) for name,info in CITIES.items() if re.search(r'(?<!\w)'+re.escape(name)+r'(?!\w)',loclower)]
@@ -179,11 +194,14 @@ def refresh():
    if city and city[0]=='london' and re.search(r'\bontario\b',loclower): city=('london, ontario',('Canada','North America',42.9849,-81.2453))
    countries=[city[1][0]] if city else []
    regions=[city[1][1]] if city else []
-   country_regions={'United States':'North America','Canada':'North America','Brazil':'South America','United Kingdom':'Europe','Spain':'Europe','Czech Republic':'Europe','Japan':'Asia','India':'Asia','Australia':'Oceania','France':'Europe','Germany':'Europe','Singapore':'Asia','China':'Asia','Ireland':'Europe','Sweden':'Europe','Mexico':'North America'}
+   eligible_location=remote_locations(location,mode)
+   country_regions={'Turkey':'Europe','United States':'North America','Canada':'North America','Brazil':'South America','United Kingdom':'Europe','Spain':'Europe','Czech Republic':'Europe','Japan':'Asia','India':'Asia','Australia':'Oceania','France':'Europe','Germany':'Europe','Singapore':'Asia','China':'Asia','Ireland':'Europe','Sweden':'Europe','Mexico':'North America'}
+   if re.search(r'\b(?:US|USA)\s*\(Remote\)',eligible_location,re.I): countries.append('United States'); regions.append('North America')
    for country, area in country_regions.items():
-    if re.search(r'(?<!\w)'+re.escape(country)+r'(?!\w)',location,re.I):
+    if re.search(r'(?<!\w)'+re.escape(country)+r'(?!\w)',eligible_location,re.I):
      if country not in countries: countries.append(country)
      if area not in regions: regions.append(area)
+   if mode=='Remote eligible' and re.search(r'\bEurope\b',eligible_location,re.I) and 'Europe' not in regions: regions.append('Europe')
    job={'id':f'gh-{slug}-{item["id"]}','sourceId':'gh:'+slug,'title':title,'company':company,
         'sourceLabel':'Official careers page','url':item['absolute_url'],'category':category,
         'pay':'See listing','payNote':'Check source for pay','location':location or 'See listing',
@@ -207,7 +225,7 @@ def refresh():
   area={'us':'North America','ca':'North America','br':'South America','es':'Europe','fr':'Europe','gb':'Europe','uk':'Europe','de':'Europe','ro':'Europe','ua':'Europe','pl':'Europe','vn':'Asia','in':'Asia','sg':'Asia','id':'Asia','jp':'Asia','au':'Oceania','nz':'Oceania'}
   for entry in entries:
    loc=entry.get('location',{}); title=entry.get('name','').strip(); id='sr-gameloft-'+entry['id']
-   if not loc.get('hybrid') or not CREATIVE.search(title) or senior_role(title,level=entry.get('experienceLevel',{}).get('label','')): continue
+   if not (loc.get('hybrid') or loc.get('remote')) or not CREATIVE.search(title) or senior_role(title,level=entry.get('experienceLevel',{}).get('label','')): continue
    try:
     detail=json.loads(request(entry['ref']))
     parts=detail['jobAd']['sections']; text=' '.join(html.unescape(re.sub(r'<[^>]+>',' ',parts.get(k,{}).get('text','') or '')) for k in ('jobDescription','qualifications'))
@@ -225,11 +243,11 @@ def refresh():
     'countries':[country] if country else [],'regions':[area[code]] if code in area else [],'posted':(entry.get('releasedDate') or '')[:10],
     'requirementsList':extract_requirements(parts.get('qualifications',{}).get('text',''),True),
     'skills':[x for x in SKILLS if re.search(r'(?<![\w])'+re.escape(x)+r'(?![\w])',text,re.I)][:8],
-    'summary':'Explore this hybrid role at a games company. Check the listing for its requirements.',
+    'summary':'Explore this role at a games company. Check the listing for its requirements.',
     'requirements':'See the official listing for experience, qualifications and role details.',
-    'employment':entry.get('typeOfEmployment',{}).get('label','See listing'),'checkedAt':today,'workMode':'Hybrid'}
+    'employment':entry.get('typeOfEmployment',{}).get('label','See listing'),'checkedAt':today,'workMode':'Hybrid' if loc.get('hybrid') else 'Remote eligible'}
    try:
-    if loc.get('city') and loc.get('latitude') and loc.get('longitude'):
+    if job['workMode']=='Hybrid' and loc.get('city') and loc.get('latitude') and loc.get('longitude'):
      job['coordinates']={'lat':float(loc['latitude']),'lon':float(loc['longitude']),'city':loc['city']}
    except (TypeError,ValueError): pass
    out.append(job)

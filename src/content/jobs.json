@@ -107,6 +107,134 @@
       "workMode": "Not specified"
     },
     {
+      "id": "gh-rushdownstudios-4503214009",
+      "sourceId": "gh:rushdownstudios",
+      "title": "Platform Engineer",
+      "company": "Rushdown Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/rushdownstudios/jobs/4503214009",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "United States (Remote)",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-11-11",
+      "requirementsList": [
+        {
+          "text": "Four (4) years of professional experience with Microsoft Azure.",
+          "kind": "required",
+          "tools": [
+            "Azure"
+          ]
+        },
+        {
+          "text": "Experience scripting with languages like Python, PowerShell, or Groovy.",
+          "kind": "required",
+          "tools": [
+            "Python"
+          ]
+        },
+        {
+          "text": "Experience with containerization and orchestration (e.g., Docker, Kubernetes).",
+          "kind": "required",
+          "tools": [
+            "Docker",
+            "Kubernetes"
+          ]
+        },
+        {
+          "text": "Understanding of game packaging and deployment requirements for different platforms.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience compiling code and/or managing pipelines that compile code.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience monitoring and profiling applications (DataDog, CloudWatch, Prometheus)",
+          "kind": "required",
+          "tools": [
+            "Datadog",
+            "Prometheus"
+          ]
+        },
+        {
+          "text": "Ability to debug unexpected issues that arise during development.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Willingness to selflessly put player experiences first before even your own code…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Proactive approach to communication, particularly when it comes to unblocking yourself and…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience with build systems like Jenkins, TeamCity, or Azure DevOps, specifically for…",
+          "kind": "preferred",
+          "tools": [
+            "Azure"
+          ]
+        },
+        {
+          "text": "Experience working with additional cloud providers (e.g., AWS, GCP).",
+          "kind": "preferred",
+          "tools": [
+            "AWS"
+          ]
+        },
+        {
+          "text": "Knowledge of game development workflows and asset management.",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Experience with the Go programming language.",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Experience running multi-cloud applications.",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Previous work using version control for game development (e.g., Perforce, Git LFS).",
+          "kind": "preferred",
+          "tools": [
+            "Git",
+            "Perforce"
+          ]
+        }
+      ],
+      "skills": [
+        "Python",
+        "Git",
+        "Docker",
+        "Kubernetes",
+        "AWS",
+        "Azure",
+        "Perforce",
+        "Terraform"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Remote eligible"
+    },
+    {
       "id": "gh-riotgames-8356771",
       "sourceId": "gh:riotgames",
       "title": "Machine Learning Engineering Intern (Masters/PhD) - Summer 2027",
@@ -674,6 +802,11 @@
       "checkedAt": "2026-11-15",
       "requirementsList": [
         {
+          "text": "This is an ongoing, project-based opportunity that can be completed alongside other…",
+          "kind": "required",
+          "tools": []
+        },
+        {
           "text": "Schedule: Part-time, with no set schedule or minimum hour requirement.",
           "kind": "required",
           "tools": []
@@ -810,6 +943,185 @@
         "lon": 77.5946,
         "city": "Bangalore"
       }
+    },
+    {
+      "id": "gh-roblox-8357783",
+      "sourceId": "gh:roblox",
+      "title": "Developer Engagement Team  (Contract)",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/8357783?gh_jid=8357783",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Remote",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-11-05",
+      "requirementsList": [
+        {
+          "text": "Strong verbal and written communication skills.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Demonstrates endless patience and a positive attitude.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Capable of managing time effectively.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "In-depth understanding of Roblox and the Roblox community.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Solid knowledge of the technical aspects of Roblox Studio.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience developing on Roblox and/or other creation platforms.",
+          "kind": "required",
+          "tools": []
+        }
+      ],
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Remote eligible"
+    },
+    {
+      "id": "gh-rushdownstudios-4475669009",
+      "sourceId": "gh:rushdownstudios",
+      "title": "Game Build Engineer",
+      "company": "Rushdown Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/rushdownstudios/jobs/4475669009",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "United States (Remote)",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-11-02",
+      "requirementsList": [
+        {
+          "text": "Three (3) years of professional experience scripting with Python.",
+          "kind": "required",
+          "tools": [
+            "Python"
+          ]
+        },
+        {
+          "text": "Experience with CI/CD pipelines in TeamCity for game development projects.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Familiarity with version control systems for large binary assets.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Proficiency in automation tools (e.g., MSBuild, FastBuild, Incredibuild).",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Understanding of game packaging and deployment requirements for different platforms.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience compiling code and/or managing pipelines that compile code.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Ability to debug unexpected issues that arise during development.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience working with cloud providers (e.g. Azure, AWS, GCP).",
+          "kind": "required",
+          "tools": [
+            "AWS",
+            "Azure"
+          ]
+        },
+        {
+          "text": "Experience with additional build systems like Jenkins or Azure DevOps, specifically for…",
+          "kind": "preferred",
+          "tools": [
+            "Azure"
+          ]
+        },
+        {
+          "text": "Experience with game engine build pipelines (e.g., in Unreal, Unity, or proprietary…",
+          "kind": "preferred",
+          "tools": [
+            "Unity",
+            "Unreal"
+          ]
+        },
+        {
+          "text": "Knowledge of game development workflows and asset management.",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "General understanding of C-family programming languages.",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Familiarity with other scripting languages (e.g., PowerShell, Groovy).",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Familiarity with the use of AI tooling (e.g., Claude Code) for code…",
+          "kind": "preferred",
+          "tools": [
+            "Claude Code"
+          ]
+        },
+        {
+          "text": "Previous work using version control for game development (e.g., Perforce, Git LFS).",
+          "kind": "preferred",
+          "tools": [
+            "Git",
+            "Perforce"
+          ]
+        }
+      ],
+      "skills": [
+        "Unity",
+        "Python",
+        "Git",
+        "AWS",
+        "Azure",
+        "Perforce",
+        "Claude Code",
+        "Terraform"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Remote eligible"
     },
     {
       "id": "gh-wooga-8330917",
@@ -1122,6 +1434,110 @@
       "workMode": "Not specified"
     },
     {
+      "id": "gh-atariinc-5459410008",
+      "sourceId": "gh:atariinc",
+      "title": "Asset Designer: Platform Games",
+      "company": "Atari",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/atariinc/jobs/5459410008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Atari - US (Remote); Atari Europe; Remote",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-21",
+      "requirementsList": [
+        {
+          "text": "Demonstrated portfolio showcasing high-quality key art, store capsule design, and asset optimization…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Demonstrated hands-on experience in building, adapting, or delivering platform games and interactive…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Expert proficiency in Adobe Creative Suite (Photoshop, Illustrator) including non-destructive editing, batch…",
+          "kind": "required",
+          "tools": [
+            "Photoshop",
+            "Illustrator"
+          ]
+        },
+        {
+          "text": "Proficiency in Blender for 3D asset modeling, rendering, and web-ready optimization.",
+          "kind": "required",
+          "tools": [
+            "Blender"
+          ]
+        },
+        {
+          "text": "Familiarity with HTML5, WebGL, and Unity asset pipelines and optimization constraints.",
+          "kind": "required",
+          "tools": [
+            "Unity"
+          ]
+        },
+        {
+          "text": "Deep understanding of platform-specific asset guidelines, safe zones, UI/UX constraints, and aspect…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Strict adherence to corporate visual identity standards, logo lockups, typography, and visual…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Strong graphic design foundation with expertise in composition, typography, and color theory…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Strong operational discipline, asynchronous communication skills, and experience in milestone-driven workflows.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Motion graphics and video editing skills for animated store capsules, end cards…",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Experience managing IP approval workflows with external brand licensors.",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Experience with Spine 2D or frame-by-frame sprite animation.",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Controlled use of AI-assisted design tooling (generative fill, upscaling) maintaining complete copyright…",
+          "kind": "preferred",
+          "tools": []
+        }
+      ],
+      "skills": [
+        "Unity",
+        "Photoshop",
+        "Illustrator",
+        "Blender"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Remote eligible"
+    },
+    {
       "id": "gh-tripledotstudios-5010999101",
       "sourceId": "gh:tripledotstudios",
       "title": "2D Artist",
@@ -1235,6 +1651,134 @@
       "employment": "See listing",
       "checkedAt": "2026-11-15",
       "workMode": "Not specified"
+    },
+    {
+      "id": "gh-rushdownstudios-4457371009",
+      "sourceId": "gh:rushdownstudios",
+      "title": "DevOps Engineer",
+      "company": "Rushdown Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/rushdownstudios/jobs/4457371009",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "United States (Remote)",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-19",
+      "requirementsList": [
+        {
+          "text": "Four (4) years of professional experience with Microsoft Azure.",
+          "kind": "required",
+          "tools": [
+            "Azure"
+          ]
+        },
+        {
+          "text": "Experience scripting with languages like Python, PowerShell, or Groovy.",
+          "kind": "required",
+          "tools": [
+            "Python"
+          ]
+        },
+        {
+          "text": "Experience with containerization and orchestration (e.g., Docker, Kubernetes).",
+          "kind": "required",
+          "tools": [
+            "Docker",
+            "Kubernetes"
+          ]
+        },
+        {
+          "text": "Understanding of game packaging and deployment requirements for different platforms.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience compiling code and/or managing pipelines that compile code.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience monitoring and profiling applications (DataDog, CloudWatch, Prometheus)",
+          "kind": "required",
+          "tools": [
+            "Datadog",
+            "Prometheus"
+          ]
+        },
+        {
+          "text": "Ability to debug unexpected issues that arise during development.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Willingness to selflessly put player experiences first before even your own code…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Proactive approach to communication, particularly when it comes to unblocking yourself and…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience with build systems like Jenkins, TeamCity, or Azure DevOps, specifically for…",
+          "kind": "preferred",
+          "tools": [
+            "Azure"
+          ]
+        },
+        {
+          "text": "Experience working with additional cloud providers (e.g., AWS, GCP).",
+          "kind": "preferred",
+          "tools": [
+            "AWS"
+          ]
+        },
+        {
+          "text": "Knowledge of game development workflows and asset management.",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Experience with the Go programming language.",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Experience running multi-cloud applications.",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Previous work using version control for game development (e.g., Perforce, Git LFS).",
+          "kind": "preferred",
+          "tools": [
+            "Git",
+            "Perforce"
+          ]
+        }
+      ],
+      "skills": [
+        "Python",
+        "Git",
+        "Docker",
+        "Kubernetes",
+        "AWS",
+        "Azure",
+        "Perforce",
+        "Terraform"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Remote eligible"
     },
     {
       "id": "gh-scopely-5354144008",
@@ -1562,7 +2106,7 @@
         "Python",
         "SQL"
       ],
-      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "summary": "Explore this role at a games company. Check the listing for its requirements.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "Full-time",
       "checkedAt": "2026-11-15",
@@ -1711,6 +2255,101 @@
         "lon": 106.8456,
         "city": "Jakarta"
       }
+    },
+    {
+      "id": "gh-escapevelocityentertainmentinc-4409527009",
+      "sourceId": "gh:escapevelocityentertainmentinc",
+      "title": "Regular Gameplay Engineer (Mid Level) | Fully Remote",
+      "company": "Escape Velocity Entertainment",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/escapevelocityentertainmentinc/jobs/4409527009",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "United States, Canada, Spain, United Kingdom, Czech Republic",
+      "countries": [
+        "United States",
+        "Canada",
+        "United Kingdom",
+        "Spain",
+        "Czech Republic"
+      ],
+      "regions": [
+        "North America",
+        "Europe"
+      ],
+      "posted": "2026-10-07",
+      "requirementsList": [
+        {
+          "text": "As a Regular Gameplay Engineer (Mid Level), you will work closely with…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience developing games professionally, and shipping AAA titles",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience using Unreal Engine 4/5",
+          "kind": "required",
+          "tools": [
+            "Unreal Engine"
+          ]
+        },
+        {
+          "text": "A keen analytical mind, with strong problem-solving skills",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Strong C++ skills and the ability to code and architect gameplay mechanics…",
+          "kind": "required",
+          "tools": [
+            "C++"
+          ]
+        },
+        {
+          "text": "Strong math skills",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Well versed in games and the ability to articulate what is strong/weak…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Excellent communication and interpersonal skills",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Self-motivated, strong work ethic, and able to work independently",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Creativity in problem-solving and the ability to think outside of the established…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Keen interest in games",
+          "kind": "required",
+          "tools": []
+        }
+      ],
+      "skills": [
+        "Unreal Engine",
+        "C++",
+        "Unreal"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Remote eligible"
     },
     {
       "id": "gh-scopely-5442575008",
@@ -1916,6 +2555,92 @@
       "employment": "See listing",
       "checkedAt": "2026-11-15",
       "workMode": "Not specified"
+    },
+    {
+      "id": "gh-atariinc-5434070008",
+      "sourceId": "gh:atariinc",
+      "title": "Junior Generalist Engineer (Video Games)",
+      "company": "Atari",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/atariinc/jobs/5434070008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Atari - US (Remote); Implicit Conversions",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-09-25",
+      "requirementsList": [
+        {
+          "text": "1–3 years of generalist engineering experience, with a strong interest or background…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Strong scripting language skills (Python, Lua, etc.).",
+          "kind": "required",
+          "tools": [
+            "Python",
+            "Lua"
+          ]
+        },
+        {
+          "text": "Excellent C/C++ skills and understanding of algorithms.",
+          "kind": "required",
+          "tools": [
+            "C++"
+          ]
+        },
+        {
+          "text": "Clear communicator who works well in a remote team and takes initiative…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Genuine passion for retro games and emulation.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience building and optimizing software across multiple platforms.",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Experience with game emulation or cross-platform ports (commercial or open source like…",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Familiarity with assembly languages (such as x86, ARM, or MIPS), SIMD intrinsics…",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Hands-on experience with reverse engineering and debugging tools such as Ghidra.",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Experience with static recompilation techniques.",
+          "kind": "preferred",
+          "tools": []
+        }
+      ],
+      "skills": [
+        "Python",
+        "C++",
+        "Lua"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Remote eligible"
     },
     {
       "id": "gh-scopely-5426001008",
@@ -2156,8 +2881,12 @@
       "pay": "See listing",
       "payNote": "Check source for pay",
       "location": "Remote Turkey",
-      "countries": [],
-      "regions": [],
+      "countries": [
+        "Turkey"
+      ],
+      "regions": [
+        "Europe"
+      ],
       "posted": "2026-09-23",
       "requirementsList": [
         {
@@ -2197,29 +2926,29 @@
         },
         {
           "text": "Game design experience as a publisher in puzzle genres is a huge…",
-          "kind": "required",
+          "kind": "preferred",
           "tools": []
         },
         {
           "text": "Experience with liveops, A/B testing, or data-informed iteration cycles.",
-          "kind": "required",
+          "kind": "preferred",
           "tools": []
         },
         {
           "text": "Familiarity with Figma or similar visual collaboration software for mock-ups",
-          "kind": "required",
+          "kind": "preferred",
           "tools": [
             "Figma"
           ]
         },
         {
           "text": "Proficient using AI tools for generating early prototypes",
-          "kind": "required",
+          "kind": "preferred",
           "tools": []
         },
         {
           "text": "Track record of publishing/working on successful hypercasual, casual, or AAA titles",
-          "kind": "required",
+          "kind": "preferred",
           "tools": []
         }
       ],
@@ -3243,7 +3972,9 @@
       "payNote": "Check source for pay",
       "location": "Remote Europe",
       "countries": [],
-      "regions": [],
+      "regions": [
+        "Europe"
+      ],
       "posted": "2026-09-01",
       "requirementsList": [
         {
@@ -3283,29 +4014,29 @@
         },
         {
           "text": "Game design experience as a publisher in puzzle genres is a huge…",
-          "kind": "required",
+          "kind": "preferred",
           "tools": []
         },
         {
           "text": "Experience with liveops, A/B testing, or data-informed iteration cycles.",
-          "kind": "required",
+          "kind": "preferred",
           "tools": []
         },
         {
           "text": "Familiarity with Figma or similar visual collaboration software for mock-ups",
-          "kind": "required",
+          "kind": "preferred",
           "tools": [
             "Figma"
           ]
         },
         {
           "text": "Proficient using AI tools for generating early prototypes",
-          "kind": "required",
+          "kind": "preferred",
           "tools": []
         },
         {
           "text": "Track record of publishing/working on successful hypercasual, casual, or AAA titles",
-          "kind": "required",
+          "kind": "preferred",
           "tools": []
         }
       ],
@@ -3849,29 +4580,29 @@
         },
         {
           "text": "Game design experience as a publisher in puzzle genres is a huge…",
-          "kind": "required",
+          "kind": "preferred",
           "tools": []
         },
         {
           "text": "Experience with liveops, A/B testing, or data-informed iteration cycles.",
-          "kind": "required",
+          "kind": "preferred",
           "tools": []
         },
         {
           "text": "Familiarity with Figma or similar visual collaboration software for mock-ups",
-          "kind": "required",
+          "kind": "preferred",
           "tools": [
             "Figma"
           ]
         },
         {
           "text": "Proficient using AI tools for generating early prototypes",
-          "kind": "required",
+          "kind": "preferred",
           "tools": []
         },
         {
           "text": "Track record of publishing/working on successful hypercasual, casual, or AAA titles",
-          "kind": "required",
+          "kind": "preferred",
           "tools": []
         }
       ],
@@ -4925,6 +5656,11 @@
       "posted": "2026-06-30",
       "requirementsList": [
         {
+          "text": "Compétences requises",
+          "kind": "required",
+          "tools": []
+        },
+        {
           "text": "1 à 2 années d'expérience en écriture de scripts Python pour des…",
           "kind": "required",
           "tools": [
@@ -5133,7 +5869,7 @@
         "MySQL",
         "PostgreSQL"
       ],
-      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "summary": "Explore this role at a games company. Check the listing for its requirements.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "Full-time",
       "checkedAt": "2026-11-15",
@@ -5239,6 +5975,69 @@
         "lon": -99.1332,
         "city": "Mexico City"
       }
+    },
+    {
+      "id": "gh-neteasegames-5166671007",
+      "sourceId": "gh:neteasegames",
+      "title": "Character Performance Animator",
+      "company": "NetEase Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/neteasegames/jobs/5166671007",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Canada-Remote; United Kingdom - Guildford Onsite; United States-Remote",
+      "countries": [
+        "United States",
+        "Canada"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-06-17",
+      "requirementsList": [
+        {
+          "text": "Bachelor's degree or above in Animation, Film, Directing, Digital Media Arts, or…",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "3+ years of experience as an Animation Director, Action Director, Performance Animator…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Deep understanding of cinematic language, character acting, and emotional storytelling. Ability to…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Proficiency in motion capture data processing, keyframe animation, and in-engine performance integration.…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Strong cross-functional collaboration and communication skills, with the ability to work effectively…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Strong industrialized production mindset. Experience establishing animation standards, optimizing workflows, and improving…",
+          "kind": "mixed",
+          "tools": []
+        },
+        {
+          "text": "Ability to thrive in a fast-paced production environment. Prior experience in film…",
+          "kind": "mixed",
+          "tools": []
+        }
+      ],
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Remote eligible"
     },
     {
       "id": "gh-scopely-5222025008",
@@ -5353,7 +6152,70 @@
         "Europe"
       ],
       "posted": "2026-04-27",
-      "requirementsList": [],
+      "requirementsList": [
+        {
+          "text": "Experience in After Effects",
+          "kind": "preferred",
+          "tools": [
+            "After Effects"
+          ]
+        },
+        {
+          "text": "Marketing mindset with a good sense of storytelling and visual communication",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Portfolio demonstrating video/motion work with a creative edge",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Strong attention to detail and ability to deliver under tight deadlines",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Interest in visual trends, pop culture, and new media formats",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Passion for Match Villains and mobile puzzle games in general",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Nice to have: Familiarity with AI tools, especially for image and video…",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Feedback and transparency are at the heart of everything we do",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Exceptional and passionate people/team members",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Every idea counts",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Never-ending learning",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "We never stop asking the questions “why” and “how”.",
+          "kind": "preferred",
+          "tools": []
+        }
+      ],
       "skills": [
         "After Effects"
       ],
@@ -5542,6 +6404,122 @@
       }
     },
     {
+      "id": "gh-roblox-7736682",
+      "sourceId": "gh:roblox",
+      "title": "Global Developer Engagement Representative, Part-Time, Contractor",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/7736682?gh_jid=7736682",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Remote",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-03-23",
+      "requirementsList": [
+        {
+          "text": "Strong understanding of Roblox and the Roblox developer community",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Good standing regarding Roblox moderation history",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Passion for supporting and empowering creators",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience engaging or growing online communities",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Strong communication, collaboration, and organizational skills",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience coordinating community initiatives, events, or developer programs.",
+          "kind": "required",
+          "tools": []
+        }
+      ],
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Remote eligible"
+    },
+    {
+      "id": "gh-roblox-7705949",
+      "sourceId": "gh:roblox",
+      "title": "Developer Engagement Representative - LATAM (Part-Time Contract)",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/7705949?gh_jid=7705949",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Remote",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-03-11",
+      "requirementsList": [
+        {
+          "text": "Great understanding of Roblox and the Roblox community",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Good standing regarding Roblox moderation history",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Excellent speaking and writing skills in both English and Spanish",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Believe that helping the community is crucial to the success of the…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Motivated to help empower and encourage our developer community",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Team-focused and experienced in cross-team collaboration",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Knowledgeable, with an understanding of community processes, methodologies and best practices",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Availability to support and attend online and offline community events",
+          "kind": "required",
+          "tools": []
+        }
+      ],
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Remote eligible"
+    },
+    {
       "id": "gh-goodjobgames-7574002003",
       "sourceId": "gh:goodjobgames",
       "title": "Software Engineer - New Grad",
@@ -5559,7 +6537,65 @@
         "Europe"
       ],
       "posted": "2025-12-29",
-      "requirementsList": [],
+      "requirementsList": [
+        {
+          "text": "Bachelor's degree in Computer Science or other engineering departments",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Understanding distributed, highly scalable, low latency, fault tolerant backend architecture fundamentals",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Knowledge of the Go programming language at an entry-level, including experience with…",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Strong engineering, design and architecture skills",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Familiarity with AWS, NoSQL/in-memory databases, DevOps practices and CI/CD tools",
+          "kind": "preferred",
+          "tools": [
+            "AWS"
+          ]
+        },
+        {
+          "text": "Passion for Match Villains and mobile puzzle games in general",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Feedback and transparency are at the heart of everything we do",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Exceptional and passionate people/team members",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Every idea counts",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Never-ending learning",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "We never stop asking the questions “why” and “how”",
+          "kind": "preferred",
+          "tools": []
+        }
+      ],
       "skills": [
         "AWS"
       ],
@@ -5592,7 +6628,67 @@
         "Europe"
       ],
       "posted": "2025-10-06",
-      "requirementsList": [],
+      "requirementsList": [
+        {
+          "text": "Bachelor's degree in Computer Science, Mathematics or a related engineering field",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Proficiency in Python (TensorFlow or PyTorch)",
+          "kind": "preferred",
+          "tools": [
+            "Python",
+            "PyTorch",
+            "TensorFlow"
+          ]
+        },
+        {
+          "text": "Interest in Generative AI techniques (Diffusers, LoRAs, GANs, Transformer models, etc.) and…",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "An always-looking-for-better-ways mindset and the ability to understand team needs to proactively…",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Ability to combine technical and business mindsets effectively",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Passion for Match Villains and mobile puzzle games in general",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Feedback and transparency are at the heart of everything we do",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Exceptional and passionate people/team members",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Every idea counts",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Never-ending learning",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "We never stop asking the questions “why” and “how”",
+          "kind": "preferred",
+          "tools": []
+        }
+      ],
       "skills": [
         "Python",
         "Generative AI",
@@ -5712,7 +6808,63 @@
         "Europe"
       ],
       "posted": "2022-09-29",
-      "requirementsList": [],
+      "requirementsList": [
+        {
+          "text": "B.S. or higher preferably in Computer Science or an equivalent program",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Familiarity with the Unity game engine and C#",
+          "kind": "preferred",
+          "tools": [
+            "Unity",
+            "C#"
+          ]
+        },
+        {
+          "text": "Strong problem-solving and communication skills",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Familiarity with version control systems such as Plastic or Git",
+          "kind": "preferred",
+          "tools": [
+            "Git"
+          ]
+        },
+        {
+          "text": "Passion for Match Villains and mobile puzzle games in general",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Feedback and transparency are at the heart of everything we do",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Exceptional and passionate people/team members",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Every idea counts",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Never-ending learning",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "We never stop asking the questions “why” and “how”.",
+          "kind": "preferred",
+          "tools": []
+        }
+      ],
       "skills": [
         "Unity",
         "C#",

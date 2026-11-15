@@ -7,7 +7,7 @@ import styles from "./jobs.module.css";
 
 type Job = { id:string; title:string; company:string; url:string; category:string; pay:string; payNote:string; location:string; countries:string[]; regions:string[]; posted:string; skills:string[]; summary:string; requirements:string; requirementsList?:{text:string;kind:string;tools?:string[]}[]; employment:string; checkedAt:string; sourceLabel?:string; workMode?:string; coordinates?:{city:string;lat:number;lon:number} };
 const allJobs: Job[] = listings.jobs;
-const priority = (job: Job) => (job.workMode === "Hybrid" ? 2 : 0) + (/\b(junior|jr\.?|intern|internship|graduate|new.grad|entry.level|associate)\b/i.test(job.title) ? 1 : 0);
+const priority = (job: Job) => ((job.workMode || "Remote eligible") === "Remote eligible" ? 4 : job.workMode === "Hybrid" ? 2 : 0) + (/\b(junior|jr\.?|intern|internship|graduate|new.grad|entry.level|associate)\b/i.test(job.title) ? 1 : 0);
 const regions = ["North America", "South America", "Europe", "Africa", "Asia", "Oceania"];
 const formatDate = (date: string) => new Date(`${date}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 
@@ -27,11 +27,11 @@ function JobIcon({kind}:{kind:"pin"|"game"|"calendar"|"layers"}) {
 
 function PixelLandscape() {
   return <svg className={styles.pixelLandscape} viewBox="0 0 520 180" aria-hidden="true" shapeRendering="crispEdges">
-    <path fill="#46164f" d="M0 170h45v-14h34v-14h45v16h50v-21h42v-12h66v13h30v-20h51v-20h49V73h55V56h53v124H0z"/>
-    <path fill="#702052" d="M0 176h95v-8h35v-16h78v10h56v-21h57v-16h52v-21h44V82h48V66h55v114H0z"/>
-    <path fill="#a22975" d="M210 178v-12h70v-12h59v-14h48v-20h51v-16h41V87h41v8h-35v17h-45v16h-48v20h-49v14h-59v16z"/>
-    <path fill="#ff92cc" d="M210 175h70v-4h-70zm70-12h59v-4h-59zm59-14h48v-4h-48zm48-20h51v-4h-51zm51-16h41v-4h-41zm41-17h41v-4h-41z"/>
-    <path fill="#617160" d="M270 151h7v-10h5v7h6v-11h5v13h7v-5h5v9h-35zm190-70h5v-9h5v5h5v-13h5v15h6v-8h5v13h-31z"/>
+    <path fill="#352039" d="M0 170h45v-14h34v-14h45v16h50v-21h42v-12h66v13h30v-20h51v-20h49V73h55V56h53v124H0z"/>
+    <path fill="#522b40" d="M0 176h95v-8h35v-16h78v10h56v-21h57v-16h52v-21h44V82h48V66h55v114H0z"/>
+    <path fill="#a95b69" d="M210 178v-12h70v-12h59v-14h48v-20h51v-16h41V87h41v8h-35v17h-45v16h-48v20h-49v14h-59v16z"/>
+    <path fill="#ffc089" d="M210 175h70v-4h-70zm70-12h59v-4h-59zm59-14h48v-4h-48zm48-20h51v-4h-51zm51-16h41v-4h-41zm41-17h41v-4h-41z"/>
+    <path fill="#768576" d="M270 151h7v-10h5v7h6v-11h5v13h7v-5h5v9h-35zm190-70h5v-9h5v5h5v-13h5v15h6v-8h5v13h-31z"/>
     <path fill="#ffd94a" d="M394 67h5v38h-5zm5 2h23v5h7v13h-7v4h-23z"/><path fill="#ffb132" d="M386 103h22v4h-22z"/><path fill="#fff0a1" d="M393 64h7v5h-7z"/>
     <path fill="#ffe99a" d="M122 118h4v4h4v4h-4v4h-4v-4h-4v-4h4zm332-63h3v3h3v3h-3v3h-3v-3h-3v-3h3z"/>
   </svg>;
@@ -42,7 +42,7 @@ export default function JobBoard() {
   const [country, setCountry] = useState("All countries");
   const [search, setSearch] = useState("");
   const [city, setCity] = useState("All cities");
-  const [mode, setMode] = useState("All workplaces");
+  const [mode, setMode] = useState("Remote eligible");
   const [limit, setLimit] = useState(20);
   const pins = useMemo(() => {
     const cities = new Map<string,{city:string;lat:number;lon:number;count:number}>();
@@ -66,8 +66,8 @@ export default function JobBoard() {
         <p className={styles.eyebrow}>THE AI GAME MAKERS JOB BOARD <span>✦</span> YOUR NEXT LEVEL</p>
         <h1>Find your place in <em>games + AI.</em></h1>
         <p className={styles.lead}>Real opportunities. Skills worth building. A world of ways to make games and work with AI.</p>
-        <div className={styles.heroMeta}><span><i /> {allJobs.filter(j => j.workMode === "Hybrid").length} HYBRID OPPORTUNITIES</span><span>BOARD UPDATED {formatDate(listings.lastUpdated).toUpperCase()}</span></div>
-        <a className={styles.heroButton} href="#board-heading" onClick={() => {setMode("Hybrid"); setCity("All cities"); setCountry("All countries"); setRegion("All regions"); setSearch(""); setLimit(20);}}>Explore hybrid jobs ↓</a>
+        <div className={styles.heroMeta}><span><i /> {allJobs.filter(j => (j.workMode || "Remote eligible") === "Remote eligible").length} REMOTE OPPORTUNITIES</span><span>BOARD UPDATED {formatDate(listings.lastUpdated).toUpperCase()}</span></div>
+        <a className={styles.heroButton} href="#board-heading" onClick={() => {setMode("Remote eligible"); setCity("All cities"); setCountry("All countries"); setRegion("All regions"); setSearch(""); setLimit(20);}}>Explore remote jobs ↓</a>
       </div>
     </section>
     <section className={styles.wrap} aria-labelledby="map-heading">
@@ -76,7 +76,7 @@ export default function JobBoard() {
         <div className={styles.globeLayout}>
           <div><Globe pins={pins} selected={city} onSelect={selectCity} /><p className={styles.globeHint}>✦ DRAG TO ROTATE <span>•</span> TAP A POINT</p></div>
           <aside className={styles.cityPanel} aria-live="polite" aria-label="Selected city opportunities">
-            {city === "All cities" ? <><p className={styles.eyebrow}>YOUR NEXT STOP</p><h3>Pick a point.<br /><em>See the jobs.</em></h3><p>Tap a glowing point on the globe or choose a city below. Hybrid opportunities are shown first.</p><span className={styles.hintArrow}>↖</span></> : <><p className={styles.eyebrow}>JOBS IN {city.toUpperCase()}</p><h3>{city}</h3><p>{cityJobs.length} {cityJobs.length === 1 ? "opportunity" : "opportunities"} · Hybrid first</p><div className={styles.cityJobs}>{cityJobs.slice(0,4).map(job => <a href={job.url} key={job.id} target="_blank" rel="noopener noreferrer"><span>{job.title}<small>{job.company} · {job.workMode}</small></span><b>↗</b></a>)}</div><a className={styles.viewCity} href="#board-heading">View all {cityJobs.length} jobs ↓</a></>}
+            {city === "All cities" ? <><p className={styles.eyebrow}>YOUR NEXT STOP</p><h3>Pick a point.<br /><em>See the jobs.</em></h3><p>Tap a glowing point on the globe or choose a city below to explore its local opportunities.</p><span className={styles.hintArrow}>↖</span></> : <><p className={styles.eyebrow}>JOBS IN {city.toUpperCase()}</p><h3>{city}</h3><p>{cityJobs.length} {cityJobs.length === 1 ? "opportunity" : "opportunities"}</p><div className={styles.cityJobs}>{cityJobs.slice(0,4).map(job => <a href={job.url} key={job.id} target="_blank" rel="noopener noreferrer"><span>{job.title}<small>{job.company} · {job.workMode}</small></span><b>↗</b></a>)}</div><a className={styles.viewCity} href="#board-heading">View all {cityJobs.length} jobs ↓</a></>}
           </aside>
         </div>
         <div className={styles.cityButtons} aria-label="Filter by city">
@@ -90,11 +90,11 @@ export default function JobBoard() {
       </div>
     </section>
     <section className={`${styles.wrap} ${styles.board}`} aria-labelledby="board-heading">
-      <div className={styles.boardHeading}><div><p className={styles.eyebrow}>THE OPPORTUNITY BOARD</p><h2 id="board-heading">Find work in <em>gaming.</em></h2></div><p>Explore entry-level and other non-senior opportunities in gaming. Check each listing for experience requirements.</p></div>
+      <div className={styles.boardHeading}><div><p className={styles.eyebrow}>THE OPPORTUNITY BOARD</p><h2 id="board-heading">Find work in <em>gaming.</em></h2></div><p>Explore remote and other non-senior opportunities in gaming. Check each listing for experience and location requirements.</p></div>
       <div className={styles.filters}>
         <label>Search skills or title<input type="search" value={search} onChange={e => setSearch(e.target.value)} placeholder="Try Godot or Python" /></label>
         <label>Country<select value={country} onChange={e => { setCountry(e.target.value); setRegion("All regions"); setCity("All cities"); setLimit(20); }}><option>All countries</option>{countries.map(c => <option key={c}>{c}</option>)}</select></label>
-        <label>Workplace<select value={mode} onChange={e => {setMode(e.target.value);setLimit(20);}}><option>All workplaces</option><option>Hybrid</option><option>Remote eligible</option><option>On-site</option><option>Location based</option><option>Not specified</option></select></label>
+        <label>Workplace<select value={mode} onChange={e => {setMode(e.target.value);setLimit(20);}}><option>All workplaces</option><option>Remote eligible</option><option>Hybrid</option><option>On-site</option><option>Location based</option><option>Not specified</option></select></label>
       </div>
       <div className={styles.results}><strong aria-live="polite">{jobs.length} {jobs.length === 1 ? "opportunity" : "opportunities"}</strong><button onClick={() => {setSearch(""); setCountry("All countries"); setRegion("All regions"); setCity("All cities"); setMode("All workplaces"); setLimit(20);}}>Clear filters ↗</button></div>
       <div className={styles.list}>

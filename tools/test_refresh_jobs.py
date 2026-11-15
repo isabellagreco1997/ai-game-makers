@@ -49,6 +49,16 @@ class RequirementTests(unittest.TestCase):
  def test_bullets_in_paragraph_and_company_heading_stop(self):
   markup='<p>Qualifications:</p><p>• Python experience • Godot experience</p><p>Why Krafton Montreal</p><ul><li>Free games</li></ul>'
   result=bot.extract_requirements(markup);self.assertEqual([x['text'] for x in result],['Python experience','Godot experience'])
+ def test_requirements_in_plain_paragraphs(self):
+  result=bot.extract_requirements('<p>Requirements:</p><p>3+ years of experience in animation.</p><p>Experience with Maya.</p>')
+  self.assertEqual(len(result),2)
+ def test_requirement_subheadings_keep_full_requirement_section(self):
+  result=bot.extract_requirements('<h2>Requirements</h2><p>Design Skills</p><ul><li>Good portfolio</li></ul><p>Education & Experience</p><ul><li>5-7 years of experience as a designer.</li></ul>')
+  self.assertEqual(len(result),2)
+  self.assertTrue(bot.senior_role('Designer',result))
+ def test_a_paragraph_after_a_list_is_not_a_requirement(self):
+  markup='<h2>Requirements</h2><ul><li>Experience with Python</li></ul><p>We provide equal opportunities for everyone.</p>'
+  result=bot.extract_requirements(markup);self.assertEqual([x['text'] for x in result],['Experience with Python'])
  def test_no_requirements_section_returns_no_fabricated_bullets(self):
   self.assertEqual(bot.extract_requirements('<h2>About us</h2><ul><li>We love games</li></ul>'),[])
  def test_long_requirement_is_short(self):
@@ -63,9 +73,19 @@ class SeniorityTests(unittest.TestCase):
   self.assertTrue(bot.senior_role('Game Developer',[{'text':'At least 5 years of game development experience','kind':'required'}]))
   self.assertTrue(bot.senior_role('Game Developer',[{'text':'Experience: Mid-Senior level','kind':'required'}]))
   self.assertTrue(bot.senior_role('Game Developer',level='Mid-Senior Level'))
+  self.assertTrue(bot.senior_role('Animator',[{'text':'5+ years of professional animation experience. Game credits preferred.','kind':'mixed'}]))
  def test_keeps_junior_and_non_senior_experience(self):
   self.assertFalse(bot.senior_role('Junior Gameplay Developer',[{'text':'1 to 2 years of professional experience','kind':'required'}]))
   self.assertFalse(bot.senior_role('Game Designer',[{'text':'3-6+ years of professional game design experience','kind':'required'}]))
   self.assertFalse(bot.senior_role('Game Designer',[{'text':'5 years of experience is a plus','kind':'preferred'}]))
+
+class RemoteTests(unittest.TestCase):
+ def test_remote_and_onsite_titles(self):
+  self.assertTrue(bot.is_remote_listing('Junior Game Developer','United States (Remote)',{}))
+  self.assertFalse(bot.is_remote_listing('Intern (On-Site)','United States (Remote)',{}))
+  self.assertTrue(bot.is_remote_listing('Artist','Canada',{'Careers Page Remote Eligible':'Yes'}))
+ def test_remote_country_excludes_separate_onsite_office(self):
+  text='Canada-Remote; United Kingdom - Guildford Onsite; United States-Remote'
+  self.assertEqual(bot.remote_locations(text,'Remote eligible'),'Canada-Remote;  United States-Remote')
 
 if __name__=='__main__':unittest.main()
