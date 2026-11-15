@@ -3,7 +3,7 @@ import { site } from "@/config/site";
 
 export const dynamic = "force-static";
 
-const ROUTES = ["/", "/free-course", "/community", "/mentorship", "/games", "/about", "/workshops", "/ai-and-games", "/interest", "/privacy", "/cookies", "/terms"];
+const ROUTES = ["/", "/free-course", "/community", "/mentorship", "/games", "/about", "/workshops", "/jobs", "/ai-and-games", "/interest", "/privacy", "/cookies", "/terms"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
