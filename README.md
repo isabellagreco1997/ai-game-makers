@@ -49,7 +49,7 @@ Routes: `/` `/free-course` `/community` `/mentorship` `/games` `/about` `/worksh
 | 10 | Game screenshots | Works | Loaded from the games' own public pages (itch.io, GitHub Pages). Better: save them into `public/games/` so the site doesn't depend on those hosts. |
 | 11 | Analytics | Optional | `ANALYTICS_PROVIDER=plausible` + `PLAUSIBLE_DOMAIN`. Loads only after consent; a consent banner appears automatically. |
 | 12 | Search Console | Optional | `GOOGLE_SITE_VERIFICATION`. Then submit `/sitemap.xml`. |
-| 13 | `SITE_URL` | **Missing** | The real domain, for canonicals, sitemap and share cards. |
+| 13 | `SITE_URL` | Set | https://aigamemakersclub.com (repo variable `SITE_URL`; custom domain set in Settings > Pages, DNS at Namecheap). |
 
 ## Analytics events
 
