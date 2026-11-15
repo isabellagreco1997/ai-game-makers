@@ -11,6 +11,32 @@ const priority = (job: Job) => (job.workMode === "Hybrid" ? 2 : 0) + (/\b(junior
 const regions = ["North America", "South America", "Europe", "Africa", "Asia", "Oceania"];
 const formatDate = (date: string) => new Date(`${date}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 
+function FlagIcon() {
+  return <svg viewBox="0 0 32 32" aria-hidden="true" className={styles.flagIcon}><path fill="#ffe45c" d="M7 3h3v24H7zM10 5h12v3h4v8h-4v3H10z"/><path fill="#ff9a39" d="M4 27h18v3H4z"/><path fill="#ff6caa" d="M2 30h22v2H2z"/></svg>;
+}
+
+function JobIcon({kind}:{kind:"pin"|"game"|"calendar"|"layers"}) {
+  const shapes = {
+    pin: <><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></>,
+    game: <><path d="M7 8h10c2 0 3 1.5 3.5 4l1 4.5c.3 1.8-1.5 2.8-2.8 1.7L16 16h-8l-2.7 2.2c-1.3 1.1-3.1.1-2.8-1.7l1-4.5C4 9.5 5 8 7 8Z"/><path d="M7 10.5v4M5 12.5h4M16 11.5h.01M18 13.5h.01"/></>,
+    calendar: <><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></>,
+    layers: <><path d="m12 3 9 5-9 5-9-5 9-5ZM3 12l9 5 9-5M3 16l9 5 9-5"/></>,
+  };
+  return <svg className={styles.jobIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.65" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{shapes[kind]}</svg>;
+}
+
+function PixelLandscape() {
+  return <svg className={styles.pixelLandscape} viewBox="0 0 520 180" aria-hidden="true" shapeRendering="crispEdges">
+    <path fill="#46164f" d="M0 170h45v-14h34v-14h45v16h50v-21h42v-12h66v13h30v-20h51v-20h49V73h55V56h53v124H0z"/>
+    <path fill="#702052" d="M0 176h95v-8h35v-16h78v10h56v-21h57v-16h52v-21h44V82h48V66h55v114H0z"/>
+    <path fill="#a22975" d="M210 178v-12h70v-12h59v-14h48v-20h51v-16h41V87h41v8h-35v17h-45v16h-48v20h-49v14h-59v16z"/>
+    <path fill="#ff92cc" d="M210 175h70v-4h-70zm70-12h59v-4h-59zm59-14h48v-4h-48zm48-20h51v-4h-51zm51-16h41v-4h-41zm41-17h41v-4h-41z"/>
+    <path fill="#617160" d="M270 151h7v-10h5v7h6v-11h5v13h7v-5h5v9h-35zm190-70h5v-9h5v5h5v-13h5v15h6v-8h5v13h-31z"/>
+    <path fill="#ffd94a" d="M394 67h5v38h-5zm5 2h23v5h7v13h-7v4h-23z"/><path fill="#ffb132" d="M386 103h22v4h-22z"/><path fill="#fff0a1" d="M393 64h7v5h-7z"/>
+    <path fill="#ffe99a" d="M122 118h4v4h4v4h-4v4h-4v-4h-4v-4h4zm332-63h3v3h3v3h-3v3h-3v-3h-3v-3h3z"/>
+  </svg>;
+}
+
 export default function JobBoard() {
   const [region, setRegion] = useState("All regions");
   const [country, setCountry] = useState("All countries");
@@ -73,15 +99,15 @@ export default function JobBoard() {
       <div className={styles.results}><strong aria-live="polite">{jobs.length} {jobs.length === 1 ? "opportunity" : "opportunities"}</strong><button onClick={() => {setSearch(""); setCountry("All countries"); setRegion("All regions"); setCity("All cities"); setMode("All workplaces"); setLimit(20);}}>Clear filters ↗</button></div>
       <div className={styles.list}>
         {jobs.slice(0, limit).map(job => <article key={job.id} className={styles.job}>
-          <div className={styles.jobTop}><span className={styles.category}>{job.workMode || "Remote eligible"}</span><span className={styles.checked}>{job.checkedAt < listings.lastUpdated ? "NOT CONFIRMED IN LATEST UPDATE · " : ""}CHECKED {formatDate(job.checkedAt).toUpperCase()}</span></div>
+          <div className={styles.jobTop}><span className={styles.category}><FlagIcon />{job.workMode || "Remote eligible"}</span><span className={styles.checked}>{job.checkedAt < listings.lastUpdated ? "NOT CONFIRMED IN LATEST UPDATE · " : ""}CHECKED {formatDate(job.checkedAt).toUpperCase()}</span></div>
           <div className={styles.jobMain}><div><h3>{job.title}</h3><p className={styles.company}>{job.company} · {job.sourceLabel || "recruiting platform"}</p></div><div className={styles.pay}>{job.pay}<small>{job.payNote}</small></div></div>
-          <div className={styles.tags}><span>⌁ {job.location}</span><span>◷ {job.employment}</span>{job.posted && <span>Posted {formatDate(job.posted)}</span>}<span>{job.workMode || "Remote eligible"}</span></div>
+          <div className={styles.tags}><span><JobIcon kind="pin" />{job.location}</span><span><JobIcon kind="game" />{job.employment}</span>{job.posted && <span><JobIcon kind="calendar" />Posted {formatDate(job.posted)}</span>}<span><JobIcon kind="layers" />{job.workMode || "Remote eligible"}</span></div>
           <div className={styles.requirementsBlock}>
-            <h4>Skills &amp; requirements</h4>
+            <div className={styles.requirementsHeading}><FlagIcon /><h4>Skills &amp; requirements</h4></div><PixelLandscape />
             {job.requirementsList?.length ? <><ul className={styles.requirementList}>{job.requirementsList.map((item,i) => <li key={`${i}-${item.text}`}><span>{item.text}</span>{item.kind === "preferred" && <small>Preferred</small>}{item.kind === "mixed" && <small>See details</small>}</li>)}</ul><p className={styles.requirementsNote}>Short excerpts · see the listing for full details and context.</p></> : <p className={styles.requirementsNote}>Requirements could not be extracted. See the original listing.</p>}
             {(() => {const tools = [...new Set((job.requirementsList || []).flatMap(item => item.tools || []))]; return tools.length ? <><p className={styles.terms}>TOOLS MENTIONED IN REQUIREMENTS</p><div className={styles.skills}>{tools.map(tool => <span key={tool}>{tool}</span>)}</div></> : null;})()}
           </div>
-          <div className={styles.jobBottom}><span>Check the source for current details and eligibility.</span><a href={job.url} target="_blank" rel="noopener noreferrer">View listing <span aria-hidden="true">↗</span><span className="sr-only"> (opens in a new tab)</span></a></div>
+          <div className={styles.jobDivider} aria-hidden="true"><i /><i /><i /></div><div className={styles.jobBottom}><span>Check the source for current details and eligibility.</span><a href={job.url} target="_blank" rel="noopener noreferrer">View listing <span aria-hidden="true">↗</span><span className="sr-only"> (opens in a new tab)</span></a></div>
         </article>)}
         {!jobs.length && <div className={styles.empty}><h3>No matches yet.</h3><p>Try another region, country or skill. New opportunities can appear as the board is refreshed.</p></div>}
       </div>
