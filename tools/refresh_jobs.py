@@ -5,7 +5,7 @@ from html.parser import HTMLParser
 
 ROOT = Path(__file__).resolve().parents[1]
 FILE = ROOT / 'src/content/jobs.json'
-BOARDS = {'epicgames':'Epic Games','riotgames':'Riot Games','roblox':'Roblox','scopely':'Scopely','2k':'2K','escapevelocityentertainmentinc':'Escape Velocity Entertainment','neteasegames':'NetEase Games','gsgcareers':'Ghost Story Games','studiokraftonboard':'KRAFTON Montréal Studio','tripledotstudios':'Tripledot Studios','rushdownstudios':'Rushdown Studios','digitalextremes':'Digital Extremes','wooga':'Wooga'}
+BOARDS = {'epicgames':'Epic Games','riotgames':'Riot Games','roblox':'Roblox','scopely':'Scopely','2k':'2K','escapevelocityentertainmentinc':'Escape Velocity Entertainment','neteasegames':'NetEase Games','gsgcareers':'Ghost Story Games','studiokraftonboard':'KRAFTON Montréal Studio','tripledotstudios':'Tripledot Studios','rushdownstudios':'Rushdown Studios','digitalextremes':'Digital Extremes','wooga':'Wooga','goodjobgames':'Good Job Games'}
 CITIES = {
  'cary':('United States','North America',35.7915,-78.7811),'montreal':('Canada','North America',45.5019,-73.5674),
  'montréal':('Canada','North America',45.5019,-73.5674),'vancouver':('Canada','North America',49.2827,-123.1207),
@@ -23,7 +23,7 @@ CITIES = {
  'new york':('United States','North America',40.7128,-74.0060),'paris':('France','Europe',48.8566,2.3522),
  'berlin':('Germany','Europe',52.52,13.405),'seattle':('United States','North America',47.6062,-122.3321),
  'helsinki':('Finland','Europe',60.1699,24.9384),'mexico city':('Mexico','North America',19.4326,-99.1332),
- 'jakarta':('Indonesia','Asia',-6.2088,106.8456),'tbilisi':('Georgia','Asia',41.7151,44.8271),'tblisi':('Georgia','Asia',41.7151,44.8271),
+ 'istanbul':('Turkey','Europe',41.0082,28.9784),'jakarta':('Indonesia','Asia',-6.2088,106.8456),'tbilisi':('Georgia','Asia',41.7151,44.8271),'tblisi':('Georgia','Asia',41.7151,44.8271),
  'minsk':('Belarus','Europe',53.9006,27.5590),'warsaw':('Poland','Europe',52.2297,21.0122),
  'dallas':('United States','North America',32.7767,-96.7970),'tel aviv':('Israel','Asia',32.0853,34.7818),
  'kyiv':('Ukraine','Europe',50.4501,30.5234),'lviv':('Ukraine','Europe',49.8397,24.0297),
@@ -66,7 +66,7 @@ def mentioned_tools(text):
  if 'Unreal Engine' in matches and 'Unreal' in matches: matches.remove('Unreal')
  return matches
 
-def extract_requirements(markup, qualifications_only=False):
+def extract_requirements(markup, qualifications_only=False, abbreviated=True):
  parser=ListingBlocks();parser.feed(html.unescape(markup or ''));blocks=sorted(parser.blocks)
  mode='required' if qualifications_only else None; result=[];seen=set()
  for _,kind,value in blocks:
@@ -78,7 +78,7 @@ def extract_requirements(markup, qualifications_only=False):
    for item in items:
     clean=item.strip()
     if clean and mode:
-     short=short_requirement(clean);key=short.casefold()
+     short=short_requirement(clean) if abbreviated else clean;key=short.casefold()
      if key not in seen:result.append({'text':short,'kind':mode,'tools':mentioned_tools(clean)});seen.add(key)
    continue
   heading=kind.startswith('h') or (kind=='p' and len(value)<140 and not re.search(r'[.!?]$',value))
@@ -88,7 +88,7 @@ def extract_requirements(markup, qualifications_only=False):
    if END_HEADING.search(value): mode=None;continue
    if kind.startswith('h') or value.endswith(':') or value.isupper(): mode=None;continue
   if kind!='li' or mode is None:continue
-  clean=value.strip(' •–—:-');short=short_requirement(clean);key=short.casefold()
+  clean=value.strip(' •–—:-');short=short_requirement(clean) if abbreviated else clean;key=short.casefold()
   if len(clean)<4 or key in seen:continue
   optional=re.search(r'\b(?:a bonus|a plus|nice to have|preferred|is a plus|desirable)\b',clean,re.I)
   item_mode=('mixed' if optional and re.search(r'[.!?]\s+\S',clean[:optional.start()]) else 'preferred') if optional else mode
@@ -98,6 +98,23 @@ def extract_requirements(markup, qualifications_only=False):
 def request(url):
  req=urllib.request.Request(url,headers={'User-Agent':'AI-Game-Makers-Club-Job-Board/1.0 (public job listings)'})
  with urllib.request.urlopen(req,timeout=35) as r: return r.read().decode('utf-8')
+
+# Keep the board focused on roles that do not explicitly demand seniority.
+EARLY_TITLE = re.compile(r'\b(?:junior|jr\.?|intern|internship|graduate|new[ -]grad|entry[ -]level|associate)\b',re.I)
+SENIOR_TITLE = re.compile(r"\b(?:senior|sr\.?|lead|principal|staff|director|head|vice[ -]president|vp|chief|manager|supervisor|architect|distinguished|expert)\b", re.I)
+SENIOR_LEVEL = re.compile(r"\b(?:senior|executive|director|mid[ -]senior)\b", re.I)
+YEARS = re.compile(r"(?<![\d\-–])\b(\d{1,2}|five|six|seven|eight|nine|ten)\s*(?:\+|(?:-|–|to)\s*\d+\+?)?\s*(?:years?|yrs?)\b", re.I)
+
+def senior_role(title, requirements=(), level=''):
+ if SENIOR_TITLE.search(title) or SENIOR_LEVEL.search(level or ''): return True
+ for item in requirements:
+  if item.get('kind')!='required': continue
+  line=item.get('text','')
+  if re.search(r'\bexperience\s*:\s*(?:mid[ -])?senior',line,re.I): return True
+  for match in YEARS.finditer(line):
+   number=match.group(1).lower(); years=int(number) if number.isdigit() else {'five':5,'six':6,'seven':7,'eight':8,'nine':9,'ten':10}[number]
+   if years>=5 and re.search(r'\b(?:experience|professional|minimum|at least|working|worked|practice)\b',line,re.I): return True
+ return False
 
 def is_hybrid_listing(title, text, raw_location):
  raw_location=raw_location.lower()
@@ -118,11 +135,12 @@ def refresh():
     j['checkedAt']=today
     found=extract_requirements(body)
     if found: j['requirementsList']=found
+    if senior_role(j['title'],extract_requirements(body,abbreviated=False)): continue
   except urllib.error.HTTPError as e:
    if e.code in (404,410): continue
    failures.append(f"{j['url']}: {e}")
   except Exception as e: failures.append(f"{j['url']}: {e}")
-  out.append(j)
+  if not senior_role(j['title'],j.get('requirementsList',[])): out.append(j)
  for slug,company in BOARDS.items():
   try:
    payload=json.loads(request(f'https://boards-api.greenhouse.io/v1/boards/{slug}/jobs?content=true'))
@@ -133,13 +151,14 @@ def refresh():
    continue
   for item in payload['jobs']:
    title=item.get('title','').strip()
+   if senior_role(title,extract_requirements(item.get('content',''),abbreviated=False)): continue
    text=html.unescape(re.sub(r'<[^>]+>', ' ', html.unescape(item.get('content',''))))
    # Require AI in the role title or a specific stated AI tool skill in a game-creation role.
    workflow=bool(re.search(r'\b(?:experience|proficiency|proficient|hands.on|using|use of)\b.{0,75}\b(?:AI tools|generative AI|AI-powered tools|AI-assisted|LLMs?)\b',text,re.I))
    creative=bool(re.search(r'\b(?:game|gameplay|artist|animat|creative|design|tools programmer)\b',title,re.I))
    explicit_hybrid=is_hybrid_listing(title,text,item.get('location',{}).get('name',''))
    ai_role=bool(PATTERN.search(title) or (workflow and creative))
-   if not ai_role and not (explicit_hybrid and CREATIVE.search(title)): continue
+   if not ai_role and not ((explicit_hybrid or EARLY_TITLE.search(title)) and CREATIVE.search(title)): continue
    if re.search(r'\b(?:HR systems|enterprise security|enterprise data|enterprise AI|advertis|ads |ad platform)\b',title,re.I): continue
    if not ai_role: category='Game industry - AI mentioned' if PATTERN.search(text) else 'Game industry - AI not specified'
    elif re.search(r'\b(?:NPC|behaviou?r trees?|enemy behaviors?|gameplay AI)\b',text,re.I) and not re.search(r'\b(?:generative AI|LLM|large language model)\b',text,re.I): category='Gameplay AI & NPCs'
@@ -188,11 +207,12 @@ def refresh():
   area={'us':'North America','ca':'North America','br':'South America','es':'Europe','fr':'Europe','gb':'Europe','uk':'Europe','de':'Europe','ro':'Europe','ua':'Europe','pl':'Europe','vn':'Asia','in':'Asia','sg':'Asia','id':'Asia','jp':'Asia','au':'Oceania','nz':'Oceania'}
   for entry in entries:
    loc=entry.get('location',{}); title=entry.get('name','').strip(); id='sr-gameloft-'+entry['id']
-   if not loc.get('hybrid') or not CREATIVE.search(title): continue
+   if not loc.get('hybrid') or not CREATIVE.search(title) or senior_role(title,level=entry.get('experienceLevel',{}).get('label','')): continue
    try:
     detail=json.loads(request(entry['ref']))
     parts=detail['jobAd']['sections']; text=' '.join(html.unescape(re.sub(r'<[^>]+>',' ',parts.get(k,{}).get('text','') or '')) for k in ('jobDescription','qualifications'))
     url=detail['postingUrl']
+    if senior_role(title,extract_requirements(parts.get('qualifications',{}).get('text',''),True,False)): continue
    except Exception as e:
     failures.append(f'Gameloft {id}: {e}')
     if id in sr_old: out.append(sr_old[id])
@@ -214,6 +234,7 @@ def refresh():
    except (TypeError,ValueError): pass
    out.append(job)
  if len(failures)>=len(BOARDS)+1+len([j for j in old['jobs'] if not j.get('sourceId','').startswith(('gh:','sr:'))]): raise SystemExit('Every source failed; data was not changed')
+ out=[j for j in out if not senior_role(j.get('title',''),j.get('requirementsList',[]))]
  out.sort(key=lambda j:(j.get('posted',''),j.get('title','')),reverse=True)
  FILE.write_text(json.dumps({'lastUpdated':today,'jobs':out},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print(f'{len(out)} jobs; {len([x for x in out if x.get("coordinates")])} mappable; {len(failures)} source errors')

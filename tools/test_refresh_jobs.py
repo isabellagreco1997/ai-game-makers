@@ -55,4 +55,17 @@ class RequirementTests(unittest.TestCase):
   result=bot.extract_requirements('<h2>Requirements</h2><li>One two three four five six seven eight nine ten eleven twelve thirteen fourteen</li>')
   self.assertLessEqual(len(result[0]['text'].split()),12)
 
+class SeniorityTests(unittest.TestCase):
+ def test_rejects_senior_and_lead_titles(self):
+  for title in ['Senior Game Designer','Lead 2D Artist','Principal Engineer','Staff Programmer','Game Developer (Godot Expert)','3D Artist (Middle/Senior)','Distinguished Engineer']:
+   self.assertTrue(bot.senior_role(title),title)
+ def test_rejects_five_plus_years_or_explicit_senior_level(self):
+  self.assertTrue(bot.senior_role('Game Developer',[{'text':'At least 5 years of game development experience','kind':'required'}]))
+  self.assertTrue(bot.senior_role('Game Developer',[{'text':'Experience: Mid-Senior level','kind':'required'}]))
+  self.assertTrue(bot.senior_role('Game Developer',level='Mid-Senior Level'))
+ def test_keeps_junior_and_non_senior_experience(self):
+  self.assertFalse(bot.senior_role('Junior Gameplay Developer',[{'text':'1 to 2 years of professional experience','kind':'required'}]))
+  self.assertFalse(bot.senior_role('Game Designer',[{'text':'3-6+ years of professional game design experience','kind':'required'}]))
+  self.assertFalse(bot.senior_role('Game Designer',[{'text':'5 years of experience is a plus','kind':'preferred'}]))
+
 if __name__=='__main__':unittest.main()

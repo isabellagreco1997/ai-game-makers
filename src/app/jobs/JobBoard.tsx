@@ -7,7 +7,7 @@ import styles from "./jobs.module.css";
 
 type Job = { id:string; title:string; company:string; url:string; category:string; pay:string; payNote:string; location:string; countries:string[]; regions:string[]; posted:string; skills:string[]; summary:string; requirements:string; requirementsList?:{text:string;kind:string;tools?:string[]}[]; employment:string; checkedAt:string; sourceLabel?:string; workMode?:string; coordinates?:{city:string;lat:number;lon:number} };
 const allJobs: Job[] = listings.jobs;
-const priority = (job: Job) => job.workMode === "Hybrid" ? 1 : 0;
+const priority = (job: Job) => (job.workMode === "Hybrid" ? 2 : 0) + (/\b(junior|jr\.?|intern|internship|graduate|new.grad|entry.level|associate)\b/i.test(job.title) ? 1 : 0);
 const regions = ["North America", "South America", "Europe", "Africa", "Asia", "Oceania"];
 const formatDate = (date: string) => new Date(`${date}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 
@@ -64,7 +64,7 @@ export default function JobBoard() {
       </div>
     </section>
     <section className={`${styles.wrap} ${styles.board}`} aria-labelledby="board-heading">
-      <div className={styles.boardHeading}><div><p className={styles.eyebrow}>THE OPPORTUNITY BOARD</p><h2 id="board-heading">Find work in <em>gaming.</em></h2></div><p>Explore opportunities in gaming. See the skills and tools each team is looking for.</p></div>
+      <div className={styles.boardHeading}><div><p className={styles.eyebrow}>THE OPPORTUNITY BOARD</p><h2 id="board-heading">Find work in <em>gaming.</em></h2></div><p>Explore entry-level and other non-senior opportunities in gaming. Check each listing for experience requirements.</p></div>
       <div className={styles.filters}>
         <label>Search skills or title<input type="search" value={search} onChange={e => setSearch(e.target.value)} placeholder="Try Godot or Python" /></label>
         <label>Country<select value={country} onChange={e => { setCountry(e.target.value); setRegion("All regions"); setCity("All cities"); setLimit(20); }}><option>All countries</option>{countries.map(c => <option key={c}>{c}</option>)}</select></label>
