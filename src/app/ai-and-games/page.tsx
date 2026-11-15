@@ -34,7 +34,7 @@ export default function AiAndGames() {
       <Scene variant="about" compact>
         <span className="eyebrow">AI, hate and your game</span>
         <h1 className="display display--lg">
-          Getting hate for building with AI? <em>Here is what the data says.</em>
+          AI is changing games and careers. <em>Here&apos;s what the evidence says.</em>
         </h1>
         <p className="on-sky">
           If you make things with AI, someone may tell you it is not real work. This page takes that seriously. It looks at the numbers on both sides, what is happening to jobs, and how to use AI for your game&apos;s art in a way you can stand behind.
@@ -113,7 +113,7 @@ export default function AiAndGames() {
           eyebrow="Will AI take my job?"
           title={
             <>
-              AI won&apos;t take your place. <em>Someone skilled with it might.</em>
+              Work is changing. <em>Skills still matter.</em>
             </>
           }
           intro="Harvard Business Review put that idea in a 2023 headline: people with AI will replace people without it. The numbers since then point in the same direction."

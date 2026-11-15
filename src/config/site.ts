@@ -14,7 +14,7 @@ export const site = {
   /** Full public address including any base path, e.g. https://user.github.io/ai-game-makers */
   url: (env("SITE_URL") || "http://localhost:8900").replace(/\/$/, ""),
   locale: "en_GB",
-  tagline: "Learn to make your own game with AI.",
+  tagline: "Build games with AI. Grow skills for your future.",
   heroLine: "Make your game happen.",
   founder: "Isabella",
 } as const;
@@ -89,7 +89,7 @@ export const mentorship = {
   /** Programme name, tagline, summary and the list below: her offer card of 15 Nov 2026, word for word. */
   name: "Game Design Accelerator",
   tagline: "Learn the craft. Build your game.",
-  summary: "A personalised 12-week mentorship to master game design fundamentals while creating your own game with AI.",
+  summary: "A personalised 12-week mentorship to develop game design skills while creating your own playable game with AI.",
   package: [
     "12 weekly 45-minute 1:1 sessions",
     "Personalised game development roadmap",

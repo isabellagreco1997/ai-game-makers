@@ -6,7 +6,7 @@ import styles from "../pages.module.css";
 
 export const metadata = pageMeta(
   "Free AI Game Development Course | AI Game Makers",
-  "Learn to plan, build and share your first playable game with AI, through free lessons made for beginners.",
+  "Build practical AI game development skills and a playable project through free lessons for beginners.",
   "/free-course",
 );
 
@@ -51,10 +51,10 @@ export default function FreeCourse() {
           <span className="eyebrow">Free course</span>
         </p>
         <h1 className={["display display--xl", styles.h1].join(" ")}>
-          Build your first game with AI. <em>For free.</em>
+          Start building skills for your future in games. <em>For free.</em>
         </h1>
         <p className={["lede on-sky", styles.heroCopy].join(" ")}>
-          Learn where to start, how to guide AI tools and how to turn a small idea into something you can play.
+          Learn to guide AI tools and turn a small idea into a playable project you can share as you grow your skills.
         </p>
         <div className="cta-row">
           <Button href="/community" size="lg" track="course_hero_access">
@@ -96,7 +96,7 @@ export default function FreeCourse() {
           id="curriculum-h"
           title={
             <>
-              Your first game <em>starts here.</em>
+              Your first playable project <em>starts here.</em>
             </>
           }
           intro="Four levels, from a small idea to a build you can share."
@@ -160,9 +160,9 @@ export default function FreeCourse() {
       <Band tone="night" labelledBy="final">
         <div className="center stack" style={{ maxWidth: 760, margin: "0 auto" }}>
           <h2 id="final" className="display display--lg">
-            Your first game <em>is waiting.</em>
+            Start building work <em>you can share.</em>
           </h2>
-          <p className="lede">Take the first step towards a game you can play.</p>
+          <p className="lede">Take the first step towards a playable project and skills you can keep developing.</p>
           <div className="cta-row cta-row--center">
             <Button href="/community" size="lg" track="course_final_access">
               Access the Free Course

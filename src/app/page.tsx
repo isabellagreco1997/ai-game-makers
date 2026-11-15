@@ -16,7 +16,7 @@ import styles from "./home.module.css";
 
 export const metadata = pageMeta(
   "AI Game Makers Club | Learn AI by Building Games",
-  "Learn to make your first playable game with AI, practical lessons, feedback from other makers and personal project mentorship.",
+  "Learn AI game development, build playable projects and grow skills you can show to employers or clients.",
   "/",
 );
 
@@ -31,6 +31,7 @@ const faq = [
     a: <p>Each lesson names the tools it uses. Some have free tiers and some are paid, so you can decide before you start.</p>,
   },
   { q: "What is Skool?", a: <p>Skool is the platform that hosts the community, the lessons and the discussions. You can use it in a browser or the Skool app.</p> },
+  { q: "Will this guarantee me a job or income?", a: <p>No. The club helps you practise and build playable work you can share. Jobs and income depend on your skills, experience, location and the opportunities available.</p> },
   {
     q: "What's the difference between the free course and the mentorship?",
     a: (
@@ -61,12 +62,12 @@ export default function Home() {
       <Scene variant="home" photo photoAlt="Isabella, founder of AI Game Makers, smiling">
         <span className="eyebrow">AI Game Makers Club</span>
         <h1 className="display display--xl">
-          Make your game <em>happen.</em>
+          Learn to build games with AI. <em>Build a future doing what you love.</em>
         </h1>
-        <p className="plate">Finish your first game with Claude Code and Codex, even if you&apos;ve never written code.</p>
+        <p className="plate">Build practical skills and playable projects, even if you&apos;re new to game development.</p>
         <p className="on-sky" style={{ marginTop: 14 }}>
-          Small on purpose, playable, and yours. Learn one step at a time, get feedback from other makers and work towards a game you can
-          share on itch.io.
+          Learn with Claude Code and Codex, get feedback from other makers and create work you can show to employers or clients.
+          Start for free and explore where your skills could take you.
         </p>
         <div className="cta-row">
           <Button href="/community" size="lg" track="home_hero_start_free">
@@ -93,23 +94,23 @@ export default function Home() {
           eyebrow="Sound familiar?"
           title={
             <>
-              Most AI games never get <em>finished.</em>
+              You want to work in games. <em>Where do you start?</em>
             </>
           }
         />
         <div className="grid grid--3">
-          <FeatureCard icon="code" title="The fix loop">
-            <p>You asked the AI for a whole game. It half worked, then every fix broke something else, and you lost track of your own project.</p>
+          <FeatureCard icon="code" title="Start with the skills">
+            <p>Learn to guide AI tools, solve problems and make creative decisions by working on a small game.</p>
           </FeatureCard>
-          <FeatureCard icon="laptop" title="A folder of beginnings">
-            <p>You started another idea before the first was playable. Now both projects feel too big to finish.</p>
+          <FeatureCard icon="laptop" title="Build something playable">
+            <p>Turn an idea into a project people can try, test and give you feedback on.</p>
           </FeatureCard>
-          <FeatureCard icon="eye" title="Art you don&apos;t want to show">
-            <p>It works, but it looks generic. Nobody has played it, and you&apos;re not sure anyone should.</p>
+          <FeatureCard icon="eye" title="Show what you can do">
+            <p>Share your work and explain your choices as you develop a portfolio for future opportunities.</p>
           </FeatureCard>
         </div>
         <p className={styles.turn}>
-          You can learn to keep the scope small, test each step and <strong>finish what you start.</strong>
+          Start small, practise with purpose and <strong>build work you can share.</strong>
         </p>
       </Band>
 
@@ -120,15 +121,25 @@ export default function Home() {
           eyebrow="People play what we make"
           title={
             <>
-              Real players. Real reactions. <em>Real videos.</em>
+              Playable work. Real players. <em>Real feedback.</em>
             </>
           }
-          intro="HAPPY DAY is rated 5.0 on itch.io, and three YouTube creators recorded full playthroughs. Everything below is public and links to where it was said."
+          intro="A playable game shows what you can make. HAPPY DAY is rated 5.0 on itch.io, and three YouTube creators recorded full playthroughs. Explore their public reactions below."
         />
         <PlayerProof />
       </Band>
 
       <WorldGap />
+
+      <Band tone="cream" labelledBy="career-paths">
+        <SectionHead id="career-paths" eyebrow="Your future in games" title={<>Where could these skills <em>take you?</em></>} intro="Build a foundation for different paths in and around game development." />
+        <div className="grid grid--3">
+          <FeatureCard icon="gamepad" title="Game studios"><p>Explore roles in game design, development, art and prototyping. Requirements vary by role and studio.</p></FeatureCard>
+          <FeatureCard icon="laptop" title="Remote and contract work"><p>Look for remote jobs and freelance projects that match your skills, experience and location.</p></FeatureCard>
+          <FeatureCard icon="rocket" title="Independent projects"><p>Make and share your own games while developing a portfolio and exploring ways to earn from your work.</p></FeatureCard>
+        </div>
+        <p className={styles.turn}>In <a href="https://www.skillsearch.com/assets/reports/skillsearch_games_and_immersive_salary_and_satisfaction_report_2026.pdf" target="_blank" rel="noopener noreferrer">Skillsearch&apos;s 2026 industry survey</a>, gameplay design respondents reported an average salary of <strong>£61,245 a year</strong>. This is an industry benchmark, not a starting salary or a guarantee. Pay and remote availability vary by role, experience and location.</p>
+      </Band>
 
       {/* 5. Why now: the technical point of view, with sources */}
       <Band tone="cream" labelledBy="why-now">
@@ -294,7 +305,7 @@ export default function Home() {
           eyebrow="How it works"
           title={
             <>
-              From idea <em>to playable.</em>
+              From first steps <em>to work you can show.</em>
             </>
           }
         />
@@ -306,7 +317,7 @@ export default function Home() {
             Create characters, environments and gameplay mechanics with AI-assisted workflows.
           </StepCard>
           <StepCard n="03" title="Share" icon="share">
-            Test your project, improve the experience and prepare a playable build to share.
+            Test your project, improve it and share a playable example of your skills.
           </StepCard>
         </ol>
         <div className="cta-row cta-row--center" style={{ marginTop: 40 }}>
@@ -396,10 +407,10 @@ export default function Home() {
           eyebrow="The community"
           title={
             <>
-              You don&apos;t have to <em>build alone.</em>
+              Grow your skills <em>with other makers.</em>
             </>
           }
-          intro="Bring your first idea or a stubborn prototype. Share progress, ask for help and get feedback from people making games too."
+          intro="Share progress, ask for help and get feedback as you build projects and develop skills for your next opportunity."
         />
         <div className={styles.club}>
           <div className={styles.channels}>
@@ -464,7 +475,7 @@ export default function Home() {
       <Band tone="night" labelledBy="final">
         <div className="center" style={{ maxWidth: 720, margin: "0 auto" }}>
           <h2 id="final" className="display display--lg" style={{ marginBottom: 18 }}>
-            Ready to make <em>your game?</em>
+            Ready to build <em>your future in games?</em>
           </h2>
           <p className="lede" style={{ marginBottom: 30 }}>
             Start small, make it playable and let other people try it.

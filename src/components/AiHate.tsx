@@ -113,9 +113,9 @@ export function Takes() {
       </li>
       <li data-reveal="">
         <span className={styles.tag}>The jobs</span>
-        <b>AI won&apos;t take your place. Someone skilled with it might.</b>
+        <b>AI skills are becoming part of the work.</b>
         <span className={styles.takeText}>
-          The risk is falling behind if you never learn to direct the tool, check its work and finish something with it.
+          Practise directing the tool, checking its work and finishing projects you can share. Employers also value experience and judgement.
         </span>
         <Source href={SRC.hbr.href}>{SRC.hbr.label}</Source>
       </li>

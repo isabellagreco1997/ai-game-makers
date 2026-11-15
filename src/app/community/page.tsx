@@ -11,7 +11,7 @@ import styles from "../pages.module.css";
 
 export const metadata = pageMeta(
   "Join the Free AI Game Makers Community on Skool",
-  "Join a free community to learn AI game making, share your first playable builds and get feedback from other makers.",
+  "Join a free community to build games with AI, develop practical skills and share your work with other makers.",
   "/community",
 );
 
@@ -44,11 +44,11 @@ export default function Community() {
       <Scene variant="community" photo photoAlt="Isabella, who runs the AI Game Makers community">
         <span className="eyebrow">Free community + practical game development</span>
         <h1 className="display display--lg">
-          Build games with AI. <em>You don&apos;t have to do it alone.</em>
+          Build skills, make games and <em>grow alongside other creators.</em>
         </h1>
-        <p className="on-sky">Bring your first game idea to a free community of people learning to make games with AI.</p>
+        <p className="on-sky">Learn to create playable projects with AI, share your work and develop skills you can take towards future opportunities.</p>
         <ul className={["check-list", styles.heroList].join(" ")}>
-          <li>Practical lessons, from first idea to playable game</li>
+          <li>Practical lessons, from first idea to playable project</li>
           <li>Somewhere to share what you're building and get feedback</li>
           <li>Tools and workflows to help when a project gets stuck</li>
         </ul>
@@ -141,7 +141,7 @@ export default function Community() {
           id="audience"
           title={
             <>
-              Made for people who <em>want to finish.</em>
+              Made for people who <em>want to grow.</em>
             </>
           }
         />
@@ -201,9 +201,9 @@ export default function Community() {
       <Band tone="night" labelledBy="final">
         <div className="center stack" style={{ maxWidth: 800, margin: "0 auto" }}>
           <h2 id="final" className="display display--lg">
-            Stop waiting for the perfect idea. <em>Start building.</em>
+            Your next opportunity starts <em>with something you build.</em>
           </h2>
-          <p className="lede">Join for free, choose a lesson and take one small step towards a playable game.</p>
+          <p className="lede">Join for free, choose a lesson and start building a playable project you can share.</p>
           <div className="cta-row cta-row--center">
             <ExternalCta href={links.skoolCommunity} pendingNote={PENDING} size="lg" track="community_join_click">
               Join Free on Skool

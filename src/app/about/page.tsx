@@ -27,7 +27,7 @@ export default function About() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }} />
       <Scene variant="about" photo photoAlt="Isabella, founder of AI Game Makers">
         <h1 className={["display display--xl", styles.h1].join(" ")}>
-          Hi, I&apos;m <em>Isabella.</em>
+          I&apos;m Isabella. I help people <em>learn to build with AI.</em>
         </h1>
         <p className="plate" style={{ marginBottom: 18 }}>
           Software engineer. Game creator. Curious about what AI makes possible.
@@ -103,7 +103,7 @@ export default function About() {
       <Band tone="night" labelledBy="final">
         <div className="center stack" style={{ maxWidth: 760, margin: "0 auto" }}>
           <h2 id="final" className="display display--lg">
-            Let&apos;s make <em>your game.</em>
+            Let&apos;s build your skills <em>together.</em>
           </h2>
           <div className="cta-row cta-row--center">
             <Button href="/community" size="lg" track="about_join">

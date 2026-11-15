@@ -20,7 +20,7 @@ export default function Workshops() {
       <Scene variant="workshops" compact>
         <span className="eyebrow">Live every Sunday</span>
         <h1 className="display display--lg">
-          A new live workshop. <em>Every Sunday.</em>
+          Learn practical game development skills <em>live every Sunday.</em>
         </h1>
         <p className="on-sky">
           Every Sunday I run a different live workshop inside the AI Game Makers Club. Build a small piece of a game with me and ask

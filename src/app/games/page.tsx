@@ -26,7 +26,7 @@ export default function Games() {
           <span className="eyebrow">Our games</span>
         </p>
         <h1 className={["display display--lg", styles.h1].join(" ")}>
-          Games aren&apos;t just what we teach. <em>They&apos;re what we make.</em>
+          See what you can build <em>with the skills we teach.</em>
         </h1>
         <p className={["lede on-sky", styles.heroCopy].join(" ")} style={{ marginLeft: "auto", marginRight: "auto" }}>
           Play the released games and demos, and see what is still in development.
@@ -87,7 +87,7 @@ export default function Games() {
       <Band tone="night" labelledBy="final">
         <div className="center stack" style={{ maxWidth: 760, margin: "0 auto" }}>
           <h2 id="final" className="display display--lg">
-            Want to create <em>your own?</em>
+            Ready to build work <em>you can share?</em>
           </h2>
           <p className="lede">Explore the free lessons and start with one playable idea.</p>
           <div className="cta-row cta-row--center">

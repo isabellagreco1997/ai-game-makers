@@ -41,6 +41,7 @@ export default function Mentorship() {
       a: <p>No. You build the game and make the creative decisions. I teach, review your work and help you get unstuck so you can keep making games afterwards.</p>,
     },
     { q: "Is publishing guaranteed?", a: <p>No. You'll get guidance on preparing and sharing a playable build, but no one can honestly guarantee a release or its results.</p> },
+    { q: "Will this guarantee a job or income?", a: <p>No. The mentorship focuses on building your game and developing your skills. Employment, freelance work and earnings depend on your experience, location and opportunities.</p> },
     {
       q: "Which AI subscriptions will I need?",
       a: <p>That depends on your project. We'll look at it together in the first call, including free options, before you spend anything on tools. Tool costs are separate from the mentorship fee.</p>,
@@ -69,7 +70,7 @@ export default function Mentorship() {
           <span className="eyebrow">{mentorship.name}</span>
         </p>
         <h1 className={["display display--lg", styles.h1].join(" ")}>
-          Let&apos;s turn your game idea into <em>something playable.</em>
+          Build a game. <em>Grow the skills behind it.</em>
         </h1>
         <p className={["lede on-sky", styles.heroCopy].join(" ")}>{mentorship.summary}</p>
         <div className={styles.priceHero}>
@@ -333,9 +334,9 @@ export default function Mentorship() {
       <Band tone="night" labelledBy="final">
         <div className="center stack" style={{ maxWidth: 820, margin: "0 auto" }}>
           <h2 id="final" className="display display--lg">
-            Your game deserves more than <em>an unfinished folder.</em>
+            Build something you&apos;re proud <em>to share.</em>
           </h2>
-          <p className="lede">Choose a small scope, work through the hard parts and get specific feedback on your game.</p>
+          <p className="lede">Choose a small scope, work through the hard parts and develop a playable project with personal feedback.</p>
           <div className="cta-row cta-row--center">
             <ExternalCta href={links.skoolMentorship} pendingNote={PENDING} size="lg" track="mentorship_purchase_click">
               Start Your Mentorship: {mentorship.price}/month
