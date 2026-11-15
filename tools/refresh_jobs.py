@@ -1,6 +1,7 @@
 """Refresh curated game/AI jobs from public Greenhouse boards. No third-party packages."""
 import datetime, html, json, re, urllib.request, urllib.error
 from pathlib import Path
+from html.parser import HTMLParser
 
 ROOT = Path(__file__).resolve().parents[1]
 FILE = ROOT / 'src/content/jobs.json'
@@ -33,7 +34,66 @@ CITIES = {
 PATTERN = re.compile(r'\b(?:AI|artificial intelligence|machine learning|generative AI|genAI)\b', re.I)
 HYBRID = re.compile(r'\b(?:on (?:a )?hybrid basis|hybrid\s+(?:working|work(?:ing)? model|work schedule|schedule|arrangement|basis|with|[0-9])|work(?:ing)?\s+(?:in\s+)?(?:a\s+)?hybrid)\b', re.I)
 CREATIVE = re.compile(r'\b(?:game|gameplay|developer|programmer|engineer|designer|artist|animator|animation|quality|tools)\b', re.I)
-SKILLS = ['Unreal Engine','Unity','Godot','Python','C++','C#','Java','Lua','GDScript','Machine Learning','Generative AI','LLM','Deep Learning','PyTorch','TensorFlow']
+SKILLS = ['Unreal Engine','Unity','Godot','Python','C++','C#','Java','Lua','GDScript','Machine Learning','Generative AI','LLM','Deep Learning','PyTorch','TensorFlow','Photoshop','Illustrator','Figma','Blender','Maya','Houdini','ZBrush','Substance Painter','After Effects','Premiere Pro','Stable Diffusion','ComfyUI','Flux','Midjourney','GitHub','Git','Jira','Confluence','SQL','TypeScript','JavaScript','Docker','Kubernetes','AWS','Google Cloud','Azure','CMake','Perforce','Blueprints','3D Studio Max','3ds Max','Aseprite','LibreSprite','Solar2D','Defold','Panda3D','LLMs','Claude Code','Codex','GitHub Copilot','ChatGPT','Cinema 4D','Octane Render','Premiere Pro','Visual Studio','Terraform','Datadog','Kibana','Miro','Excel','PowerPoint','Shader Graph','HLSL','Ruby','Unreal','CryEngine','Cinema4D','Fiddler','Firebug','Charles Proxy','MySQL','PostgreSQL','Prometheus','Grafana','K6','Locust','NATS','A1111']
+
+class ListingBlocks(HTMLParser):
+ def __init__(self):
+  super().__init__(convert_charrefs=True); self.stack=[]; self.blocks=[]; self.order=0
+ def handle_starttag(self,tag,attrs):
+  if tag in ('h1','h2','h3','h4','h5','h6','p','li'):
+   self.order+=1;self.stack.append([tag,self.order,[]])
+  elif tag=='br' and self.stack: self.stack[-1][2].append(' ')
+ def handle_data(self,data):
+  if self.stack: self.stack[-1][2].append(data)
+ def handle_endtag(self,tag):
+  if self.stack and self.stack[-1][0]==tag:
+   kind,order,parts=self.stack.pop();value=re.sub(r'\s+',' ',''.join(parts)).strip()
+   if value:self.blocks.append((order,kind,value))
+
+REQUIRED_HEADING=re.compile(r"(?:requirements?|qualifications?|required skills|what (?:we|you).{0,25}(?:looking for|bring|need)|what you.ll (?:need|bring)|who you are|your (?:profile|skills|experience)|about you|must.have|what you have|you have|you should have|your background|your expertise|your toolkit|your player profile|votre profil|knowledge and experience|knowledge/skills|connaissances/compétences)",re.I)
+PREFERRED_HEADING=re.compile(r"(?:nice.to.have|bonus|preferred|desirable|extra credit|would be a plus|additional (?:skills|qualifications))",re.I)
+END_HEADING=re.compile(r"(?:benefits|perks|what we offer|working at|about (?:us|the company|scopely)|equal opportunity|compensation|salary|how to apply|responsibilities|what you.ll do|what you will do|why join|why krafton|pourquoi krafton|our benefits|open to applicants|open in [0-9]+ countries|job expectations|fair employment)",re.I)
+
+def short_requirement(value):
+ # Keep factual requirements in short, source-linked fragments; the original
+ # listing remains the authority for context and the full wording.
+ value=re.sub(r'\s+',' ',value).strip(' •–—:-')
+ words=value.split()
+ return value if len(words)<=12 else ' '.join(words[:12]).rstrip(',;:')+'…'
+
+def mentioned_tools(text):
+ matches=list(dict.fromkeys(skill for skill in SKILLS if skill not in ('Machine Learning','Generative AI','LLM','LLMs','Deep Learning') and re.search(r'(?<![\w])'+re.escape(skill)+r'(?![\w])',text,re.I)))
+ if 'Unreal Engine' in matches and 'Unreal' in matches: matches.remove('Unreal')
+ return matches
+
+def extract_requirements(markup, qualifications_only=False):
+ parser=ListingBlocks();parser.feed(html.unescape(markup or ''));blocks=sorted(parser.blocks)
+ mode='required' if qualifications_only else None; result=[];seen=set()
+ for _,kind,value in blocks:
+  # A few sources put bullet characters in a paragraph instead of HTML <li>s.
+  if kind=='p' and '•' in value:
+   prefix,*items=value.split('•')
+   if PREFERRED_HEADING.search(prefix): mode='preferred'
+   elif REQUIRED_HEADING.search(prefix): mode='required'
+   for item in items:
+    clean=item.strip()
+    if clean and mode:
+     short=short_requirement(clean);key=short.casefold()
+     if key not in seen:result.append({'text':short,'kind':mode,'tools':mentioned_tools(clean)});seen.add(key)
+   continue
+  heading=kind.startswith('h') or (kind=='p' and len(value)<140 and not re.search(r'[.!?]$',value))
+  if heading:
+   if PREFERRED_HEADING.search(value): mode='preferred';continue
+   if REQUIRED_HEADING.search(value): mode='required';continue
+   if END_HEADING.search(value): mode=None;continue
+   if kind.startswith('h') or value.endswith(':') or value.isupper(): mode=None;continue
+  if kind!='li' or mode is None:continue
+  clean=value.strip(' •–—:-');short=short_requirement(clean);key=short.casefold()
+  if len(clean)<4 or key in seen:continue
+  optional=re.search(r'\b(?:a bonus|a plus|nice to have|preferred|is a plus|desirable)\b',clean,re.I)
+  item_mode=('mixed' if optional and re.search(r'[.!?]\s+\S',clean[:optional.start()]) else 'preferred') if optional else mode
+  seen.add(key);result.append({'text':short,'kind':item_mode,'tools':mentioned_tools(clean)})
+ return result
 
 def request(url):
  req=urllib.request.Request(url,headers={'User-Agent':'AI-Game-Makers-Club-Job-Board/1.0 (public job listings)'})
@@ -53,8 +113,11 @@ def refresh():
  for j in old['jobs']:
   if j.get('sourceId','').startswith(('gh:','sr:')): continue
   try:
-   body=request(j['url']).lower()
-   if 'apply now' in body and j['title'].lower() in html.unescape(body): j['checkedAt']=today
+   body=request(j['url'])
+   if 'apply now' in body.lower() and j['title'].lower() in html.unescape(body).lower():
+    j['checkedAt']=today
+    found=extract_requirements(body)
+    if found: j['requirementsList']=found
   except urllib.error.HTTPError as e:
    if e.code in (404,410): continue
    failures.append(f"{j['url']}: {e}")
@@ -106,6 +169,7 @@ def refresh():
         'sourceLabel':'Official careers page','url':item['absolute_url'],'category':category,
         'pay':'See listing','payNote':'Check source for pay','location':location or 'See listing',
         'countries':countries,'regions':regions,'posted':(item.get('first_published') or '')[:10],
+        'requirementsList':extract_requirements(item.get('content','')),
         'skills':skills[:8], 'summary':('The listing does not specify AI.' if category=='Game industry - AI not specified' else 'AI is mentioned; check the listing for context.' if category=='Game industry - AI mentioned' else 'Explore this AI-related role at a games company. Check the source for the role’s focus.'),
         'requirements':'See the official listing for experience, qualifications and role details.',
         'employment':'See listing','checkedAt':today,'workMode':mode}
@@ -139,6 +203,7 @@ def refresh():
     'category':'AI & machine learning in gaming' if is_ai else 'Game industry - AI mentioned' if PATTERN.search(text) else 'Game industry - AI not specified',
     'pay':'See listing','payNote':'Check source for pay','location':loc.get('fullLocation') or loc.get('city','See listing'),
     'countries':[country] if country else [],'regions':[area[code]] if code in area else [],'posted':(entry.get('releasedDate') or '')[:10],
+    'requirementsList':extract_requirements(parts.get('qualifications',{}).get('text',''),True),
     'skills':[x for x in SKILLS if re.search(r'(?<![\w])'+re.escape(x)+r'(?![\w])',text,re.I)][:8],
     'summary':'Explore this hybrid role at a games company. Check the listing for its requirements.',
     'requirements':'See the official listing for experience, qualifications and role details.',

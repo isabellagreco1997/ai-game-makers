@@ -5,16 +5,15 @@ import listings from "@/content/jobs.json";
 import Globe from "./Globe";
 import styles from "./jobs.module.css";
 
-type Job = { id:string; title:string; company:string; url:string; category:string; pay:string; payNote:string; location:string; countries:string[]; regions:string[]; posted:string; skills:string[]; summary:string; requirements:string; employment:string; checkedAt:string; sourceLabel?:string; workMode?:string; coordinates?:{city:string;lat:number;lon:number} };
+type Job = { id:string; title:string; company:string; url:string; category:string; pay:string; payNote:string; location:string; countries:string[]; regions:string[]; posted:string; skills:string[]; summary:string; requirements:string; requirementsList?:{text:string;kind:string;tools?:string[]}[]; employment:string; checkedAt:string; sourceLabel?:string; workMode?:string; coordinates?:{city:string;lat:number;lon:number} };
 const allJobs: Job[] = listings.jobs;
-const priority = (job: Job) => (job.workMode === "Hybrid" ? 2 : 0) + (job.category.startsWith("Game industry -") ? 0 : 1);
+const priority = (job: Job) => job.workMode === "Hybrid" ? 1 : 0;
 const regions = ["North America", "South America", "Europe", "Africa", "Asia", "Oceania"];
 const formatDate = (date: string) => new Date(`${date}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 
 export default function JobBoard() {
   const [region, setRegion] = useState("All regions");
   const [country, setCountry] = useState("All countries");
-  const [category, setCategory] = useState("All work");
   const [search, setSearch] = useState("");
   const [city, setCity] = useState("All cities");
   const [mode, setMode] = useState("All workplaces");
@@ -25,18 +24,16 @@ export default function JobBoard() {
     return [...cities.values()].sort((a,b)=>a.city.localeCompare(b.city));
   }, []);
   const countries = useMemo(() => [...new Set(allJobs.flatMap(job => job.countries))].sort(), []);
-  const categories = useMemo(() => [...new Set(allJobs.map(job => job.category))].sort(), []);
   const jobs = allJobs.filter(job =>
     (region === "All regions" || job.regions.includes(region)) &&
     (country === "All countries" || job.countries.includes(country)) &&
-    (category === "All work" || job.category === category) &&
     (city === "All cities" || job.coordinates?.city === city) &&
     (mode === "All workplaces" || (job.workMode || "Remote eligible") === mode) &&
-    `${job.title} ${job.company} ${job.skills.join(" ")} ${job.summary}`.toLowerCase().includes(search.toLowerCase().trim())
+    `${job.title} ${job.company} ${job.skills.join(" ")} ${(job.requirementsList || []).map(r => `${r.text} ${(r.tools || []).join(" ")}`).join(" ")}`.toLowerCase().includes(search.toLowerCase().trim())
   ).sort((a,b) => priority(b) - priority(a));
   function chooseRegion(value: string) { setRegion(value); setCountry("All countries"); setCity("All cities"); setLimit(20); }
   const cityJobs = city === "All cities" ? [] : allJobs.filter(job => job.coordinates?.city === city).sort((a,b) => priority(b) - priority(a));
-  const selectCity = (selected:string) => {setCity(selected); setRegion("All regions"); setCountry("All countries"); setMode("All workplaces"); setCategory("All work"); setSearch(""); setLimit(20);};
+  const selectCity = (selected:string) => {setCity(selected); setRegion("All regions"); setCountry("All countries"); setMode("All workplaces"); setSearch(""); setLimit(20);};
   return <div className={styles.page}>
     <section className={styles.hero}>
       <div className={styles.wrap}>
@@ -44,7 +41,7 @@ export default function JobBoard() {
         <h1>Find your place in <em>games + AI.</em></h1>
         <p className={styles.lead}>Real opportunities. Skills worth building. A world of ways to make games and work with AI.</p>
         <div className={styles.heroMeta}><span><i /> {allJobs.filter(j => j.workMode === "Hybrid").length} HYBRID OPPORTUNITIES</span><span>BOARD UPDATED {formatDate(listings.lastUpdated).toUpperCase()}</span></div>
-        <a className={styles.heroButton} href="#board-heading" onClick={() => {setMode("Hybrid"); setCity("All cities"); setCountry("All countries"); setRegion("All regions"); setCategory("All work"); setSearch(""); setLimit(20);}}>Explore hybrid jobs ↓</a>
+        <a className={styles.heroButton} href="#board-heading" onClick={() => {setMode("Hybrid"); setCity("All cities"); setCountry("All countries"); setRegion("All regions"); setSearch(""); setLimit(20);}}>Explore hybrid jobs ↓</a>
       </div>
     </section>
     <section className={styles.wrap} aria-labelledby="map-heading">
@@ -67,23 +64,23 @@ export default function JobBoard() {
       </div>
     </section>
     <section className={`${styles.wrap} ${styles.board}`} aria-labelledby="board-heading">
-      <div className={styles.boardHeading}><div><p className={styles.eyebrow}>THE OPPORTUNITY BOARD</p><h2 id="board-heading">Find work in <em>gaming.</em></h2></div><p>Explore roles across game development, AI training and evaluation. Requirements and availability vary.</p></div>
+      <div className={styles.boardHeading}><div><p className={styles.eyebrow}>THE OPPORTUNITY BOARD</p><h2 id="board-heading">Find work in <em>gaming.</em></h2></div><p>Explore opportunities in gaming. See the skills and tools each team is looking for.</p></div>
       <div className={styles.filters}>
         <label>Search skills or title<input type="search" value={search} onChange={e => setSearch(e.target.value)} placeholder="Try Godot or Python" /></label>
         <label>Country<select value={country} onChange={e => { setCountry(e.target.value); setRegion("All regions"); setCity("All cities"); setLimit(20); }}><option>All countries</option>{countries.map(c => <option key={c}>{c}</option>)}</select></label>
         <label>Workplace<select value={mode} onChange={e => {setMode(e.target.value);setLimit(20);}}><option>All workplaces</option><option>Hybrid</option><option>Remote eligible</option><option>On-site</option><option>Location based</option><option>Not specified</option></select></label>
-        <label>Type of work<select value={category} onChange={e => setCategory(e.target.value)}><option>All work</option>{categories.map(c => <option key={c}>{c}</option>)}</select></label>
       </div>
-      <div className={styles.results}><strong aria-live="polite">{jobs.length} {jobs.length === 1 ? "opportunity" : "opportunities"}</strong><button onClick={() => {setSearch(""); setCountry("All countries"); setRegion("All regions"); setCategory("All work"); setCity("All cities"); setMode("All workplaces"); setLimit(20);}}>Clear filters ↗</button></div>
+      <div className={styles.results}><strong aria-live="polite">{jobs.length} {jobs.length === 1 ? "opportunity" : "opportunities"}</strong><button onClick={() => {setSearch(""); setCountry("All countries"); setRegion("All regions"); setCity("All cities"); setMode("All workplaces"); setLimit(20);}}>Clear filters ↗</button></div>
       <div className={styles.list}>
         {jobs.slice(0, limit).map(job => <article key={job.id} className={styles.job}>
-          <div className={styles.jobTop}><span className={styles.category}>{job.category}</span><span className={styles.checked}>{job.checkedAt < listings.lastUpdated ? "NOT CONFIRMED IN LATEST UPDATE · " : ""}CHECKED {formatDate(job.checkedAt).toUpperCase()}</span></div>
+          <div className={styles.jobTop}><span className={styles.category}>{job.workMode || "Remote eligible"}</span><span className={styles.checked}>{job.checkedAt < listings.lastUpdated ? "NOT CONFIRMED IN LATEST UPDATE · " : ""}CHECKED {formatDate(job.checkedAt).toUpperCase()}</span></div>
           <div className={styles.jobMain}><div><h3>{job.title}</h3><p className={styles.company}>{job.company} · {job.sourceLabel || "recruiting platform"}</p></div><div className={styles.pay}>{job.pay}<small>{job.payNote}</small></div></div>
-          <p className={styles.description}>{job.summary}</p>
           <div className={styles.tags}><span>⌁ {job.location}</span><span>◷ {job.employment}</span>{job.posted && <span>Posted {formatDate(job.posted)}</span>}<span>{job.workMode || "Remote eligible"}</span></div>
-          <p className={styles.requirements}><strong>What they ask for</strong> {job.requirements}</p>
-          {job.skills.length > 0 && <p className={styles.terms}>TERMS MENTIONED IN THE LISTING</p>}
-          <div className={styles.skills} aria-label="Terms mentioned in the listing">{job.skills.map(skill => <span key={skill}>{skill}</span>)}</div>
+          <div className={styles.requirementsBlock}>
+            <h4>Skills &amp; requirements</h4>
+            {job.requirementsList?.length ? <><ul className={styles.requirementList}>{job.requirementsList.map((item,i) => <li key={`${i}-${item.text}`}><span>{item.text}</span>{item.kind === "preferred" && <small>Preferred</small>}{item.kind === "mixed" && <small>See details</small>}</li>)}</ul><p className={styles.requirementsNote}>Short excerpts · see the listing for full details and context.</p></> : <p className={styles.requirementsNote}>Requirements could not be extracted. See the original listing.</p>}
+            {(() => {const tools = [...new Set((job.requirementsList || []).flatMap(item => item.tools || []))]; return tools.length ? <><p className={styles.terms}>TOOLS MENTIONED IN REQUIREMENTS</p><div className={styles.skills}>{tools.map(tool => <span key={tool}>{tool}</span>)}</div></> : null;})()}
+          </div>
           <div className={styles.jobBottom}><span>Check the source for current details and eligibility.</span><a href={job.url} target="_blank" rel="noopener noreferrer">View listing <span aria-hidden="true">↗</span><span className="sr-only"> (opens in a new tab)</span></a></div>
         </article>)}
         {!jobs.length && <div className={styles.empty}><h3>No matches yet.</h3><p>Try another region, country or skill. New opportunities can appear as the board is refreshed.</p></div>}

@@ -39,4 +39,20 @@ class HybridTests(unittest.TestCase):
   self.assertFalse(bot.is_hybrid_listing('Platform Engineer','Our company has a hybrid work model.','United States (Remote)'))
   self.assertFalse(bot.is_hybrid_listing('Engineer','Remote basis in the United States or Mexico City on a hybrid basis.','United States'))
 
+class RequirementTests(unittest.TestCase):
+ def test_required_and_preferred_with_short_source_excerpts(self):
+  markup = "<h2>Requirements</h2><ul><li>Experience with Unity and C#</li></ul><h2>Nice to have</h2><ul><li>Blender experience</li></ul><h2>Benefits</h2><ul><li>Paid holiday</li></ul>"
+  result=bot.extract_requirements(markup)
+  self.assertEqual([x['kind'] for x in result],['required','preferred'])
+  self.assertEqual(result[0]['tools'],['Unity','C#'])
+  self.assertNotIn('Paid holiday',str(result))
+ def test_bullets_in_paragraph_and_company_heading_stop(self):
+  markup='<p>Qualifications:</p><p>• Python experience • Godot experience</p><p>Why Krafton Montreal</p><ul><li>Free games</li></ul>'
+  result=bot.extract_requirements(markup);self.assertEqual([x['text'] for x in result],['Python experience','Godot experience'])
+ def test_no_requirements_section_returns_no_fabricated_bullets(self):
+  self.assertEqual(bot.extract_requirements('<h2>About us</h2><ul><li>We love games</li></ul>'),[])
+ def test_long_requirement_is_short(self):
+  result=bot.extract_requirements('<h2>Requirements</h2><li>One two three four five six seven eight nine ten eleven twelve thirteen fourteen</li>')
+  self.assertLessEqual(len(result[0]['text'].split()),12)
+
 if __name__=='__main__':unittest.main()
