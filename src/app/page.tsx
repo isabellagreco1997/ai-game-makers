@@ -234,10 +234,12 @@ export default function Home() {
             </div>
             <p>Learn the tools step by step, make a small game and share your progress with other makers.</p>
             <ul className="check-list">
-              <li>A free, beginner-friendly course</li>
-              <li>A community of people building games</li>
-              <li>Shared resources, prompts and workflows</li>
-              <li>Feedback from other makers</li>
+              <li>Beginner lessons and AI tool guides</li>
+              <li>Ready-to-use prompts and resources</li>
+              <li>Live workshop every Sunday</li>
+              <li>Job board for game-making opportunities</li>
+              <li>Share your builds and get feedback</li>
+              <li>Community playtests</li>
             </ul>
             <div className={styles.pathCta}>
               <Button href="/community" track="home_path_free">
@@ -252,7 +254,12 @@ export default function Home() {
           <article className={["card", styles.path].join(" ")}>
             <div className={styles.pathTop}>
               <span className="badge badge--cream">1:1 mentorship</span>
-              <h3 className="title-ink">Game Design Accelerator</h3>
+              <h3 className={styles.acceleratorLogo} aria-label="Game Design Accelerator">
+                <span className={styles.acceleratorMark} aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none"><path d="M11 33 24 10l13 23h-8l-5-9-5 9h-8Z" fill="currentColor"/><path d="M16 38h16" stroke="currentColor" strokeWidth="3" strokeLinecap="square"/></svg>
+                </span>
+                <span className={styles.acceleratorWords} aria-hidden="true"><span>Game Design</span><strong>Accelerator</strong></span>
+              </h3>
             </div>
             <p className={styles.pathTagline}>Learn the craft. Build your game.</p>
             <p>A personalised 12-week mentorship to master game design fundamentals while creating your own game with AI.</p>
@@ -273,6 +280,8 @@ export default function Home() {
               <li>Game reviews and personalised feedback</li>
               <li>Skool messaging between sessions</li>
               <li>Publishing and marketing guidance</li>
+              <li>Build and present your game portfolio</li>
+              <li>Create a library of games to showcase your skills</li>
               <li>Potential YouTube game showcase</li>
               <li>Session recordings and learning resources</li>
               <li>Standard community access</li>

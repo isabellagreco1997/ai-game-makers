@@ -110,6 +110,52 @@
   letter-spacing: -0.03em;
   margin: 0;
 }
+.pathTop .acceleratorLogo {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 2vw, 20px);
+  margin: 5px 0 2px;
+  line-height: 1;
+}
+.acceleratorMark {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: clamp(50px, 6vw, 68px);
+  aspect-ratio: 1;
+  color: #23101b;
+  background: linear-gradient(145deg, #ffe65a 5%, #ffad38 50%, #ff5454 100%);
+  border: 2px solid #ffdf72;
+  border-radius: 16px 16px 6px 16px;
+  box-shadow: 0 5px 0 #a43630, 0 10px 24px rgba(255, 91, 64, .22);
+}
+.acceleratorMark svg { width: 76%; height: 76%; }
+.acceleratorWords { display: grid; gap: 5px; min-width: 0; }
+.acceleratorWords > span {
+  color: #ffdc91;
+  font-family: var(--font-pixel);
+  font-size: clamp(.66rem, 1.2vw, .83rem);
+  line-height: 1.25;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.acceleratorWords strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.65rem, 3.2vw, 2.75rem);
+  font-weight: 900;
+  letter-spacing: -.055em;
+  line-height: 1.05;
+  color: #ffb141;
+  background: linear-gradient(100deg, #ffe25a 0%, #ff9b3e 52%, #ff5957 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 380px) {
+  .pathTop .acceleratorLogo { gap: 10px; }
+  .acceleratorWords strong { font-size: 1.55rem; }
+}
 .pathCta {
   margin-top: auto;
   padding-top: 8px;

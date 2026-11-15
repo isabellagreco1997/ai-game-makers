@@ -107,6 +107,8 @@ export const mentorship = {
     "Game reviews and personalised feedback",
     "Skool messaging between sessions",
     "Publishing and marketing guidance",
+    "Build and present your game portfolio",
+    "Create a library of games to showcase your skills",
     "Potential YouTube game showcase",
     "Session recordings and learning resources",
     "Standard community access",
