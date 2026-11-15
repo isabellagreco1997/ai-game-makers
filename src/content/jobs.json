@@ -2,6 +2,105 @@
   "lastUpdated": "2026-11-15",
   "jobs": [
     {
+      "id": "gh-scopely-5477868008",
+      "sourceId": "gh:scopely",
+      "title": "Senior Technical Artist - Unannounced Project",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5477868008?gh_jid=5477868008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-11-13",
+      "skills": [
+        "Unity",
+        "Python",
+        "C#"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "gh-scopely-5479247008",
+      "sourceId": "gh:scopely",
+      "title": "Senior Server Engineer - Performance",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5479247008?gh_jid=5479247008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-11-13",
+      "skills": [
+        "Python"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "gh-scopely-5428967008",
+      "sourceId": "gh:scopely",
+      "title": "Senior Motion Designer",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5428967008?gh_jid=5428967008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-11-13",
+      "skills": [
+        "Unreal Engine",
+        "Unity"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
       "id": "gh-roblox-8311549",
       "sourceId": "gh:roblox",
       "title": "Senior Machine Learning Engineer, Behavioral Detection",
@@ -66,6 +165,38 @@
       }
     },
     {
+      "id": "sr-gameloft-744000161462070",
+      "sourceId": "sr:Gameloft",
+      "title": "Lead Game Designer (PC/Console/Mobile)",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000161462070-lead-game-designer-pc-console-mobile-",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Barcelona, CT, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-11-13",
+      "skills": [
+        "Unity"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874374,
+        "lon": 2.1686496,
+        "city": "Barcelona"
+      }
+    },
+    {
       "id": "gh-epicgames-6242339004",
       "sourceId": "gh:epicgames",
       "title": "Senior AI Programmer",
@@ -125,6 +256,36 @@
       }
     },
     {
+      "id": "sr-gameloft-744000161288789",
+      "sourceId": "sr:Gameloft",
+      "title": "Lead UI Artist",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000161288789-lead-ui-artist",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Barcelona, CT, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-11-12",
+      "skills": [],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874374,
+        "lon": 2.1686496,
+        "city": "Barcelona"
+      }
+    },
+    {
       "id": "gh-tripledotstudios-5031331101",
       "sourceId": "gh:tripledotstudios",
       "title": "Senior Game Content Designer (AI-Assisted)",
@@ -135,15 +296,24 @@
       "pay": "See listing",
       "payNote": "Check source for pay",
       "location": "Minsk",
-      "countries": [],
-      "regions": [],
+      "countries": [
+        "Belarus"
+      ],
+      "regions": [
+        "Europe"
+      ],
       "posted": "2026-11-11",
       "skills": [],
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
-      "workMode": "Not specified"
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 53.9006,
+        "lon": 27.559,
+        "city": "Minsk"
+      }
     },
     {
       "id": "gh-tripledotstudios-5033993101",
@@ -156,15 +326,24 @@
       "pay": "See listing",
       "payNote": "Check source for pay",
       "location": "Tbilisi",
-      "countries": [],
-      "regions": [],
+      "countries": [
+        "Georgia"
+      ],
+      "regions": [
+        "Asia"
+      ],
       "posted": "2026-11-11",
       "skills": [],
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
-      "workMode": "Not specified"
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.7151,
+        "lon": 44.8271,
+        "city": "Tbilisi"
+      }
     },
     {
       "id": "gh-riotgames-8356771",
@@ -339,6 +518,36 @@
       "workMode": "Not specified"
     },
     {
+      "id": "gh-tripledotstudios-5031108101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Sound Designer",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/5031108101",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Jakarta",
+      "countries": [
+        "Indonesia"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-11-09",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "city": "Jakarta"
+      }
+    },
+    {
       "id": "gh-tripledotstudios-5031309101",
       "sourceId": "gh:tripledotstudios",
       "title": "Senior Game Economy Designer",
@@ -349,15 +558,24 @@
       "pay": "See listing",
       "payNote": "Check source for pay",
       "location": "Warsaw",
-      "countries": [],
-      "regions": [],
+      "countries": [
+        "Poland"
+      ],
+      "regions": [
+        "Europe"
+      ],
       "posted": "2026-11-09",
       "skills": [],
-      "summary": "This game role mentions AI tools in its requirements.",
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
-      "workMode": "Not specified"
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 52.2297,
+        "lon": 21.0122,
+        "city": "Warsaw"
+      }
     },
     {
       "id": "gh-tripledotstudios-5028838101",
@@ -370,15 +588,24 @@
       "pay": "See listing",
       "payNote": "Check source for pay",
       "location": "Tbilisi",
-      "countries": [],
-      "regions": [],
+      "countries": [
+        "Georgia"
+      ],
+      "regions": [
+        "Asia"
+      ],
       "posted": "2026-11-09",
       "skills": [],
-      "summary": "This game role mentions AI tools in its requirements.",
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
-      "workMode": "Not specified"
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.7151,
+        "lon": 44.8271,
+        "city": "Tbilisi"
+      }
     },
     {
       "id": "gh-tripledotstudios-5031308101",
@@ -391,15 +618,24 @@
       "pay": "See listing",
       "payNote": "Check source for pay",
       "location": "Minsk",
-      "countries": [],
-      "regions": [],
+      "countries": [
+        "Belarus"
+      ],
+      "regions": [
+        "Europe"
+      ],
       "posted": "2026-11-09",
       "skills": [],
-      "summary": "This game role mentions AI tools in its requirements.",
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
-      "workMode": "Not specified"
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 53.9006,
+        "lon": 27.559,
+        "city": "Minsk"
+      }
     },
     {
       "id": "gh-riotgames-8178071",
@@ -468,6 +704,71 @@
       }
     },
     {
+      "id": "sr-gameloft-744000160547109",
+      "sourceId": "sr:Gameloft",
+      "title": "3D Environment Artist (Middle/Senior)",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000160547109-3d-environment-artist-middle-senior-",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Ho Chi Minh City, Ho Chi Minh, Vietnam",
+      "countries": [
+        "Vietnam"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-11-09",
+      "skills": [
+        "Unreal Engine",
+        "Unity"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 10.8230989,
+        "lon": 106.6296638,
+        "city": "Ho Chi Minh City"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000160546829",
+      "sourceId": "sr:Gameloft",
+      "title": "3D Character Artist (Middle/Senior)",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000160546829-3d-character-artist-middle-senior-",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Ho Chi Minh City, Ho Chi Minh, Vietnam",
+      "countries": [
+        "Vietnam"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-11-09",
+      "skills": [
+        "Unity"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 10.8230989,
+        "lon": 106.6296638,
+        "city": "Ho Chi Minh City"
+      }
+    },
+    {
       "id": "game-ai-evaluation",
       "title": "Game Developer for AI Evaluation",
       "url": "https://www.opentrain.ai/jobs/game-developer-for-ai-evaluation--cmw6v6uma00ip07lebvebr5wx/",
@@ -495,6 +796,137 @@
       "checkedAt": "2026-11-15"
     },
     {
+      "id": "gh-scopely-5425490008",
+      "sourceId": "gh:scopely",
+      "title": "QA Engineer - Royal Lounge Casino",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5425490008?gh_jid=5425490008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "IN - Bangalore, India",
+      "countries": [
+        "India"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-11-06",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 12.9716,
+        "lon": 77.5946,
+        "city": "Bangalore"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000160160819",
+      "sourceId": "sr:Gameloft",
+      "title": "3D Technical Artist",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000160160819-3d-technical-artist",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Ho Chi Minh City, Ho Chi Minh, Vietnam",
+      "countries": [
+        "Vietnam"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-11-06",
+      "skills": [
+        "Unreal Engine",
+        "Unity",
+        "Python",
+        "C++"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 10.8230989,
+        "lon": 106.6296638,
+        "city": "Ho Chi Minh City"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000159606824",
+      "sourceId": "sr:Gameloft",
+      "title": "Senior Game Developer (C++)",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000159606824-senior-game-developer-c-",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Lviv, Lviv Oblast, Ukraine",
+      "countries": [
+        "Ukraine"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-11-04",
+      "skills": [
+        "Unreal Engine",
+        "Unity",
+        "Python",
+        "C++",
+        "Lua"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 49.839683,
+        "lon": 24.029717,
+        "city": "Lviv"
+      }
+    },
+    {
+      "id": "gh-tripledotstudios-5015842101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Senior Backend Engineer - Ruby",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/5015842101",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Minsk",
+      "countries": [
+        "Belarus"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-11-04",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 53.9006,
+        "lon": 27.559,
+        "city": "Minsk"
+      }
+    },
+    {
       "id": "gh-roblox-8221568",
       "sourceId": "gh:roblox",
       "title": "Principal AI Infrastructure Engineer, Build Platform",
@@ -520,6 +952,104 @@
       "employment": "See listing",
       "checkedAt": "2026-11-15",
       "workMode": "Not specified"
+    },
+    {
+      "id": "sr-gameloft-744000159607510",
+      "sourceId": "sr:Gameloft",
+      "title": "Narrative Designer (DISNEY DREAMLIGHT VALLEY)",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000159607510-narrative-designer-disney-dreamlight-valley-",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Lviv, Lviv Oblast, Ukraine",
+      "countries": [
+        "Ukraine"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-11-04",
+      "skills": [
+        "Unity"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 49.839683,
+        "lon": 24.029717,
+        "city": "Lviv"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000159607225",
+      "sourceId": "sr:Gameloft",
+      "title": "C++ Game Developer",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000159607225-c-game-developer-",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Lviv, Lviv Oblast, Ukraine",
+      "countries": [
+        "Ukraine"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-11-04",
+      "skills": [
+        "Unreal Engine",
+        "Unity",
+        "Python",
+        "C++",
+        "Lua"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 49.839683,
+        "lon": 24.029717,
+        "city": "Lviv"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000159651229",
+      "sourceId": "sr:Gameloft",
+      "title": "2D Artist",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000159651229-2d-artist",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Lviv, Lviv Oblast, Ukraine",
+      "countries": [
+        "Ukraine"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-11-04",
+      "skills": [],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 49.839683,
+        "lon": 24.029717,
+        "city": "Lviv"
+      }
     },
     {
       "id": "solar2d",
@@ -649,11 +1179,16 @@
       ],
       "posted": "2026-11-03",
       "skills": [],
-      "summary": "This game role mentions AI tools in its requirements.",
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
-      "workMode": "Not specified"
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
     },
     {
       "id": "panda3d",
@@ -847,6 +1382,38 @@
       "checkedAt": "2026-11-15"
     },
     {
+      "id": "sr-gameloft-744000159399443",
+      "sourceId": "sr:Gameloft",
+      "title": "Java Developer - BI",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000159399443-java-developer-bi",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Bucharest, Bucharest, Romania",
+      "countries": [
+        "Romania"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-11-03",
+      "skills": [
+        "Java"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 44.4267674,
+        "lon": 26.1025384,
+        "city": "Bucharest"
+      }
+    },
+    {
       "id": "defold",
       "title": "2D Game Developer (Defold) (English)",
       "url": "https://www.opentrain.ai/jobs/2d-game-developer-defold--cmw0jjme2006608l2pltk33u9/",
@@ -979,11 +1546,16 @@
       "skills": [
         "Machine Learning"
       ],
-      "summary": "This game role mentions AI tools in its requirements.",
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
-      "workMode": "Not specified"
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 51.5072,
+        "lon": -0.1276,
+        "city": "London"
+      }
     },
     {
       "id": "godot-build",
@@ -1098,6 +1670,162 @@
       "workMode": "Not specified"
     },
     {
+      "id": "sr-gameloft-744000158215559",
+      "sourceId": "sr:Gameloft",
+      "title": "Game Designer (Middle/Senior)",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000158215559-game-designer-middle-senior-",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Ho Chi Minh City, Ho Chi Minh, Vietnam",
+      "countries": [
+        "Vietnam"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-10-28",
+      "skills": [
+        "Unity"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 10.8230989,
+        "lon": 106.6296638,
+        "city": "Ho Chi Minh City"
+      }
+    },
+    {
+      "id": "gh-wooga-8330917",
+      "sourceId": "gh:wooga",
+      "title": "Game Artist - Monetization Focus (12-months contract)",
+      "company": "Wooga",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/wooga/jobs/8330917",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Berlin",
+      "countries": [
+        "Germany"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-28",
+      "skills": [],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 52.52,
+        "lon": 13.405,
+        "city": "Berlin"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000158232289",
+      "sourceId": "sr:Gameloft",
+      "title": "3D Animator (Middle/Senior)",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000158232289-3d-animator-middle-senior-",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Ho Chi Minh City, Ho Chi Minh, Vietnam",
+      "countries": [
+        "Vietnam"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-10-28",
+      "skills": [],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 10.8230989,
+        "lon": 106.6296638,
+        "city": "Ho Chi Minh City"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000158230061",
+      "sourceId": "sr:Gameloft",
+      "title": "2D Artist (Middle/Senior)",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000158230061-2d-artist-middle-senior-",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Ho Chi Minh City, Ho Chi Minh, Vietnam",
+      "countries": [
+        "Vietnam"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-10-28",
+      "skills": [],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 10.8230989,
+        "lon": 106.6296638,
+        "city": "Ho Chi Minh City"
+      }
+    },
+    {
+      "id": "gh-riotgames-8316790",
+      "sourceId": "gh:riotgames",
+      "title": "Senior Software Engineer, Gameplay (Bots) - League of Legends (Mandarin-Proficiency Required)",
+      "company": "Riot Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://www.riotgames.com/en/work-with-us/job/8316790?gh_jid=8316790",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Los Angeles, USA",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-27",
+      "skills": [
+        "Unity",
+        "C++",
+        "Machine Learning"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 34.0522,
+        "lon": -118.2437,
+        "city": "Los Angeles"
+      }
+    },
+    {
       "id": "gh-roblox-8287614",
       "sourceId": "gh:roblox",
       "title": "Principal Software Engineer, GenAI Platform",
@@ -1126,6 +1854,38 @@
       "employment": "See listing",
       "checkedAt": "2026-11-15",
       "workMode": "Not specified"
+    },
+    {
+      "id": "sr-gameloft-744000157926609",
+      "sourceId": "sr:Gameloft",
+      "title": "Game Designer (Gameplay & Combat)",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000157926609-game-designer-gameplay-combat-",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Brisbane, QLD, Australia",
+      "countries": [
+        "Australia"
+      ],
+      "regions": [
+        "Oceania"
+      ],
+      "posted": "2026-10-27",
+      "skills": [
+        "Unreal Engine"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -27.4704528,
+        "lon": 153.0260341,
+        "city": "Brisbane"
+      }
     },
     {
       "id": "gh-epicgames-6122975004",
@@ -1193,19 +1953,28 @@
       "pay": "See listing",
       "payNote": "Check source for pay",
       "location": "Dallas",
-      "countries": [],
-      "regions": [],
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
       "posted": "2026-10-23",
       "skills": [
         "Unity",
         "Python",
         "C#"
       ],
-      "summary": "This game role mentions AI tools in its requirements.",
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
-      "workMode": "Hybrid"
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 32.7767,
+        "lon": -96.797,
+        "city": "Dallas"
+      }
     },
     {
       "id": "gh-neteasegames-5272053007",
@@ -1229,7 +1998,7 @@
         "Python",
         "C++"
       ],
-      "summary": "This game role mentions AI tools in its requirements.",
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
@@ -1264,6 +2033,36 @@
       "workMode": "Not specified"
     },
     {
+      "id": "sr-gameloft-744000157034009",
+      "sourceId": "sr:Gameloft",
+      "title": "Graphic Designer (Middle/Senior)",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000157034009-graphic-designer-middle-senior-",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Ho Chi Minh City, Ho Chi Minh, Vietnam",
+      "countries": [
+        "Vietnam"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-10-22",
+      "skills": [],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 10.8230989,
+        "lon": 106.6296638,
+        "city": "Ho Chi Minh City"
+      }
+    },
+    {
       "id": "gh-studiokraftonboard-8906044002",
       "sourceId": "gh:studiokraftonboard",
       "title": "Concepteur.trice de jeux AI / Game Designer AI",
@@ -1289,6 +2088,38 @@
       "employment": "See listing",
       "checkedAt": "2026-11-15",
       "workMode": "Not specified"
+    },
+    {
+      "id": "sr-gameloft-744000156826952",
+      "sourceId": "sr:Gameloft",
+      "title": "Senior Online/Network Programmer",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000156826952-senior-online-network-programmer",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Paris, IDF, France",
+      "countries": [
+        "France"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-21",
+      "skills": [
+        "Unreal Engine"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 48.8575475,
+        "lon": 2.3513765,
+        "city": "Paris"
+      }
     },
     {
       "id": "gh-epicgames-6231410004",
@@ -1354,6 +2185,73 @@
       }
     },
     {
+      "id": "gh-wooga-8305649",
+      "sourceId": "gh:wooga",
+      "title": "Senior Data Engineer",
+      "company": "Wooga",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/wooga/jobs/8305649",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Berlin",
+      "countries": [
+        "Germany"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-21",
+      "skills": [
+        "Python",
+        "Java",
+        "LLM"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 52.52,
+        "lon": 13.405,
+        "city": "Berlin"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000156541495",
+      "sourceId": "sr:Gameloft",
+      "title": "Video Editor & Motion Designer",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000156541495-video-editor-motion-designer",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Bucharest, Bucharest, Romania",
+      "countries": [
+        "Romania"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-20",
+      "skills": [
+        "Unreal Engine",
+        "Unity"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 44.4267674,
+        "lon": 26.1025384,
+        "city": "Bucharest"
+      }
+    },
+    {
       "id": "gh-gsgcareers-8302468",
       "sourceId": "gh:gsgcareers",
       "title": "Principal Game AI Engineer",
@@ -1378,6 +2276,71 @@
       "employment": "See listing",
       "checkedAt": "2026-11-15",
       "workMode": "Not specified"
+    },
+    {
+      "id": "sr-gameloft-744000156498423",
+      "sourceId": "sr:Gameloft",
+      "title": "Principal 3D Environment Artist",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000156498423-principal-3d-environment-artist",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Yogyakarta, Jogja, Indonesia",
+      "countries": [
+        "Indonesia"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-10-20",
+      "skills": [
+        "Unreal Engine",
+        "Unity"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -7.801367200000001,
+        "lon": 110.3647568,
+        "city": "Yogyakarta"
+      }
+    },
+    {
+      "id": "gh-tripledotstudios-5010999101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "2D Artist",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/5010999101",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Jakarta",
+      "countries": [
+        "Indonesia"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-10-20",
+      "skills": [
+        "Unity"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "city": "Jakarta"
+      }
     },
     {
       "id": "gh-scopely-5456049008",
@@ -1532,6 +2495,201 @@
       }
     },
     {
+      "id": "gh-scopely-5455004008",
+      "sourceId": "gh:scopely",
+      "title": "Senior Quality Engineer - MONOPOLY GO!",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5455004008?gh_jid=5455004008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain; ES - Seville, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-19",
+      "skills": [
+        "Unity",
+        "Python",
+        "C#"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid"
+    },
+    {
+      "id": "sr-gameloft-744000155935130",
+      "sourceId": "sr:Gameloft",
+      "title": "Video Artist",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000155935130-video-artist",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Bucharest, Bucharest, Romania",
+      "countries": [
+        "Romania"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-16",
+      "skills": [
+        "Unreal Engine",
+        "Unity"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 44.4267674,
+        "lon": 26.1025384,
+        "city": "Bucharest"
+      }
+    },
+    {
+      "id": "gh-scopely-5354144008",
+      "sourceId": "gh:scopely",
+      "title": "Software Engineer",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5354144008?gh_jid=5354144008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "MX - Mexico City, Mexico",
+      "countries": [
+        "Mexico"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-15",
+      "skills": [
+        "Unreal Engine",
+        "Unity",
+        "C#",
+        "Java"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 19.4326,
+        "lon": -99.1332,
+        "city": "Mexico City"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000155800450",
+      "sourceId": "sr:Gameloft",
+      "title": "Senior Engine Programmer",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000155800450-senior-engine-programmer",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Paris, IDF, France",
+      "countries": [
+        "France"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-15",
+      "skills": [
+        "Unreal Engine",
+        "C++"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 48.8575475,
+        "lon": 2.3513765,
+        "city": "Paris"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000155431629",
+      "sourceId": "sr:Gameloft",
+      "title": "Division Principal Game Programmer (Unreal Engine, AI)",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000155431629-division-principal-game-programmer-unreal-engine-ai-",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Ho Chi Minh City, Ho Chi Minh, Vietnam",
+      "countries": [
+        "Vietnam"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-10-14",
+      "skills": [
+        "Unreal Engine",
+        "C++",
+        "C#",
+        "LLM"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 10.8230989,
+        "lon": 106.6296638,
+        "city": "Ho Chi Minh City"
+      }
+    },
+    {
+      "id": "gh-scopely-5448999008",
+      "sourceId": "gh:scopely",
+      "title": "Intern - QA Engineer - Royal Lounge Casino",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5448999008?gh_jid=5448999008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "IN - Bangalore, India",
+      "countries": [
+        "India"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-10-13",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 12.9716,
+        "lon": 77.5946,
+        "city": "Bangalore"
+      }
+    },
+    {
       "id": "gh-riotgames-8202900",
       "sourceId": "gh:riotgames",
       "title": "Staff Machine Learning Engineer - Central Technology, Anti-Cheat",
@@ -1620,6 +2778,116 @@
       "employment": "See listing",
       "checkedAt": "2026-11-15",
       "workMode": "Not specified"
+    },
+    {
+      "id": "gh-scopely-5448555008",
+      "sourceId": "gh:scopely",
+      "title": "Lead UX Designer - Star Trek Fleet Command",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5448555008?gh_jid=5448555008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "IE - Ireland",
+      "countries": [
+        "Ireland"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-12",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid"
+    },
+    {
+      "id": "gh-scopely-5449846008",
+      "sourceId": "gh:scopely",
+      "title": "Lead UX Designer - Star Trek Fleet Command",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5449846008?gh_jid=5449846008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "GB - London, United Kingdom",
+      "countries": [
+        "United Kingdom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-12",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 51.5072,
+        "lon": -0.1276,
+        "city": "London"
+      }
+    },
+    {
+      "id": "gh-scopely-5449845008",
+      "sourceId": "gh:scopely",
+      "title": "Lead UX Designer - Star Trek Fleet Command",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5449845008?gh_jid=5449845008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-12",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid"
+    },
+    {
+      "id": "gh-tripledotstudios-5002870101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Motion Designer",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/5002870101",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Jakarta",
+      "countries": [
+        "Indonesia"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-10-10",
+      "skills": [],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "city": "Jakarta"
+      }
     },
     {
       "id": "gh-epicgames-6221662004",
@@ -1713,6 +2981,70 @@
       "workMode": "Not specified"
     },
     {
+      "id": "gh-tripledotstudios-4998359101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Senior Data Engineer",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4998359101",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "London",
+      "countries": [
+        "United Kingdom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-08",
+      "skills": [
+        "Machine Learning"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 51.5072,
+        "lon": -0.1276,
+        "city": "London"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000154412309",
+      "sourceId": "sr:Gameloft",
+      "title": "Business Intelligence Engineer (Junior)",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000154412309-business-intelligence-engineer-junior-",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Ho Chi Minh City, Ho Chi Minh, Vietnam",
+      "countries": [
+        "Vietnam"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-10-08",
+      "skills": [
+        "Python"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 10.8230989,
+        "lon": 106.6296638,
+        "city": "Ho Chi Minh City"
+      }
+    },
+    {
       "id": "gh-tripledotstudios-5000279101",
       "sourceId": "gh:tripledotstudios",
       "title": "AI Level Designer",
@@ -1723,15 +3055,150 @@
       "pay": "See listing",
       "payNote": "Check source for pay",
       "location": "Jakarta",
-      "countries": [],
-      "regions": [],
+      "countries": [
+        "Indonesia"
+      ],
+      "regions": [
+        "Asia"
+      ],
       "posted": "2026-10-08",
       "skills": [],
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
-      "workMode": "Not specified"
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "city": "Jakarta"
+      }
+    },
+    {
+      "id": "gh-tripledotstudios-5000303101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "2D Marketing Artist",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/5000303101",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Jakarta",
+      "countries": [
+        "Indonesia"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-10-08",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "city": "Jakarta"
+      }
+    },
+    {
+      "id": "gh-scopely-5434025008",
+      "sourceId": "gh:scopely",
+      "title": "Senior Identity Security Engineer",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5434025008?gh_jid=5434025008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-07",
+      "skills": [
+        "Python"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "gh-scopely-5447373008",
+      "sourceId": "gh:scopely",
+      "title": "Senior Identity Security Engineer",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5447373008?gh_jid=5447373008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "IE - Dublin, Ireland",
+      "countries": [
+        "Ireland"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-07",
+      "skills": [
+        "Python"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 53.3498,
+        "lon": -6.2603,
+        "city": "Dublin"
+      }
+    },
+    {
+      "id": "gh-scopely-5447374008",
+      "sourceId": "gh:scopely",
+      "title": "Senior Identity Security Engineer",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5447374008?gh_jid=5447374008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "GB - London, United Kingdom",
+      "countries": [
+        "United Kingdom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-07",
+      "skills": [
+        "Python"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 51.5072,
+        "lon": -0.1276,
+        "city": "London"
+      }
     },
     {
       "id": "gh-escapevelocityentertainmentinc-4409665009",
@@ -1764,6 +3231,133 @@
       "workMode": "Remote eligible"
     },
     {
+      "id": "gh-scopely-5442575008",
+      "sourceId": "gh:scopely",
+      "title": "Combat Game Designer",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5442575008?gh_jid=5442575008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-07",
+      "skills": [
+        "Unity"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "gh-scopely-5442573008",
+      "sourceId": "gh:scopely",
+      "title": "Associate Economy Game Designer",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5442573008?gh_jid=5442573008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-07",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000153759984",
+      "sourceId": "sr:Gameloft",
+      "title": "Lead VFX Artist",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000153759984-lead-vfx-artist",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Barcelona, CT, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-06",
+      "skills": [
+        "Unreal Engine",
+        "Unity"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874374,
+        "lon": 2.1686496,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000153382859",
+      "sourceId": "sr:Gameloft",
+      "title": "Narrative Game Designer & Scriptwriter",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000153382859-narrative-game-designer-scriptwriter",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Brisbane, QLD, Australia",
+      "countries": [
+        "Australia"
+      ],
+      "regions": [
+        "Oceania"
+      ],
+      "posted": "2026-10-04",
+      "skills": [
+        "Unreal Engine"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -27.4704528,
+        "lon": 153.0260341,
+        "city": "Brisbane"
+      }
+    },
+    {
       "id": "gh-scopely-5434534008",
       "sourceId": "gh:scopely",
       "title": "Director, Marketing Creative Intelligence",
@@ -1784,11 +3378,81 @@
       "skills": [
         "Python"
       ],
-      "summary": "This game role mentions AI tools in its requirements.",
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
-      "workMode": "Not specified"
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000152549019",
+      "sourceId": "sr:Gameloft",
+      "title": "Senior Shader / Texture Artist",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000152549019-senior-shader-texture-artist",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Brisbane, QLD, Australia",
+      "countries": [
+        "Australia"
+      ],
+      "regions": [
+        "Oceania"
+      ],
+      "posted": "2026-09-29",
+      "skills": [
+        "Unreal Engine"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -27.4704528,
+        "lon": 153.0260341,
+        "city": "Brisbane"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000152300130",
+      "sourceId": "sr:Gameloft",
+      "title": "Senior Animation Programmer",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000152300130-senior-animation-programmer",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Brisbane, QLD, Australia",
+      "countries": [
+        "Australia"
+      ],
+      "regions": [
+        "Oceania"
+      ],
+      "posted": "2026-09-29",
+      "skills": [
+        "Unreal Engine",
+        "C++"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -27.4704528,
+        "lon": 153.0260341,
+        "city": "Brisbane"
+      }
     },
     {
       "id": "gh-roblox-8084095",
@@ -1821,6 +3485,99 @@
       "employment": "See listing",
       "checkedAt": "2026-11-15",
       "workMode": "Not specified"
+    },
+    {
+      "id": "gh-tripledotstudios-4988540101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Lead QA Engineer",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4988540101",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Minsk",
+      "countries": [
+        "Belarus"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-09-28",
+      "skills": [],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 53.9006,
+        "lon": 27.559,
+        "city": "Minsk"
+      }
+    },
+    {
+      "id": "gh-tripledotstudios-4988531101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Lead QA Engineer",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4988531101",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Tbilisi",
+      "countries": [
+        "Georgia"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-09-28",
+      "skills": [],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.7151,
+        "lon": 44.8271,
+        "city": "Tbilisi"
+      }
+    },
+    {
+      "id": "gh-tripledotstudios-4986126101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Lead Level Designer",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4986126101",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Jakarta",
+      "countries": [
+        "Indonesia"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-09-27",
+      "skills": [
+        "Unity",
+        "Machine Learning"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "city": "Jakarta"
+      }
     },
     {
       "id": "gh-roblox-8171283",
@@ -1882,6 +3639,39 @@
       "workMode": "Not specified"
     },
     {
+      "id": "gh-scopely-5426001008",
+      "sourceId": "gh:scopely",
+      "title": "Client Engineer (Unity, Real User Monitoring) - Unannounced Project",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5426001008?gh_jid=5426001008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-09-25",
+      "skills": [
+        "Unity",
+        "C#"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
       "id": "gh-tripledotstudios-4984119101",
       "sourceId": "gh:tripledotstudios",
       "title": "Senior Machine Learning Engineer",
@@ -1909,7 +3699,12 @@
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
-      "workMode": "Not specified"
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 51.5072,
+        "lon": -0.1276,
+        "city": "London"
+      }
     },
     {
       "id": "gh-tripledotstudios-4983098101",
@@ -1939,7 +3734,12 @@
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
-      "workMode": "Not specified"
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
     },
     {
       "id": "gh-tripledotstudios-4982952101",
@@ -1952,8 +3752,12 @@
       "pay": "See listing",
       "payNote": "Check source for pay",
       "location": "Tel Aviv",
-      "countries": [],
-      "regions": [],
+      "countries": [
+        "Israel"
+      ],
+      "regions": [
+        "Asia"
+      ],
       "posted": "2026-09-23",
       "skills": [
         "Python",
@@ -1964,6 +3768,36 @@
       "employment": "See listing",
       "checkedAt": "2026-11-15",
       "workMode": "Not specified"
+    },
+    {
+      "id": "gh-tripledotstudios-4983783101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Game Producer (Hybrid Casual)",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4983783101",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Warsaw",
+      "countries": [
+        "Poland"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-09-23",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 52.2297,
+        "lon": 21.0122,
+        "city": "Warsaw"
+      }
     },
     {
       "id": "gh-tripledotstudios-4984042101",
@@ -1980,11 +3814,424 @@
       "regions": [],
       "posted": "2026-09-23",
       "skills": [],
-      "summary": "This game role mentions AI tools in its requirements.",
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
       "workMode": "Remote eligible"
+    },
+    {
+      "id": "gh-tripledotstudios-4982056101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "VFX Artist / Animator",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4982056101",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Jakarta",
+      "countries": [
+        "Indonesia"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-09-22",
+      "skills": [
+        "Unity",
+        "Machine Learning"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "city": "Jakarta"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000150979240",
+      "sourceId": "sr:Gameloft",
+      "title": "Senior Concept Artist",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000150979240-senior-concept-artist",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Bucharest, Bucharest, Romania",
+      "countries": [
+        "Romania"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-09-22",
+      "skills": [
+        "Unreal Engine"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 44.4267674,
+        "lon": 26.1025384,
+        "city": "Bucharest"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000151013658",
+      "sourceId": "sr:Gameloft",
+      "title": "Gametech Innovation Developer",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000151013658-gametech-innovation-developer",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Barcelona, CT, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-09-22",
+      "skills": [
+        "Unreal Engine",
+        "Unity",
+        "C++",
+        "C#"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874374,
+        "lon": 2.1686496,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "gh-wooga-8213546",
+      "sourceId": "gh:wooga",
+      "title": "Senior UI/UX Designer - New Games (12-month contract)",
+      "company": "Wooga",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/wooga/jobs/8213546",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Berlin",
+      "countries": [
+        "Germany"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-09-21",
+      "skills": [
+        "Unity"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 52.52,
+        "lon": 13.405,
+        "city": "Berlin"
+      }
+    },
+    {
+      "id": "gh-tripledotstudios-4976209101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "UI Artist",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4976209101",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Jakarta",
+      "countries": [
+        "Indonesia"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-09-16",
+      "skills": [
+        "Unity"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "city": "Jakarta"
+      }
+    },
+    {
+      "id": "gh-tripledotstudios-4976251101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Animator",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4976251101",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Jakarta",
+      "countries": [
+        "Indonesia"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-09-16",
+      "skills": [
+        "Unity"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "city": "Jakarta"
+      }
+    },
+    {
+      "id": "gh-tripledotstudios-4973861101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "3D Artist",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4973861101",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Jakarta",
+      "countries": [
+        "Indonesia"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-09-15",
+      "skills": [
+        "Unity"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "city": "Jakarta"
+      }
+    },
+    {
+      "id": "gh-riotgames-8187661",
+      "sourceId": "gh:riotgames",
+      "title": "Senior Anti-Cheat Engineer - Central Technology, Anti-Cheat",
+      "company": "Riot Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://www.riotgames.com/en/work-with-us/job/8187661?gh_jid=8187661",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Los Angeles, USA",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-09-10",
+      "skills": [
+        "C++"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 34.0522,
+        "lon": -118.2437,
+        "city": "Los Angeles"
+      }
+    },
+    {
+      "id": "gh-tripledotstudios-4971954101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Senior DevOps Engineer",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4971954101",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Warsaw",
+      "countries": [
+        "Poland"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-09-09",
+      "skills": [],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 52.2297,
+        "lon": 21.0122,
+        "city": "Warsaw"
+      }
+    },
+    {
+      "id": "gh-tripledotstudios-4970870101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Game Producer (Hybrid Casual)",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4970870101",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Minsk",
+      "countries": [
+        "Belarus"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-09-09",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 53.9006,
+        "lon": 27.559,
+        "city": "Minsk"
+      }
+    },
+    {
+      "id": "gh-tripledotstudios-4971831101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Game Producer (Hybrid Casual)",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4971831101",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Tblisi",
+      "countries": [
+        "Georgia"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-09-09",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.7151,
+        "lon": 44.8271,
+        "city": "Tbilisi"
+      }
+    },
+    {
+      "id": "gh-tripledotstudios-4971839101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Game Producer (Hybrid Casual)",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4971839101",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Barcelona",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-09-09",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "gh-tripledotstudios-4969494101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Unity Software Engineer",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4969494101",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Jakarta",
+      "countries": [
+        "Indonesia"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-09-07",
+      "skills": [
+        "Unity",
+        "C#"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "city": "Jakarta"
+      }
     },
     {
       "id": "gh-tripledotstudios-4965778101",
@@ -2001,7 +4248,7 @@
       "regions": [],
       "posted": "2026-09-01",
       "skills": [],
-      "summary": "This game role mentions AI tools in its requirements.",
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
@@ -2019,18 +4266,206 @@
       "payNote": "Check source for pay",
       "location": "London, Ontario",
       "countries": [
-        "United Kingdom"
+        "Canada"
       ],
       "regions": [
-        "Europe"
+        "North America"
       ],
       "posted": "2026-09-01",
       "skills": [],
-      "summary": "This game role mentions AI tools in its requirements.",
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
       "workMode": "Not specified"
+    },
+    {
+      "id": "gh-scopely-5394587008",
+      "sourceId": "gh:scopely",
+      "title": "Senior Motion Designer",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5394587008?gh_jid=5394587008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-08-31",
+      "skills": [
+        "Unreal Engine",
+        "Unity"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "gh-tripledotstudios-4963495101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Game Designer (Hybrid Casual)",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4963495101",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Warsaw",
+      "countries": [
+        "Poland"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-08-28",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 52.2297,
+        "lon": 21.0122,
+        "city": "Warsaw"
+      }
+    },
+    {
+      "id": "gh-scopely-5396801008",
+      "sourceId": "gh:scopely",
+      "title": "UI Artist - MONOPOLY GO!",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5396801008?gh_jid=5396801008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-08-26",
+      "skills": [
+        "Unity"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "gh-scopely-5396799008",
+      "sourceId": "gh:scopely",
+      "title": "Lead UI Artist - MONOPOLY GO!",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5396799008?gh_jid=5396799008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-08-26",
+      "skills": [],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "gh-scopely-5396797008",
+      "sourceId": "gh:scopely",
+      "title": "Senior UI Artist - MONOPOLY GO!",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5396797008?gh_jid=5396797008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-08-25",
+      "skills": [],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000145604539",
+      "sourceId": "sr:Gameloft",
+      "title": "Artiste en animation graphique (Marketing) Contrat Temporaire - Motion Designer (Marketing) Temporary Contract",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000145604539-artiste-en-animation-graphique-marketing-contrat-temporaire-motion-designer-marketing-temporary-contract",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Montreal, QC, Canada",
+      "countries": [
+        "Canada"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-08-25",
+      "skills": [
+        "Unreal Engine",
+        "Unity"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Contract",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 45.5018869,
+        "lon": -73.56739189999999,
+        "city": "Montreal"
+      }
     },
     {
       "id": "gh-scopely-5395477008",
@@ -2059,6 +4494,137 @@
       "employment": "See listing",
       "checkedAt": "2026-11-15",
       "workMode": "Not specified"
+    },
+    {
+      "id": "gh-scopely-5398787008",
+      "sourceId": "gh:scopely",
+      "title": "Senior Software Engineer (Gaming Backend) - WWE Champions",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5398787008?gh_jid=5398787008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "MX - Mexico City, Mexico",
+      "countries": [
+        "Mexico"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-08-21",
+      "skills": [
+        "Unity",
+        "C#"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 19.4326,
+        "lon": -99.1332,
+        "city": "Mexico City"
+      }
+    },
+    {
+      "id": "gh-scopely-5396208008",
+      "sourceId": "gh:scopely",
+      "title": "Senior Animator – MONOPOLY GO!",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5396208008?gh_jid=5396208008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-08-21",
+      "skills": [
+        "Unity"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "gh-scopely-5395416008",
+      "sourceId": "gh:scopely",
+      "title": "Lead Game Capture Artist",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5395416008?gh_jid=5395416008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-08-21",
+      "skills": [
+        "Unreal Engine",
+        "Unity"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000144514822",
+      "sourceId": "sr:Gameloft",
+      "title": "Senior Graphic Designer",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000144514822-senior-graphic-designer",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Brisbane, QLD, Australia",
+      "countries": [
+        "Australia"
+      ],
+      "regions": [
+        "Oceania"
+      ],
+      "posted": "2026-08-20",
+      "skills": [
+        "Unreal Engine",
+        "Unity"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -27.4704528,
+        "lon": 153.0260341,
+        "city": "Brisbane"
+      }
     },
     {
       "id": "gh-riotgames-7944656",
@@ -2106,7 +4672,7 @@
       ],
       "posted": "2026-08-19",
       "skills": [],
-      "summary": "This game role mentions AI tools in its requirements.",
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
@@ -2174,6 +4740,96 @@
       "employment": "See listing",
       "checkedAt": "2026-11-15",
       "workMode": "Not specified"
+    },
+    {
+      "id": "gh-scopely-5388807008",
+      "sourceId": "gh:scopely",
+      "title": "Lead Systems Designer - Star Trek Fleet Command",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5388807008?gh_jid=5388807008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "IE - Dublin, Ireland",
+      "countries": [
+        "Ireland"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-08-13",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 53.3498,
+        "lon": -6.2603,
+        "city": "Dublin"
+      }
+    },
+    {
+      "id": "gh-scopely-5388806008",
+      "sourceId": "gh:scopely",
+      "title": "Lead Systems Designer - Star Trek Fleet Command",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5388806008?gh_jid=5388806008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-08-13",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "gh-scopely-5379017008",
+      "sourceId": "gh:scopely",
+      "title": "Lead Systems Designer - Star Trek Fleet Command",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5379017008?gh_jid=5379017008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "GB - London, United Kingdom",
+      "countries": [
+        "United Kingdom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-08-13",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 51.5072,
+        "lon": -0.1276,
+        "city": "London"
+      }
     },
     {
       "id": "gh-epicgames-6142411004",
@@ -2441,6 +5097,40 @@
       "workMode": "Location based"
     },
     {
+      "id": "gh-scopely-5342840008",
+      "sourceId": "gh:scopely",
+      "title": "Software Engineer (Ad Tech)",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5342840008?gh_jid=5342840008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-08-06",
+      "skills": [
+        "Unity",
+        "C#",
+        "Java"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
       "id": "gh-scopely-5372414008",
       "sourceId": "gh:scopely",
       "title": "AI  Artist (2D Generalist ) - Bingo Bash",
@@ -2463,7 +5153,132 @@
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
-      "workMode": "Not specified"
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 12.9716,
+        "lon": 77.5946,
+        "city": "Bangalore"
+      }
+    },
+    {
+      "id": "gh-tripledotstudios-4944288101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Game Designer (Hybrid Casual)",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4944288101",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Tblisi",
+      "countries": [
+        "Georgia"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-08-05",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.7151,
+        "lon": 44.8271,
+        "city": "Tbilisi"
+      }
+    },
+    {
+      "id": "gh-tripledotstudios-4944287101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Game Designer (Hybrid Casual)",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4944287101",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Minsk",
+      "countries": [
+        "Belarus"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-08-05",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 53.9006,
+        "lon": 27.559,
+        "city": "Minsk"
+      }
+    },
+    {
+      "id": "gh-scopely-5371151008",
+      "sourceId": "gh:scopely",
+      "title": "Senior QA Engineer",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5371151008?gh_jid=5371151008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "IN - Bangalore, India",
+      "countries": [
+        "India"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-07-29",
+      "skills": [],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 12.9716,
+        "lon": 77.5946,
+        "city": "Bangalore"
+      }
+    },
+    {
+      "id": "gh-scopely-5371149008",
+      "sourceId": "gh:scopely",
+      "title": "Lead QA Engineer",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5371149008?gh_jid=5371149008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "IN - Bangalore, India",
+      "countries": [
+        "India"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-07-29",
+      "skills": [],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 12.9716,
+        "lon": 77.5946,
+        "city": "Bangalore"
+      }
     },
     {
       "id": "gh-roblox-8090079",
@@ -2491,6 +5306,69 @@
       "employment": "See listing",
       "checkedAt": "2026-11-15",
       "workMode": "Not specified"
+    },
+    {
+      "id": "gh-scopely-5368795008",
+      "sourceId": "gh:scopely",
+      "title": "Senior Engineer, Graphics - Unannounced Project",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5368795008?gh_jid=5368795008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-07-27",
+      "skills": [
+        "Unity",
+        "C++"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "gh-scopely-5294097008",
+      "sourceId": "gh:scopely",
+      "title": "Principal UX designer - Monopoly GO!",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5294097008?gh_jid=5294097008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Seville, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-07-23",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 37.3891,
+        "lon": -5.9845,
+        "city": "Seville"
+      }
     },
     {
       "id": "gh-epicgames-6117647004",
@@ -2547,11 +5425,16 @@
       ],
       "posted": "2026-07-14",
       "skills": [],
-      "summary": "This game role mentions AI tools in its requirements.",
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-15",
-      "workMode": "Not specified"
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
     },
     {
       "id": "gh-riotgames-7981132",
@@ -2579,6 +5462,71 @@
       "employment": "See listing",
       "checkedAt": "2026-11-15",
       "workMode": "Not specified"
+    },
+    {
+      "id": "sr-gameloft-744000136753850",
+      "sourceId": "sr:Gameloft",
+      "title": "Senior Technical Artist",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000136753850-senior-technical-artist",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Paris, IDF, France",
+      "countries": [
+        "France"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-07-09",
+      "skills": [
+        "Unreal Engine",
+        "Python"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 48.8575475,
+        "lon": 2.3513765,
+        "city": "Paris"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000136778258",
+      "sourceId": "sr:Gameloft",
+      "title": "Devops & Release Engineer",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000136778258-devops-release-engineer",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Paris, IDF, France",
+      "countries": [
+        "France"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-07-09",
+      "skills": [
+        "Unreal Engine"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 48.8575475,
+        "lon": 2.3513765,
+        "city": "Paris"
+      }
     },
     {
       "id": "gh-roblox-8046794",
@@ -2633,6 +5581,68 @@
       "workMode": "Not specified"
     },
     {
+      "id": "sr-gameloft-744000135040419",
+      "sourceId": "sr:Gameloft",
+      "title": "Développeur(se) d'automatisation et d'infrastructure - Infrastructure & Automation Developer",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000135040419-developpeur-se-d-automatisation-et-d-infrastructure-infrastructure-automation-developer",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Montreal, QC, Canada",
+      "countries": [
+        "Canada"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-06-30",
+      "skills": [
+        "Python"
+      ],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 45.5018869,
+        "lon": -73.56739189999999,
+        "city": "Montreal"
+      }
+    },
+    {
+      "id": "gh-scopely-5261506008",
+      "sourceId": "gh:scopely",
+      "title": "Software Engineer - Pokemon GO Platform",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5261506008?gh_jid=5261506008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "MX - Mexico City, Mexico",
+      "countries": [
+        "Mexico"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-06-22",
+      "skills": [],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 19.4326,
+        "lon": -99.1332,
+        "city": "Mexico City"
+      }
+    },
+    {
       "id": "gh-roblox-7994532",
       "sourceId": "gh:roblox",
       "title": "Senior Product Manager, AI Compute Infrastructure",
@@ -2656,6 +5666,36 @@
       "employment": "See listing",
       "checkedAt": "2026-11-15",
       "workMode": "Not specified"
+    },
+    {
+      "id": "gh-scopely-5222025008",
+      "sourceId": "gh:scopely",
+      "title": "Analytics Engineer",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5222025008?gh_jid=5222025008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-05-19",
+      "skills": [],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
     },
     {
       "id": "gh-riotgames-7872902",
@@ -2719,6 +5759,71 @@
       "workMode": "Not specified"
     },
     {
+      "id": "gh-scopely-5181280008",
+      "sourceId": "gh:scopely",
+      "title": "Analytics Engineer, Finance",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5181280008?gh_jid=5181280008",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain; ES - Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-04-14",
+      "skills": [
+        "Python"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "gh-tripledotstudios-4821131101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Technical Artist",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4821131101",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Jakarta",
+      "countries": [
+        "Indonesia"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-03-26",
+      "skills": [
+        "Unity",
+        "C#"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "city": "Jakarta"
+      }
+    },
+    {
       "id": "gh-roblox-7729109",
       "sourceId": "gh:roblox",
       "title": "Senior Machine Learning Engineer - Economy ML",
@@ -2747,6 +5852,69 @@
       "employment": "See listing",
       "checkedAt": "2026-11-15",
       "workMode": "Not specified"
+    },
+    {
+      "id": "gh-tripledotstudios-4820731101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Senior Unity Software Engineer",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4820731101",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Jakarta",
+      "countries": [
+        "Indonesia"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-03-24",
+      "skills": [
+        "Unity",
+        "C#"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "city": "Jakarta"
+      }
+    },
+    {
+      "id": "sr-gameloft-744000115751358",
+      "sourceId": "sr:Gameloft",
+      "title": "[Dungeons & Dragons PC-Console] Artiste de concept - Concept Artist",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000115751358--dungeons-dragons-pc-console-artiste-de-concept-concept-artist-",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Montreal, QC, Canada",
+      "countries": [
+        "Canada"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-03-19",
+      "skills": [],
+      "summary": "Explore this hybrid role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 45.5018869,
+        "lon": -73.56739189999999,
+        "city": "Montreal"
+      }
     },
     {
       "id": "gh-roblox-7655346",
@@ -2805,6 +5973,39 @@
       "workMode": "Not specified"
     },
     {
+      "id": "gh-scopely-4958835008",
+      "sourceId": "gh:scopely",
+      "title": "Staff Engineer, Server",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/4958835008?gh_jid=4958835008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2025-11-03",
+      "skills": [
+        "Python",
+        "C#"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
       "id": "gh-roblox-7351220",
       "sourceId": "gh:roblox",
       "title": "Senior Machine Learning Engineer, Ads",
@@ -2860,6 +6061,99 @@
       "employment": "See listing",
       "checkedAt": "2026-11-15",
       "workMode": "Not specified"
+    },
+    {
+      "id": "gh-scopely-4626426008",
+      "sourceId": "gh:scopely",
+      "title": "Analytics Engineer",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/4626426008?gh_jid=4626426008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2025-04-10",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "gh-scopely-4596752008",
+      "sourceId": "gh:scopely",
+      "title": "Senior/Software Engineer",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/4596752008?gh_jid=4596752008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2025-03-26",
+      "skills": [
+        "C#",
+        "Java"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "gh-scopely-4596685008",
+      "sourceId": "gh:scopely",
+      "title": "Senior Analytics Engineer",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/4596685008?gh_jid=4596685008",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2025-03-26",
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
+      }
     }
   ]
 }

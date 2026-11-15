@@ -5,9 +5,10 @@ import world from "@/content/world-map.json";
 import styles from "./jobs.module.css";
 
 type Pin = { city: string; lat: number; lon: number; count: number };
-export default function Globe({ pins, onSelect }: { pins: Pin[]; onSelect: (city: string) => void }) {
+export default function Globe({ pins, selected, onSelect }: { pins: Pin[]; selected: string; onSelect: (city: string) => void }) {
   const mount = useRef<HTMLDivElement>(null);
   const callback = useRef(onSelect); callback.current = onSelect;
+  const selectedRef = useRef(selected); selectedRef.current = selected;
   useEffect(() => {
     const el = mount.current; if (!el) return;
     let renderer: THREE.WebGLRenderer;
@@ -34,11 +35,26 @@ export default function Globe({ pins, onSelect }: { pins: Pin[]; onSelect: (city
     }
     let width=0,height=0; const resize=()=>{width=el.clientWidth;height=el.clientHeight; if(!width||!height)return; renderer.setSize(width,height,false);camera.aspect=width/height;camera.updateProjectionMatrix();};
     const observer=new ResizeObserver(resize);observer.observe(el);resize();
-    let dragging=false, moved=false, lastX=0,lastY=0; const down=(e:PointerEvent)=>{dragging=true;moved=false;lastX=e.clientX;lastY=e.clientY;renderer.domElement.setPointerCapture(e.pointerId)};
-    const move=(e:PointerEvent)=>{if(!dragging)return; const dx=e.clientX-lastX,dy=e.clientY-lastY; if(Math.abs(dx)+Math.abs(dy)>1)moved=true; group.rotation.y+=dx*.008;group.rotation.x=Math.max(-1.1,Math.min(1.1,group.rotation.x+dy*.008));lastX=e.clientX;lastY=e.clientY;};
-    const up=(e:PointerEvent)=>{dragging=false;if(moved)return; const box=renderer.domElement.getBoundingClientRect();const point=new THREE.Vector2((e.clientX-box.left)/box.width*2-1,-((e.clientY-box.top)/box.height)*2+1);const ray=new THREE.Raycaster();ray.setFromCamera(point,camera);const all=ray.intersectObjects([...targets,sphere]);if(all[0] && all[0].object!==sphere)callback.current(all[0].object.userData.city);};
+    let dragging=false, moved=false, lastX=0,lastY=0,startX=0,startY=0; const down=(e:PointerEvent)=>{dragging=true;moved=false;lastX=startX=e.clientX;lastY=startY=e.clientY;renderer.domElement.setPointerCapture(e.pointerId)};
+    const move=(e:PointerEvent)=>{if(!dragging)return; const dx=e.clientX-lastX,dy=e.clientY-lastY; if(Math.hypot(e.clientX-startX,e.clientY-startY)>7)moved=true; group.rotation.y+=dx*.008;group.rotation.x=Math.max(-1.1,Math.min(1.1,group.rotation.x+dy*.008));lastX=e.clientX;lastY=e.clientY;};
+    const up=(e:PointerEvent)=>{
+      dragging=false; if(moved)return;
+      const box=renderer.domElement.getBoundingClientRect();
+      let closest: {city:string;distance:number}|null=null;
+      group.updateMatrixWorld(true);
+      for (const dot of targets) {
+        const worldPosition=dot.getWorldPosition(new THREE.Vector3());
+        const normal=worldPosition.clone().normalize();
+        if (normal.dot(camera.position.clone().sub(worldPosition)) <= 0) continue;
+        const projected=worldPosition.project(camera);
+        const x=box.left+(projected.x+1)*box.width/2, y=box.top+(1-projected.y)*box.height/2;
+        const distance=Math.hypot(e.clientX-x,e.clientY-y);
+        if(distance < 28 && (!closest || distance<closest.distance)) closest={city:dot.userData.city,distance};
+      }
+      if(closest)callback.current(closest.city);
+    };
     renderer.domElement.addEventListener('pointerdown',down);renderer.domElement.addEventListener('pointermove',move);renderer.domElement.addEventListener('pointerup',up);
-    let frame=0; const animate=()=>{frame=requestAnimationFrame(animate);if(!dragging)group.rotation.y+=.0012;renderer.render(scene,camera)};animate();
+    let frame=0; const animate=()=>{frame=requestAnimationFrame(animate);for(const dot of targets)dot.scale.setScalar(dot.userData.city===selectedRef.current?1.55:1);renderer.render(scene,camera)};animate();
     return ()=>{cancelAnimationFrame(frame);observer.disconnect();renderer.domElement.removeEventListener('pointerdown',down);renderer.domElement.removeEventListener('pointermove',move);renderer.domElement.removeEventListener('pointerup',up);scene.traverse(obj=>{if(obj instanceof THREE.Mesh){obj.geometry.dispose(); const materials=Array.isArray(obj.material)?obj.material:[obj.material];materials.forEach(m=>m.dispose())}});texture.dispose();renderer.dispose();renderer.domElement.remove();};
   },[pins]);
   return <div ref={mount} className={styles.globe} aria-label="Interactive 3D globe. Drag to rotate. Choose a city using the buttons below." role="img" />;

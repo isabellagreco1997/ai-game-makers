@@ -7,6 +7,7 @@ import styles from "./jobs.module.css";
 
 type Job = { id:string; title:string; company:string; url:string; category:string; pay:string; payNote:string; location:string; countries:string[]; regions:string[]; posted:string; skills:string[]; summary:string; requirements:string; employment:string; checkedAt:string; sourceLabel?:string; workMode?:string; coordinates?:{city:string;lat:number;lon:number} };
 const allJobs: Job[] = listings.jobs;
+const priority = (job: Job) => (job.workMode === "Hybrid" ? 2 : 0) + (job.category.startsWith("Game industry -") ? 0 : 1);
 const regions = ["North America", "South America", "Europe", "Africa", "Asia", "Oceania"];
 const formatDate = (date: string) => new Date(`${date}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 
@@ -32,25 +33,32 @@ export default function JobBoard() {
     (city === "All cities" || job.coordinates?.city === city) &&
     (mode === "All workplaces" || (job.workMode || "Remote eligible") === mode) &&
     `${job.title} ${job.company} ${job.skills.join(" ")} ${job.summary}`.toLowerCase().includes(search.toLowerCase().trim())
-  );
+  ).sort((a,b) => priority(b) - priority(a));
   function chooseRegion(value: string) { setRegion(value); setCountry("All countries"); setCity("All cities"); setLimit(20); }
+  const cityJobs = city === "All cities" ? [] : allJobs.filter(job => job.coordinates?.city === city).sort((a,b) => priority(b) - priority(a));
+  const selectCity = (selected:string) => {setCity(selected); setRegion("All regions"); setCountry("All countries"); setMode("All workplaces"); setCategory("All work"); setSearch(""); setLimit(20);};
   return <div className={styles.page}>
     <section className={styles.hero}>
       <div className={styles.wrap}>
         <p className={styles.eyebrow}>THE AI GAME MAKERS JOB BOARD <span>✦</span> YOUR NEXT LEVEL</p>
         <h1>Find your place in <em>games + AI.</em></h1>
         <p className={styles.lead}>Real opportunities. Skills worth building. A world of ways to make games and work with AI.</p>
-        <div className={styles.heroMeta}><span><i /> CURATED OPPORTUNITIES</span><span>BOARD UPDATED {formatDate(listings.lastUpdated).toUpperCase()}</span></div>
+        <div className={styles.heroMeta}><span><i /> {allJobs.filter(j => j.workMode === "Hybrid").length} HYBRID OPPORTUNITIES</span><span>BOARD UPDATED {formatDate(listings.lastUpdated).toUpperCase()}</span></div>
+        <a className={styles.heroButton} href="#board-heading" onClick={() => {setMode("Hybrid"); setCity("All cities"); setCountry("All countries"); setRegion("All regions"); setCategory("All work"); setSearch(""); setLimit(20);}}>Explore hybrid jobs ↓</a>
       </div>
     </section>
     <section className={styles.wrap} aria-labelledby="map-heading">
       <div className={styles.mapCard}>
-        <div className={styles.mapIntro}><div><p className={styles.eyebrow}>EXPLORE THE MAP</p><h2 id="map-heading">Your next opportunity<br /><em>could be anywhere.</em></h2></div><p>Drag the planet to explore. Glowing points show confirmed city-based roles. Select a city below to see its opportunities.</p></div>
-        <Globe pins={pins} onSelect={(selected) => {setCity(selected); setRegion("All regions"); setCountry("All countries"); setLimit(20);}} />
-        <p className={styles.globeHint}>✦ DRAG TO ROTATE <span>•</span> SELECT A CITY</p>
+        <div className={styles.mapIntro}><div><p className={styles.eyebrow}>EXPLORE THE MAP</p><h2 id="map-heading">Your next opportunity<br /><em>could be anywhere.</em></h2></div><p>Drag to spin the globe. Select a glowing point to see jobs in that city, without leaving the map.</p></div>
+        <div className={styles.globeLayout}>
+          <div><Globe pins={pins} selected={city} onSelect={selectCity} /><p className={styles.globeHint}>✦ DRAG TO ROTATE <span>•</span> TAP A POINT</p></div>
+          <aside className={styles.cityPanel} aria-live="polite" aria-label="Selected city opportunities">
+            {city === "All cities" ? <><p className={styles.eyebrow}>YOUR NEXT STOP</p><h3>Pick a point.<br /><em>See the jobs.</em></h3><p>Tap a glowing point on the globe or choose a city below. Hybrid opportunities are shown first.</p><span className={styles.hintArrow}>↖</span></> : <><p className={styles.eyebrow}>JOBS IN {city.toUpperCase()}</p><h3>{city}</h3><p>{cityJobs.length} {cityJobs.length === 1 ? "opportunity" : "opportunities"} · Hybrid first</p><div className={styles.cityJobs}>{cityJobs.slice(0,4).map(job => <a href={job.url} key={job.id} target="_blank" rel="noopener noreferrer"><span>{job.title}<small>{job.company} · {job.workMode}</small></span><b>↗</b></a>)}</div><a className={styles.viewCity} href="#board-heading">View all {cityJobs.length} jobs ↓</a></>}
+          </aside>
+        </div>
         <div className={styles.cityButtons} aria-label="Filter by city">
           <button aria-pressed={city === "All cities"} onClick={() => {setCity("All cities"); setLimit(20);}}>All cities</button>
-          {pins.map(pin => <button key={pin.city} aria-pressed={city === pin.city} onClick={() => {setCity(pin.city); setRegion("All regions"); setCountry("All countries"); setLimit(20);}}>{pin.city} <span>{pin.count}</span></button>)}
+          {pins.map(pin => <button key={pin.city} aria-pressed={city === pin.city} onClick={() => selectCity(pin.city)}>{pin.city} <span>{pin.count}</span></button>)}
         </div>
         <div className={styles.regions} aria-label="Filter by region">
           {["All regions", ...regions].map(r => <button key={r} type="button" onClick={() => chooseRegion(r)} aria-pressed={region === r} className={region === r ? styles.activeRegion : ""}>{r} <span>{r === "All regions" ? allJobs.length : allJobs.filter(j => j.regions.includes(r)).length}</span></button>)}
@@ -63,7 +71,7 @@ export default function JobBoard() {
       <div className={styles.filters}>
         <label>Search skills or title<input type="search" value={search} onChange={e => setSearch(e.target.value)} placeholder="Try Godot or Python" /></label>
         <label>Country<select value={country} onChange={e => { setCountry(e.target.value); setRegion("All regions"); setCity("All cities"); setLimit(20); }}><option>All countries</option>{countries.map(c => <option key={c}>{c}</option>)}</select></label>
-        <label>Workplace<select value={mode} onChange={e => {setMode(e.target.value);setLimit(20);}}><option>All workplaces</option><option>Remote eligible</option><option>On-site</option><option>Hybrid</option><option>Location based</option><option>Not specified</option></select></label>
+        <label>Workplace<select value={mode} onChange={e => {setMode(e.target.value);setLimit(20);}}><option>All workplaces</option><option>Hybrid</option><option>Remote eligible</option><option>On-site</option><option>Location based</option><option>Not specified</option></select></label>
         <label>Type of work<select value={category} onChange={e => setCategory(e.target.value)}><option>All work</option>{categories.map(c => <option key={c}>{c}</option>)}</select></label>
       </div>
       <div className={styles.results}><strong aria-live="polite">{jobs.length} {jobs.length === 1 ? "opportunity" : "opportunities"}</strong><button onClick={() => {setSearch(""); setCountry("All countries"); setRegion("All regions"); setCategory("All work"); setCity("All cities"); setMode("All workplaces"); setLimit(20);}}>Clear filters ↗</button></div>

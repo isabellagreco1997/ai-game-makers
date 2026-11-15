@@ -30,4 +30,13 @@ class RefreshTests(unittest.TestCase):
   before=self.file.read_text(encoding='utf-8')
   with self.assertRaises(SystemExit): self.run_bot(lambda url: (_ for _ in ()).throw(OSError('unavailable')))
   self.assertEqual(self.file.read_text(encoding='utf-8'),before)
+class HybridTests(unittest.TestCase):
+ def test_work_arrangement_is_not_confused_with_game_genre(self):
+  self.assertFalse(bot.is_hybrid_listing('Game Designer (Hybrid Casual)','Build a hybrid casual mobile game.','Barcelona, Spain'))
+  self.assertTrue(bot.is_hybrid_listing('Game Designer','Join our Barcelona team on a hybrid basis.','Barcelona, Spain'))
+ def test_remote_location_is_not_mislabelled_by_other_office(self):
+  self.assertFalse(bot.is_hybrid_listing('Game Engineer','Hybrid work in Barcelona or remotely in the UK.','United Kingdom'))
+  self.assertFalse(bot.is_hybrid_listing('Platform Engineer','Our company has a hybrid work model.','United States (Remote)'))
+  self.assertFalse(bot.is_hybrid_listing('Engineer','Remote basis in the United States or Mexico City on a hybrid basis.','United States'))
+
 if __name__=='__main__':unittest.main()

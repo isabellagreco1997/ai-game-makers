@@ -95,3 +95,10 @@ set NEXT_PUBLIC_BASE_PATH=/ai-game-makers&& npx next build
 ```
 
 Forms on a static host: set `FORM_ENDPOINT` to a Formspree (or similar) form URL; the browser posts to it directly.
+## Jobs board maintenance
+
+The `/jobs/` page prioritises hybrid opportunities. Its globe opens a city panel with direct listing links; the same cities are available as keyboard-accessible buttons. Remote or location-unknown roles are not plotted as office locations.
+
+`src/content/jobs.json` is a snapshot. `python tools/refresh_jobs.py` checks the public Greenhouse feeds listed in the script, the Gameloft SmartRecruiters feed, and the separately curated external listings. The script adds hybrid games-industry roles and AI-related roles, distinguishes AI mentions from requirements, preserves a source's previous records on an access failure, and removes Greenhouse/SmartRecruiters records no longer returned by a successful complete feed. Per-listing `checkedAt` dates remain unchanged when a source cannot be verified. Explicitly remote postings and game-genre references such as “hybrid casual” are not evidence of hybrid working. Map coordinates are only attached to known city-based postings. The script does not guarantee a particular number of new jobs.
+
+The GitHub Pages workflow runs this refresh daily at 06:20 UTC, commits changes and publishes the updated snapshot. The separate daily Codex automation searches for additional sources and listings. Test the refresh logic with `python -m unittest discover -s tools -p test_refresh_jobs.py` before changing its matching or source handling.
