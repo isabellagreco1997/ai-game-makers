@@ -2,86 +2,201 @@
   "lastUpdated": "2026-11-15",
   "jobs": [
     {
-      "id": "godot-build",
-      "title": "Godot Game Developer",
-      "url": "https://www.opentrain.ai/jobs/godot-game-developer--cmvz9ulhe004e08l9ipcd7hu5/",
-      "category": "Build games for AI training",
-      "pay": "$20–$60 / hour equivalent",
-      "payNote": "Paid per accepted task",
-      "location": "Remote · 52 eligible countries",
+      "id": "gh-roblox-8311549",
+      "sourceId": "gh:roblox",
+      "title": "Senior Machine Learning Engineer, Behavioral Detection",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/8311549?gh_jid=8311549",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
       "countries": [
-        "Algeria",
-        "Argentina",
-        "Austria",
-        "Bahrain",
-        "Bangladesh",
-        "Belgium",
-        "Brazil",
-        "Canada",
-        "Chile",
-        "Colombia",
-        "Denmark",
-        "Egypt",
-        "France",
-        "Germany",
-        "Ghana",
-        "Greece",
-        "India",
-        "Indonesia",
-        "Italy",
-        "Japan",
-        "Jordan",
-        "Kazakhstan",
-        "Kenya",
-        "Kuwait",
-        "Kyrgyzstan",
-        "Lebanon",
-        "Malaysia",
-        "Mexico",
-        "Morocco",
-        "Netherlands",
-        "Nigeria",
-        "Oman",
-        "Pakistan",
-        "Palestine",
-        "Peru",
-        "Philippines",
-        "Portugal",
-        "Qatar",
-        "Saudi Arabia",
-        "Singapore",
-        "South Africa",
-        "Spain",
-        "Sri Lanka",
-        "Switzerland",
-        "Taiwan",
-        "Thailand",
-        "Tunisia",
-        "United Arab Emirates",
-        "United Kingdom",
-        "United States",
-        "Uzbekistan",
-        "Vietnam"
+        "United States"
       ],
       "regions": [
-        "North America",
-        "South America",
-        "Europe",
-        "Africa",
-        "Asia"
+        "North America"
       ],
-      "posted": "2026-11-02",
+      "posted": "2026-11-13",
       "skills": [
-        "Godot or major engine",
-        "GDScript, C#, C++ or Blueprints",
-        "Portfolio",
-        "English"
+        "Python",
+        "Machine Learning",
+        "PyTorch",
+        "TensorFlow"
       ],
-      "summary": "Build and improve gameplay, scenes and assets for AI training.",
-      "requirements": "Game development experience, advanced engine skills and a public portfolio.",
-      "company": "OpenTrain AI",
-      "employment": "Contract",
-      "checkedAt": "2026-11-15"
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-epicgames-6261103004",
+      "sourceId": "gh:epicgames",
+      "title": "Senior AI Programmer",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6261103004?gh_jid=6261103004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Montreal,Quebec,Canada",
+      "countries": [
+        "Canada"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-11-13",
+      "skills": [
+        "Unreal Engine",
+        "C++",
+        "Generative AI"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based",
+      "coordinates": {
+        "lat": 45.5019,
+        "lon": -73.5674,
+        "city": "Montreal"
+      }
+    },
+    {
+      "id": "gh-epicgames-6242339004",
+      "sourceId": "gh:epicgames",
+      "title": "Senior AI Programmer",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6242339004?gh_jid=6242339004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Multiple Locations",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-11-12",
+      "skills": [
+        "Unreal Engine",
+        "C++",
+        "Generative AI"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based"
+    },
+    {
+      "id": "gh-epicgames-6242337004",
+      "sourceId": "gh:epicgames",
+      "title": "Senior AI Programmer",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6242337004?gh_jid=6242337004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Cary,North Carolina,United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-11-12",
+      "skills": [
+        "Unreal Engine",
+        "C++",
+        "Generative AI"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based",
+      "coordinates": {
+        "lat": 35.7915,
+        "lon": -78.7811,
+        "city": "Cary"
+      }
+    },
+    {
+      "id": "gh-tripledotstudios-5031331101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Senior Game Content Designer (AI-Assisted)",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/5031331101",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Minsk",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-11-11",
+      "skills": [],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-tripledotstudios-5033993101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Senior Game Content Designer (AI-Assisted)",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/5033993101",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Tbilisi",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-11-11",
+      "skills": [],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-riotgames-8356771",
+      "sourceId": "gh:riotgames",
+      "title": "Machine Learning Engineering Intern (Masters/PhD) - Summer 2027",
+      "company": "Riot Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://www.riotgames.com/en/work-with-us/job/8356771?gh_jid=8356771",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Los Angeles, USA",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-11-11",
+      "skills": [
+        "Unreal Engine",
+        "Unity",
+        "Python",
+        "Machine Learning",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
     },
     {
       "id": "godot-expert",
@@ -166,6 +281,193 @@
       "checkedAt": "2026-11-15"
     },
     {
+      "id": "gh-roblox-8356764",
+      "sourceId": "gh:roblox",
+      "title": "Software Engineer, ROS Open Platform & AI Enablement",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/8356764?gh_jid=8356764",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-11-10",
+      "skills": [
+        "Python"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-roblox-8359456",
+      "sourceId": "gh:roblox",
+      "title": "Senior AI Application Engineer, Creator Tools",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/8359456?gh_jid=8359456",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-11-10",
+      "skills": [
+        "Python",
+        "C++",
+        "C#",
+        "Java",
+        "LLM"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-tripledotstudios-5031309101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Senior Game Economy Designer",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/5031309101",
+      "category": "AI tools in game work",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Warsaw",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-11-09",
+      "skills": [],
+      "summary": "This game role mentions AI tools in its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-tripledotstudios-5028838101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Senior Game Economy Designer",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/5028838101",
+      "category": "AI tools in game work",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Tbilisi",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-11-09",
+      "skills": [],
+      "summary": "This game role mentions AI tools in its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-tripledotstudios-5031308101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Senior Game Economy Designer",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/5031308101",
+      "category": "AI tools in game work",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Minsk",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-11-09",
+      "skills": [],
+      "summary": "This game role mentions AI tools in its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-riotgames-8178071",
+      "sourceId": "gh:riotgames",
+      "title": "Director, Machine Learning Engineering - AI Foundations",
+      "company": "Riot Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://www.riotgames.com/en/work-with-us/job/8178071?gh_jid=8178071",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Los Angeles, USA",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-11-09",
+      "skills": [
+        "Machine Learning",
+        "Generative AI",
+        "LLM"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-epicgames-6251540004",
+      "sourceId": "gh:epicgames",
+      "title": "AI Programmer Intern",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6251540004?gh_jid=6251540004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Cary,North Carolina,United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-11-09",
+      "skills": [
+        "Unreal Engine",
+        "Python",
+        "C++",
+        "Machine Learning",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based",
+      "coordinates": {
+        "lat": 35.7915,
+        "lon": -78.7811,
+        "city": "Cary"
+      }
+    },
+    {
       "id": "game-ai-evaluation",
       "title": "Game Developer for AI Evaluation",
       "url": "https://www.opentrain.ai/jobs/game-developer-for-ai-evaluation--cmw6v6uma00ip07lebvebr5wx/",
@@ -191,6 +493,2373 @@
       "company": "OpenTrain AI",
       "employment": "Contract",
       "checkedAt": "2026-11-15"
+    },
+    {
+      "id": "gh-roblox-8221568",
+      "sourceId": "gh:roblox",
+      "title": "Principal AI Infrastructure Engineer, Build Platform",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/8221568?gh_jid=8221568",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-11-04",
+      "skills": [
+        "LLM"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "solar2d",
+      "title": "Solar2D Game Developer (Lua and 2D Games)",
+      "url": "https://www.opentrain.ai/jobs/solar2d-game-developer--cmw0jjnpg007k08l2dwe7d82v/",
+      "category": "Build games for AI training",
+      "pay": "$70–$130 / hour",
+      "payNote": "Contract · part-time",
+      "location": "Remote · 52 eligible countries",
+      "countries": [
+        "Algeria",
+        "Argentina",
+        "Austria",
+        "Bahrain",
+        "Bangladesh",
+        "Belgium",
+        "Brazil",
+        "Canada",
+        "Chile",
+        "Colombia",
+        "Denmark",
+        "Egypt",
+        "France",
+        "Germany",
+        "Ghana",
+        "Greece",
+        "India",
+        "Indonesia",
+        "Italy",
+        "Japan",
+        "Jordan",
+        "Kazakhstan",
+        "Kenya",
+        "Kuwait",
+        "Kyrgyzstan",
+        "Lebanon",
+        "Malaysia",
+        "Mexico",
+        "Morocco",
+        "Netherlands",
+        "Nigeria",
+        "Oman",
+        "Pakistan",
+        "Palestine",
+        "Peru",
+        "Philippines",
+        "Portugal",
+        "Qatar",
+        "Saudi Arabia",
+        "Singapore",
+        "South Africa",
+        "Spain",
+        "Sri Lanka",
+        "Switzerland",
+        "Taiwan",
+        "Thailand",
+        "Tunisia",
+        "United Arab Emirates",
+        "United Kingdom",
+        "United States",
+        "Uzbekistan",
+        "Vietnam"
+      ],
+      "regions": [
+        "North America",
+        "South America",
+        "Europe",
+        "Africa",
+        "Asia"
+      ],
+      "posted": "2026-11-03",
+      "skills": [
+        "Solar2D or Corona SDK",
+        "Lua",
+        "2D games",
+        "English B2+"
+      ],
+      "summary": "Create and modify 2D games and document workflows for AI training.",
+      "requirements": "Strong Solar2D or Corona SDK experience, Lua and 2D game development.",
+      "company": "OpenTrain AI",
+      "employment": "Contract",
+      "checkedAt": "2026-11-15"
+    },
+    {
+      "id": "gh-roblox-8282837",
+      "sourceId": "gh:roblox",
+      "title": "Senior Machine Learning Infrastructure Engineer, Matchmaking",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/8282837?gh_jid=8282837",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-11-03",
+      "skills": [
+        "Machine Learning"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-scopely-5466060008",
+      "sourceId": "gh:scopely",
+      "title": "Senior 2D Marketing Artist",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5466060008?gh_jid=5466060008",
+      "category": "AI tools in game work",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-11-03",
+      "skills": [],
+      "summary": "This game role mentions AI tools in its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "panda3d",
+      "title": "Python Game Developer (Panda3D)",
+      "url": "https://www.opentrain.ai/jobs/panda3d-python-game-developer--cmw0jjmxe006q08l2vjlykust/",
+      "category": "Build games for AI training",
+      "pay": "$50–$120 / hour",
+      "payNote": "Contract · part-time",
+      "location": "Remote · 52 eligible countries",
+      "countries": [
+        "Algeria",
+        "Argentina",
+        "Austria",
+        "Bahrain",
+        "Bangladesh",
+        "Belgium",
+        "Brazil",
+        "Canada",
+        "Chile",
+        "Colombia",
+        "Denmark",
+        "Egypt",
+        "France",
+        "Germany",
+        "Ghana",
+        "Greece",
+        "India",
+        "Indonesia",
+        "Italy",
+        "Japan",
+        "Jordan",
+        "Kazakhstan",
+        "Kenya",
+        "Kuwait",
+        "Kyrgyzstan",
+        "Lebanon",
+        "Malaysia",
+        "Mexico",
+        "Morocco",
+        "Netherlands",
+        "Nigeria",
+        "Oman",
+        "Pakistan",
+        "Palestine",
+        "Peru",
+        "Philippines",
+        "Portugal",
+        "Qatar",
+        "Saudi Arabia",
+        "Singapore",
+        "South Africa",
+        "Spain",
+        "Sri Lanka",
+        "Switzerland",
+        "Taiwan",
+        "Thailand",
+        "Tunisia",
+        "United Arab Emirates",
+        "United Kingdom",
+        "United States",
+        "Uzbekistan",
+        "Vietnam"
+      ],
+      "regions": [
+        "North America",
+        "South America",
+        "Europe",
+        "Africa",
+        "Asia"
+      ],
+      "posted": "2026-11-03",
+      "skills": [
+        "Panda3D",
+        "Python",
+        "C++",
+        "English B2+"
+      ],
+      "summary": "Build and document 3D games and simulations for AI training.",
+      "requirements": "Strong professional Panda3D experience, Python and C++, plus screen recording.",
+      "company": "OpenTrain AI",
+      "employment": "Contract",
+      "checkedAt": "2026-11-15"
+    },
+    {
+      "id": "gh-roblox-8257625",
+      "sourceId": "gh:roblox",
+      "title": "Principal Machine Learning Engineer - Matchmaking",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/8257625?gh_jid=8257625",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-11-03",
+      "skills": [
+        "Machine Learning"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "libresprite",
+      "title": "LibreSprite Expert (Pixel Art and 2D Animation)",
+      "url": "https://www.opentrain.ai/jobs/libresprite-pixel-art-and-2d-animation-expert--cmw0jxktq000207kxcci2v5vw/",
+      "category": "Game art for AI training",
+      "pay": "$21–$70 / hour",
+      "payNote": "Contract · part-time",
+      "location": "Remote · 52 eligible countries",
+      "countries": [
+        "Algeria",
+        "Argentina",
+        "Austria",
+        "Bahrain",
+        "Bangladesh",
+        "Belgium",
+        "Brazil",
+        "Canada",
+        "Chile",
+        "Colombia",
+        "Denmark",
+        "Egypt",
+        "France",
+        "Germany",
+        "Ghana",
+        "Greece",
+        "India",
+        "Indonesia",
+        "Italy",
+        "Japan",
+        "Jordan",
+        "Kazakhstan",
+        "Kenya",
+        "Kuwait",
+        "Kyrgyzstan",
+        "Lebanon",
+        "Malaysia",
+        "Mexico",
+        "Morocco",
+        "Netherlands",
+        "Nigeria",
+        "Oman",
+        "Pakistan",
+        "Palestine",
+        "Peru",
+        "Philippines",
+        "Portugal",
+        "Qatar",
+        "Saudi Arabia",
+        "Singapore",
+        "South Africa",
+        "Spain",
+        "Sri Lanka",
+        "Switzerland",
+        "Taiwan",
+        "Thailand",
+        "Tunisia",
+        "United Arab Emirates",
+        "United Kingdom",
+        "United States",
+        "Uzbekistan",
+        "Vietnam"
+      ],
+      "regions": [
+        "North America",
+        "South America",
+        "Europe",
+        "Africa",
+        "Asia"
+      ],
+      "posted": "2026-11-03",
+      "skills": [
+        "LibreSprite",
+        "Pixel art",
+        "2D animation",
+        "English B2+"
+      ],
+      "summary": "Create pixel art and game assets for AI training.",
+      "requirements": "Professional LibreSprite, pixel art, sprite design and 2D animation experience.",
+      "company": "OpenTrain AI",
+      "employment": "Contract",
+      "checkedAt": "2026-11-15"
+    },
+    {
+      "id": "defold",
+      "title": "2D Game Developer (Defold) (English)",
+      "url": "https://www.opentrain.ai/jobs/2d-game-developer-defold--cmw0jjme2006608l2pltk33u9/",
+      "category": "Build games for AI training",
+      "pay": "$70–$130 / hour",
+      "payNote": "Contract · part-time",
+      "location": "Remote · 52 eligible countries",
+      "countries": [
+        "Algeria",
+        "Argentina",
+        "Austria",
+        "Bahrain",
+        "Bangladesh",
+        "Belgium",
+        "Brazil",
+        "Canada",
+        "Chile",
+        "Colombia",
+        "Denmark",
+        "Egypt",
+        "France",
+        "Germany",
+        "Ghana",
+        "Greece",
+        "India",
+        "Indonesia",
+        "Italy",
+        "Japan",
+        "Jordan",
+        "Kazakhstan",
+        "Kenya",
+        "Kuwait",
+        "Kyrgyzstan",
+        "Lebanon",
+        "Malaysia",
+        "Mexico",
+        "Morocco",
+        "Netherlands",
+        "Nigeria",
+        "Oman",
+        "Pakistan",
+        "Palestine",
+        "Peru",
+        "Philippines",
+        "Portugal",
+        "Qatar",
+        "Saudi Arabia",
+        "Singapore",
+        "South Africa",
+        "Spain",
+        "Sri Lanka",
+        "Switzerland",
+        "Taiwan",
+        "Thailand",
+        "Tunisia",
+        "United Arab Emirates",
+        "United Kingdom",
+        "United States",
+        "Uzbekistan",
+        "Vietnam"
+      ],
+      "regions": [
+        "North America",
+        "South America",
+        "Europe",
+        "Africa",
+        "Asia"
+      ],
+      "posted": "2026-11-03",
+      "skills": [
+        "Defold",
+        "Lua",
+        "2D games",
+        "English B2+"
+      ],
+      "summary": "Build and document 2D games in Defold for AI training.",
+      "requirements": "Strong professional Defold experience, Lua scripting and 2D game development.",
+      "company": "OpenTrain AI",
+      "employment": "Contract",
+      "checkedAt": "2026-11-15"
+    },
+    {
+      "id": "gh-roblox-8275414",
+      "sourceId": "gh:roblox",
+      "title": "Senior Software Engineer (Machine Learning) - Economy ML",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/8275414?gh_jid=8275414",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-11-02",
+      "skills": [
+        "Python",
+        "Machine Learning",
+        "Deep Learning",
+        "PyTorch"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-tripledotstudios-5013759101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Lead Game Designer",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/5013759101",
+      "category": "AI tools in game work",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "London",
+      "countries": [
+        "United Kingdom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-11-02",
+      "skills": [
+        "Machine Learning"
+      ],
+      "summary": "This game role mentions AI tools in its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "godot-build",
+      "title": "Godot Game Developer",
+      "url": "https://www.opentrain.ai/jobs/godot-game-developer--cmvz9ulhe004e08l9ipcd7hu5/",
+      "category": "Build games for AI training",
+      "pay": "$20–$60 / hour equivalent",
+      "payNote": "Paid per accepted task",
+      "location": "Remote · 52 eligible countries",
+      "countries": [
+        "Algeria",
+        "Argentina",
+        "Austria",
+        "Bahrain",
+        "Bangladesh",
+        "Belgium",
+        "Brazil",
+        "Canada",
+        "Chile",
+        "Colombia",
+        "Denmark",
+        "Egypt",
+        "France",
+        "Germany",
+        "Ghana",
+        "Greece",
+        "India",
+        "Indonesia",
+        "Italy",
+        "Japan",
+        "Jordan",
+        "Kazakhstan",
+        "Kenya",
+        "Kuwait",
+        "Kyrgyzstan",
+        "Lebanon",
+        "Malaysia",
+        "Mexico",
+        "Morocco",
+        "Netherlands",
+        "Nigeria",
+        "Oman",
+        "Pakistan",
+        "Palestine",
+        "Peru",
+        "Philippines",
+        "Portugal",
+        "Qatar",
+        "Saudi Arabia",
+        "Singapore",
+        "South Africa",
+        "Spain",
+        "Sri Lanka",
+        "Switzerland",
+        "Taiwan",
+        "Thailand",
+        "Tunisia",
+        "United Arab Emirates",
+        "United Kingdom",
+        "United States",
+        "Uzbekistan",
+        "Vietnam"
+      ],
+      "regions": [
+        "North America",
+        "South America",
+        "Europe",
+        "Africa",
+        "Asia"
+      ],
+      "posted": "2026-11-02",
+      "skills": [
+        "Godot or major engine",
+        "GDScript, C#, C++ or Blueprints",
+        "Portfolio",
+        "English"
+      ],
+      "summary": "Build and improve gameplay, scenes and assets for AI training.",
+      "requirements": "Game development experience, advanced engine skills and a public portfolio.",
+      "company": "OpenTrain AI",
+      "employment": "Contract",
+      "checkedAt": "2026-11-15"
+    },
+    {
+      "id": "gh-riotgames-8316786",
+      "sourceId": "gh:riotgames",
+      "title": "Senior Manager, Machine Learning Engineering - League of Legends",
+      "company": "Riot Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://www.riotgames.com/en/work-with-us/job/8316786?gh_jid=8316786",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Los Angeles, USA",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-29",
+      "skills": [
+        "Python",
+        "C++",
+        "Java",
+        "Machine Learning"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-roblox-8287614",
+      "sourceId": "gh:roblox",
+      "title": "Principal Software Engineer, GenAI Platform",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/8287614?gh_jid=8287614",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-27",
+      "skills": [
+        "Python",
+        "Machine Learning",
+        "Generative AI",
+        "LLM"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-epicgames-6122975004",
+      "sourceId": "gh:epicgames",
+      "title": "Principal Engineer, AI Platform",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6122975004?gh_jid=6122975004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Cary,North Carolina,United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-23",
+      "skills": [
+        "Unreal Engine"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based",
+      "coordinates": {
+        "lat": 35.7915,
+        "lon": -78.7811,
+        "city": "Cary"
+      }
+    },
+    {
+      "id": "gh-epicgames-6122977004",
+      "sourceId": "gh:epicgames",
+      "title": "Principal Engineer, AI Platform",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6122977004?gh_jid=6122977004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Multiple Locations",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-10-23",
+      "skills": [
+        "Unreal Engine"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based"
+    },
+    {
+      "id": "gh-tripledotstudios-5015075101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Game Level Designer - Peoplefun",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/5015075101",
+      "category": "AI tools in game work",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Dallas",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-10-23",
+      "skills": [
+        "Unity",
+        "Python",
+        "C#"
+      ],
+      "summary": "This game role mentions AI tools in its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Hybrid"
+    },
+    {
+      "id": "gh-neteasegames-5272053007",
+      "sourceId": "gh:neteasegames",
+      "title": "SG Campus Recruitment - Game Programmer",
+      "company": "NetEase Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/neteasegames/jobs/5272053007",
+      "category": "AI tools in game work",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Singapore-Guoco Midtown",
+      "countries": [
+        "Singapore"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-10-22",
+      "skills": [
+        "Python",
+        "C++"
+      ],
+      "summary": "This game role mentions AI tools in its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-studiokraftonboard-8907433002",
+      "sourceId": "gh:studiokraftonboard",
+      "title": "Programmeur.euse Gameplay  IA / Gameplay AI programmer",
+      "company": "KRAFTON Montréal Studio",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/studiokraftonboard/jobs/8907433002",
+      "category": "Gameplay AI & NPCs",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Montreal, Quebec, Canada",
+      "countries": [
+        "Canada"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-22",
+      "skills": [
+        "Unreal Engine",
+        "C++"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-studiokraftonboard-8906044002",
+      "sourceId": "gh:studiokraftonboard",
+      "title": "Concepteur.trice de jeux AI / Game Designer AI",
+      "company": "KRAFTON Montréal Studio",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/studiokraftonboard/jobs/8906044002",
+      "category": "Gameplay AI & NPCs",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Montreal",
+      "countries": [
+        "Canada"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-22",
+      "skills": [
+        "Unreal Engine"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-epicgames-6231410004",
+      "sourceId": "gh:epicgames",
+      "title": "Senior Machine Learning Engineer, Discovery Recommendations",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6231410004?gh_jid=6231410004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Multiple Locations",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-10-21",
+      "skills": [
+        "Unreal Engine",
+        "Python",
+        "Generative AI",
+        "Deep Learning",
+        "PyTorch"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based"
+    },
+    {
+      "id": "gh-epicgames-6180210004",
+      "sourceId": "gh:epicgames",
+      "title": "Senior Machine Learning Engineer, Discovery Recommendations",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6180210004?gh_jid=6180210004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Cary,North Carolina,United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-21",
+      "skills": [
+        "Unreal Engine",
+        "Python",
+        "Generative AI",
+        "Deep Learning",
+        "PyTorch"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based",
+      "coordinates": {
+        "lat": 35.7915,
+        "lon": -78.7811,
+        "city": "Cary"
+      }
+    },
+    {
+      "id": "gh-gsgcareers-8302468",
+      "sourceId": "gh:gsgcareers",
+      "title": "Principal Game AI Engineer",
+      "company": "Ghost Story Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/gsgcareers/jobs/8302468",
+      "category": "Gameplay AI & NPCs",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Massachusetts, USA",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-10-20",
+      "skills": [
+        "Unreal Engine",
+        "Python",
+        "C++",
+        "C#"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-scopely-5456049008",
+      "sourceId": "gh:scopely",
+      "title": "Software Engineer, Machine Learning",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5456049008?gh_jid=5456049008",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "US - San Francisco, California, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-19",
+      "skills": [
+        "Python",
+        "Machine Learning",
+        "Generative AI"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-epicgames-6226621004",
+      "sourceId": "gh:epicgames",
+      "title": "Senior Tools Programmer, UI & AI Workflows",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6226621004?gh_jid=6226621004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Cary,North Carolina,United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-19",
+      "skills": [
+        "Unreal Engine",
+        "C++"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based",
+      "coordinates": {
+        "lat": 35.7915,
+        "lon": -78.7811,
+        "city": "Cary"
+      }
+    },
+    {
+      "id": "gh-epicgames-6229262004",
+      "sourceId": "gh:epicgames",
+      "title": "Senior Tools Programmer, UI & AI Workflows",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6229262004?gh_jid=6229262004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Vancouver,British Columbia,Canada",
+      "countries": [
+        "Canada"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-19",
+      "skills": [
+        "Unreal Engine",
+        "C++"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based",
+      "coordinates": {
+        "lat": 49.2827,
+        "lon": -123.1207,
+        "city": "Vancouver"
+      }
+    },
+    {
+      "id": "gh-epicgames-6226623004",
+      "sourceId": "gh:epicgames",
+      "title": "Senior Tools Programmer, UI & AI Workflows",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6226623004?gh_jid=6226623004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Multiple Locations",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-10-19",
+      "skills": [
+        "Unreal Engine",
+        "C++"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based"
+    },
+    {
+      "id": "gh-epicgames-6229255004",
+      "sourceId": "gh:epicgames",
+      "title": "Senior Tools Programmer, UI & AI Workflows",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6229255004?gh_jid=6229255004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Montreal,Quebec,Canada",
+      "countries": [
+        "Canada"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-19",
+      "skills": [
+        "Unreal Engine",
+        "C++"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based",
+      "coordinates": {
+        "lat": 45.5019,
+        "lon": -73.5674,
+        "city": "Montreal"
+      }
+    },
+    {
+      "id": "gh-riotgames-8202900",
+      "sourceId": "gh:riotgames",
+      "title": "Staff Machine Learning Engineer - Central Technology, Anti-Cheat",
+      "company": "Riot Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://www.riotgames.com/en/work-with-us/job/8202900?gh_jid=8202900",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Los Angeles, USA",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-12",
+      "skills": [
+        "Machine Learning"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-epicgames-6222447004",
+      "sourceId": "gh:epicgames",
+      "title": "Senior Machine Learning Programmer",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6222447004?gh_jid=6222447004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Montreal,Quebec,Canada",
+      "countries": [
+        "Canada"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-12",
+      "skills": [
+        "Unreal Engine",
+        "Python",
+        "Machine Learning",
+        "Deep Learning",
+        "PyTorch"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based",
+      "coordinates": {
+        "lat": 45.5019,
+        "lon": -73.5674,
+        "city": "Montreal"
+      }
+    },
+    {
+      "id": "gh-roblox-8233722",
+      "sourceId": "gh:roblox",
+      "title": "Principal Machine Learning Platform Engineer, Foundation AI",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/8233722?gh_jid=8233722",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-12",
+      "skills": [
+        "Machine Learning"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-epicgames-6221662004",
+      "sourceId": "gh:epicgames",
+      "title": "Senior Machine Learning Programmer",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6221662004?gh_jid=6221662004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Multiple Locations",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-10-09",
+      "skills": [
+        "Unreal Engine",
+        "Python",
+        "Machine Learning",
+        "Deep Learning",
+        "PyTorch"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based"
+    },
+    {
+      "id": "gh-roblox-8242623",
+      "sourceId": "gh:roblox",
+      "title": "[2027] Senior Machine Learning Engineer - PhD Early Career",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/8242623?gh_jid=8242623",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-08",
+      "skills": [
+        "Python",
+        "C++",
+        "Java",
+        "Machine Learning",
+        "Generative AI",
+        "Deep Learning"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-riotgames-8104456",
+      "sourceId": "gh:riotgames",
+      "title": "Staff Machine Learning Engineer - Unpublished R&D Product",
+      "company": "Riot Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://www.riotgames.com/en/work-with-us/job/8104456?gh_jid=8104456",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Los Angeles, USA",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-08",
+      "skills": [
+        "Unity",
+        "Python",
+        "C++",
+        "Machine Learning",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-tripledotstudios-5000279101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "AI Level Designer",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/5000279101",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Jakarta",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-10-08",
+      "skills": [],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-escapevelocityentertainmentinc-4409665009",
+      "sourceId": "gh:escapevelocityentertainmentinc",
+      "title": "Senior Game AI Designer | Fully Remote",
+      "company": "Escape Velocity Entertainment",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/escapevelocityentertainmentinc/jobs/4409665009",
+      "category": "Gameplay AI & NPCs",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "United States, Canada, Spain, United Kingdom, Czech Republic",
+      "countries": [
+        "United States",
+        "Canada",
+        "United Kingdom",
+        "Spain",
+        "Czech Republic"
+      ],
+      "regions": [
+        "North America",
+        "Europe"
+      ],
+      "posted": "2026-10-07",
+      "skills": [],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Remote eligible"
+    },
+    {
+      "id": "gh-scopely-5434534008",
+      "sourceId": "gh:scopely",
+      "title": "Director, Marketing Creative Intelligence",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5434534008?gh_jid=5434534008",
+      "category": "AI tools in game work",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-01",
+      "skills": [
+        "Python"
+      ],
+      "summary": "This game role mentions AI tools in its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-roblox-8084095",
+      "sourceId": "gh:roblox",
+      "title": "Senior Machine Learning Engineer, 3D Data",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/8084095?gh_jid=8084095",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-09-28",
+      "skills": [
+        "Unreal Engine",
+        "Unity",
+        "Python",
+        "C++",
+        "Machine Learning",
+        "Generative AI"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-roblox-8171283",
+      "sourceId": "gh:roblox",
+      "title": "Software Engineer, GenAI Platform",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/8171283?gh_jid=8171283",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-09-25",
+      "skills": [
+        "Python",
+        "Machine Learning",
+        "Generative AI",
+        "LLM"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-roblox-8104808",
+      "sourceId": "gh:roblox",
+      "title": "Distinguished Engineer, Machine Learning - Discovery",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/8104808?gh_jid=8104808",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-09-25",
+      "skills": [
+        "Machine Learning",
+        "Generative AI",
+        "LLM"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-tripledotstudios-4984119101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Senior Machine Learning Engineer",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4984119101",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "London",
+      "countries": [
+        "United Kingdom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-09-23",
+      "skills": [
+        "Machine Learning",
+        "LLM",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-tripledotstudios-4983098101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Senior Machine Learning Engineer",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4983098101",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Barcelona",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-09-23",
+      "skills": [
+        "Machine Learning",
+        "LLM",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-tripledotstudios-4982952101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Lead Data & AI Scientist",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4982952101",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Tel Aviv",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-09-23",
+      "skills": [
+        "Python",
+        "LLM"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-tripledotstudios-4984042101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Game Designer - Lion Studios - Turkish Market",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4984042101",
+      "category": "AI tools in game work",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Remote Turkey",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-09-23",
+      "skills": [],
+      "summary": "This game role mentions AI tools in its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Remote eligible"
+    },
+    {
+      "id": "gh-tripledotstudios-4965778101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Game Designer - Lion Studios - Turkish Market",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4965778101",
+      "category": "AI tools in game work",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Remote Europe",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-09-01",
+      "skills": [],
+      "summary": "This game role mentions AI tools in its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Remote eligible"
+    },
+    {
+      "id": "gh-digitalextremes-5227518007",
+      "sourceId": "gh:digitalextremes",
+      "title": "Concept Artist",
+      "company": "Digital Extremes",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/digitalextremes/jobs/5227518007",
+      "category": "AI tools in game work",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "London, Ontario",
+      "countries": [
+        "United Kingdom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-09-01",
+      "skills": [],
+      "summary": "This game role mentions AI tools in its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-scopely-5395477008",
+      "sourceId": "gh:scopely",
+      "title": "AI Data Specialist - Tokyo",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5395477008?gh_jid=5395477008",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "JP - Tokyo, Japan",
+      "countries": [
+        "Japan"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-08-25",
+      "skills": [
+        "Machine Learning",
+        "LLM"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-riotgames-7944656",
+      "sourceId": "gh:riotgames",
+      "title": "Principal Machine Learning Engineer (AI/Platform)- League of Legends",
+      "company": "Riot Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://www.riotgames.com/en/work-with-us/job/7944656?gh_jid=7944656",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Los Angeles, USA",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-08-19",
+      "skills": [
+        "Machine Learning"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-tripledotstudios-4955732101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Game Designer - Lion Studios (f/m/d) - Turkish Market",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4955732101",
+      "category": "AI tools in game work",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Berlin",
+      "countries": [
+        "Germany"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-08-19",
+      "skills": [],
+      "summary": "This game role mentions AI tools in its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-roblox-8131695",
+      "sourceId": "gh:roblox",
+      "title": "Senior Director of Engineering, Generative AI",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/8131695?gh_jid=8131695",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-08-18",
+      "skills": [
+        "Machine Learning",
+        "Generative AI",
+        "LLM"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-2k-7812947003",
+      "sourceId": "gh:2k",
+      "title": "Senior Machine Learning Engineer",
+      "company": "2K",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/2k/jobs/7812947003",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Dublin, Ireland",
+      "countries": [
+        "Ireland"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-08-13",
+      "skills": [
+        "Unity",
+        "Python",
+        "C++",
+        "Java",
+        "Machine Learning",
+        "LLM",
+        "Deep Learning",
+        "TensorFlow"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-epicgames-6142411004",
+      "sourceId": "gh:epicgames",
+      "title": "Machine Learning Programmer, Memory",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6142411004?gh_jid=6142411004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Montreal,Quebec,Canada",
+      "countries": [
+        "Canada"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-08-12",
+      "skills": [
+        "Unreal Engine",
+        "Python",
+        "Machine Learning",
+        "PyTorch"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based",
+      "coordinates": {
+        "lat": 45.5019,
+        "lon": -73.5674,
+        "city": "Montreal"
+      }
+    },
+    {
+      "id": "gh-epicgames-6142418004",
+      "sourceId": "gh:epicgames",
+      "title": "Machine Learning Engineer, Memory",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6142418004?gh_jid=6142418004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Porto Alegre,Rio Grande do Sul,Brazil",
+      "countries": [
+        "Brazil"
+      ],
+      "regions": [
+        "South America"
+      ],
+      "posted": "2026-08-12",
+      "skills": [
+        "Unreal Engine",
+        "Python",
+        "Machine Learning",
+        "PyTorch"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based",
+      "coordinates": {
+        "lat": -30.0346,
+        "lon": -51.2177,
+        "city": "Porto Alegre"
+      }
+    },
+    {
+      "id": "gh-epicgames-6141148004",
+      "sourceId": "gh:epicgames",
+      "title": "Machine Learning Programmer, Memory",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6141148004?gh_jid=6141148004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Multiple Locations",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-08-11",
+      "skills": [
+        "Unreal Engine",
+        "Python",
+        "Machine Learning",
+        "PyTorch"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based"
+    },
+    {
+      "id": "gh-epicgames-6141143004",
+      "sourceId": "gh:epicgames",
+      "title": "Machine Learning Engineer, Memory",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6141143004?gh_jid=6141143004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "London,England,United Kingdom",
+      "countries": [
+        "United Kingdom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-08-11",
+      "skills": [
+        "Unreal Engine",
+        "Python",
+        "Machine Learning",
+        "PyTorch"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based",
+      "coordinates": {
+        "lat": 51.5072,
+        "lon": -0.1276,
+        "city": "London"
+      }
+    },
+    {
+      "id": "gh-epicgames-6134271004",
+      "sourceId": "gh:epicgames",
+      "title": "Machine Learning Engineer, Memory",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6134271004?gh_jid=6134271004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Cary,North Carolina,United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-08-11",
+      "skills": [
+        "Unreal Engine",
+        "Python",
+        "Machine Learning",
+        "PyTorch"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based",
+      "coordinates": {
+        "lat": 35.7915,
+        "lon": -78.7811,
+        "city": "Cary"
+      }
+    },
+    {
+      "id": "gh-epicgames-6138140004",
+      "sourceId": "gh:epicgames",
+      "title": "Machine Learning Intern",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6138140004?gh_jid=6138140004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Montreal,Quebec,Canada",
+      "countries": [
+        "Canada"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-08-07",
+      "skills": [
+        "Unreal Engine",
+        "C++",
+        "C#",
+        "Machine Learning",
+        "Deep Learning"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based",
+      "coordinates": {
+        "lat": 45.5019,
+        "lon": -73.5674,
+        "city": "Montreal"
+      }
+    },
+    {
+      "id": "gh-epicgames-5708589004",
+      "sourceId": "gh:epicgames",
+      "title": "Machine Learning Intern",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/5708589004?gh_jid=5708589004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "London,England,United Kingdom",
+      "countries": [
+        "United Kingdom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-08-07",
+      "skills": [
+        "Unreal Engine",
+        "C++",
+        "C#",
+        "Machine Learning",
+        "Deep Learning"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based",
+      "coordinates": {
+        "lat": 51.5072,
+        "lon": -0.1276,
+        "city": "London"
+      }
+    },
+    {
+      "id": "gh-epicgames-6138134004",
+      "sourceId": "gh:epicgames",
+      "title": "Machine Learning Intern",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6138134004?gh_jid=6138134004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Multiple Locations",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-08-07",
+      "skills": [
+        "Unreal Engine",
+        "C++",
+        "C#",
+        "Machine Learning",
+        "Deep Learning"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based"
+    },
+    {
+      "id": "gh-scopely-5372414008",
+      "sourceId": "gh:scopely",
+      "title": "AI  Artist (2D Generalist ) - Bingo Bash",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5372414008?gh_jid=5372414008",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "IN - Bangalore, India",
+      "countries": [
+        "India"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-08-06",
+      "skills": [],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-roblox-8090079",
+      "sourceId": "gh:roblox",
+      "title": "Principal Machine Learning Infrastructure Engineer, Ads",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/8090079?gh_jid=8090079",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-07-28",
+      "skills": [
+        "Machine Learning"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-epicgames-6117647004",
+      "sourceId": "gh:epicgames",
+      "title": "Senior Machine Learning Engineer",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6117647004?gh_jid=6117647004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "London,England,United Kingdom",
+      "countries": [
+        "United Kingdom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-07-16",
+      "skills": [
+        "Unreal Engine",
+        "Python",
+        "Machine Learning",
+        "Deep Learning",
+        "PyTorch"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Location based",
+      "coordinates": {
+        "lat": 51.5072,
+        "lon": -0.1276,
+        "city": "London"
+      }
+    },
+    {
+      "id": "gh-scopely-5323963008",
+      "sourceId": "gh:scopely",
+      "title": "Creative Lead Stumble Guys",
+      "company": "Scopely",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5323963008?gh_jid=5323963008",
+      "category": "AI tools in game work",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "ES - Barcelona, Spain",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-07-14",
+      "skills": [],
+      "summary": "This game role mentions AI tools in its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-riotgames-7981132",
+      "sourceId": "gh:riotgames",
+      "title": "Staff Machine Learning Engineer (Applied Modeling) - League of Legends",
+      "company": "Riot Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://www.riotgames.com/en/work-with-us/job/7981132?gh_jid=7981132",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Los Angeles, USA",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-07-09",
+      "skills": [
+        "Machine Learning"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-roblox-8046794",
+      "sourceId": "gh:roblox",
+      "title": "Technical Director - AI Roblox Studio",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/8046794?gh_jid=8046794",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-07-07",
+      "skills": [
+        "LLM"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-riotgames-8014875",
+      "sourceId": "gh:riotgames",
+      "title": "Staff Data and AI Engineer - Enterprise",
+      "company": "Riot Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://www.riotgames.com/en/work-with-us/job/8014875?gh_jid=8014875",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Los Angeles, USA",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-07-06",
+      "skills": [],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-roblox-7994532",
+      "sourceId": "gh:roblox",
+      "title": "Senior Product Manager, AI Compute Infrastructure",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/7994532?gh_jid=7994532",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-06-10",
+      "skills": [],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-riotgames-7872902",
+      "sourceId": "gh:riotgames",
+      "title": "Principal Software Engineer, AI Enablement - Central Product",
+      "company": "Riot Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://www.riotgames.com/en/work-with-us/job/7872902?gh_jid=7872902",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Los Angeles, USA",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-05-06",
+      "skills": [
+        "Unreal Engine",
+        "Python",
+        "C++",
+        "C#",
+        "Generative AI",
+        "LLM",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-2k-7611931003",
+      "sourceId": "gh:2k",
+      "title": "Senior AI Designer",
+      "company": "2K",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/2k/jobs/7611931003",
+      "category": "Gameplay AI & NPCs",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Brighton, England, United Kingdom",
+      "countries": [
+        "United Kingdom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-04-30",
+      "skills": [
+        "Unreal Engine"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-roblox-7729109",
+      "sourceId": "gh:roblox",
+      "title": "Senior Machine Learning Engineer - Economy ML",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/7729109?gh_jid=7729109",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-03-25",
+      "skills": [
+        "Python",
+        "Machine Learning",
+        "LLM",
+        "PyTorch"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-roblox-7655346",
+      "sourceId": "gh:roblox",
+      "title": "Principal/Senior Machine Learning Scientist - Search and Discovery",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/7655346?gh_jid=7655346",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-02-26",
+      "skills": [
+        "Machine Learning",
+        "LLM"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-roblox-7463674",
+      "sourceId": "gh:roblox",
+      "title": "Senior Hardware Engineer - GPU & AI Infrastructure",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/7463674?gh_jid=7463674",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2025-12-12",
+      "skills": [
+        "Python",
+        "C++"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-roblox-7351220",
+      "sourceId": "gh:roblox",
+      "title": "Senior Machine Learning Engineer, Ads",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/7351220?gh_jid=7351220",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2025-10-24",
+      "skills": [
+        "Machine Learning",
+        "Deep Learning"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
+    },
+    {
+      "id": "gh-roblox-7332473",
+      "sourceId": "gh:roblox",
+      "title": "Distinguished Engineer, Machine Learning - Economy",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/7332473?gh_jid=7332473",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "San Mateo, CA, United States",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2025-10-15",
+      "skills": [
+        "Machine Learning",
+        "Generative AI",
+        "LLM"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-15",
+      "workMode": "Not specified"
     }
   ]
 }

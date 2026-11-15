@@ -4,9 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: '20 6 * * *'
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -19,6 +21,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Test job refresh
+        run: python3 -m unittest discover -s tools -p test_refresh_jobs.py
+      - name: Refresh verified job sources
+        if: github.event_name == 'schedule'
+        run: |
+          python3 tools/refresh_jobs.py
+          if ! git diff --quiet -- src/content/jobs.json; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add src/content/jobs.json
+            git commit -m 'Refresh game and AI opportunities'
+            git push origin HEAD:main
+          fi
       - uses: actions/setup-node@v4
         with:
           node-version: 22
