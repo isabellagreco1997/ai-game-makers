@@ -66,12 +66,12 @@ export default function Mentorship() {
     <>
       <Scene variant="mentorship" photo photoAlt="Isabella, who leads the 1:1 mentorship">
         <p>
-          <span className="eyebrow">Personal 1:1 game development guidance</span>
+          <span className="eyebrow">{mentorship.name}</span>
         </p>
         <h1 className={["display display--lg", styles.h1].join(" ")}>
           Let&apos;s turn your game idea into <em>something playable.</em>
         </h1>
-        <p className={["lede on-sky", styles.heroCopy].join(" ")}>Personal guidance over 12 weeks as you plan, build and improve your own game with AI.</p>
+        <p className={["lede on-sky", styles.heroCopy].join(" ")}>{mentorship.summary}</p>
         <div className={styles.priceHero}>
           <PriceTag big>
             {mentorship.price} <small>USD per month for three months</small>
@@ -176,14 +176,20 @@ export default function Mentorship() {
       <Band tone="dusk" labelledBy="package">
         <div className={["card", styles.package].join(" ")}>
           <div>
+            <p>
+              <span className="eyebrow">{mentorship.approved ? "What's in the package" : "The planned package"}</span>
+            </p>
             <h2 id="package" className="title-ink">
-              {mentorship.approved ? "What's in the package" : "The planned package"}
+              {mentorship.name}
             </h2>
-            <ul className="check-list">
+            <p className={styles.packTagline}>{mentorship.tagline}</p>
+            <p className={styles.packSummary}>{mentorship.summary}</p>
+            <ul className={["check-list", styles.packList].join(" ")}>
               {mentorship.package.map((p) => (
                 <li key={p}>{p}</li>
               ))}
             </ul>
+            <p className={styles.packFoot}>12 Weeks | 1:1 Mentorship</p>
             {links.conceptCall && (
               <div className={styles.callBox}>
                 <h3 className="title-ink">Talk through your game idea</h3>
@@ -213,7 +219,7 @@ export default function Mentorship() {
                 <strong>Course materials</strong>: the lessons in the Skool Classroom, available to community members.
               </li>
               <li>
-                <strong>The personal mentorship</strong>: 12 weekly 1:1 calls, reviews and feedback on your own game. Your {mentorship.price}
+                <strong>The personal mentorship</strong>: 12 weekly 1:1 calls, reviews and feedback on your own game. Your {mentorship.price}{" "}
                 monthly payments cover three months of mentorship, {mentorship.total} in total.
               </li>
             </ul>

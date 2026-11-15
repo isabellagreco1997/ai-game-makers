@@ -554,3 +554,28 @@
   margin: 0 0 14px;
   max-width: 46ch;
 }
+
+.packTagline {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin: 0 0 6px;
+}
+.packSummary {
+  margin: 0 0 18px;
+  max-width: 52ch;
+}
+.packFoot {
+  margin: 18px 0 0;
+  font-family: var(--font-pixel);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--yellow);
+}
+@media (min-width: 1180px) {
+  .packList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 22px;
+  }
+}

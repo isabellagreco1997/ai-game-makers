@@ -38,7 +38,7 @@ Routes: `/` `/free-course` `/community` `/mentorship` `/games` `/about` `/worksh
 | # | Item | Status | How |
 |---|---|---|---|
 | 1 | Skool mentorship purchase link | Set (About page) | `SKOOL_MENTORSHIP_PURCHASE_URL`. Until set, every purchase button is disabled with a note. |
-| 2 | Mentorship package approved | **Draft** | Confirm the 11 deliverables (from the Skool Premium list) in `src/config/site.ts`, then set `mentorship.approved = true`. |
+| 2 | Mentorship package approved | **Draft** | Confirm the 19 deliverables (her Game Design Accelerator card, 15 Nov) in `src/config/site.ts`, then set `mentorship.approved = true`. |
 | 3 | Refund, cancellation and start-date terms | **Missing** | Write them; they go in `/terms` and the Skool offer. Required before promoting checkout. |
 | 4 | Legal identity | **Missing** | `LEGAL_CONTROLLER_NAME`, `LEGAL_CONTROLLER_LOCATION`, `CONTACT_EMAIL`. Legal pages show "being finalised" until set. |
 | 5 | Form backend | **Missing** | `FORM_ENDPOINT` (e.g. a free Formspree form URL). Until set, forms validate but answer "sign-ups aren't open yet, nothing was saved". |
