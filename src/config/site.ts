@@ -71,47 +71,22 @@ export const integrations = {
   googleSiteVerification: env("GOOGLE_SITE_VERIFICATION"),
 };
 
-/**
- * What the mentoring includes: the Premium items from the Skool plans and about pages
- * (read 14 Nov 2026), unpacked into separate bullets by GPT-6-Sol. The 30-minute concept call is
- * not in the list on purpose: it happens before anyone pays (links.conceptCall). `approved` stays
- * false until Isabella confirms the deliverables; while false the page labels
- * the list as the planned package and the terms page says terms are pending.
- */
+/** Monthly mentorship offer. Verify the Skool subscription separately before changing payment links. */
 export const mentorship = {
-  /** Pilot price agreed 14 Nov 2026: billed monthly on Skool for three months. */
   price: "$299",
   currency: "USD",
-  months: 3,
-  total: "$897",
-  weeks: 12,
-  approved: false,
-  /** Programme name, tagline, summary and the list below: her offer card of 15 Nov 2026, word for word. */
+  approved: true,
   name: "Game Design Accelerator",
   tagline: "Learn the craft. Build your game.",
-  summary: "A personalised 12-week mentorship to develop game design skills while creating your own playable game with AI.",
+  summary: "Personalised monthly 1:1 mentorship to build professional games with AI using Claude Code and Codex, grow your portfolio and develop skills for career opportunities.",
   package: [
-    "12 weekly 45-minute 1:1 sessions",
+    "4 private 1:1 sessions per month, 45 minutes each",
     "Personalised game development roadmap",
-    "Game design principles",
-    "Gameplay mechanics and core loops",
-    "Level design and progression",
-    "Game feel and player feedback",
-    "Colour theory and composition",
-    "Visual hierarchy and art direction",
-    "Animation principles",
-    "Storytelling and narrative design",
-    "Player experience and engagement",
-    "AI tools and development workflows",
-    "Creative problem-solving",
-    "Game reviews and personalised feedback",
-    "Skool messaging between sessions",
-    "Publishing and marketing guidance",
-    "Build and present your game portfolio",
-    "Create a library of games to showcase your skills",
-    "Potential YouTube game showcase",
-    "Session recordings and learning resources",
-    "Standard community access",
+    "Game design, mechanics and level design",
+    "Art direction, animation and visual design",
+    "AI-assisted development and debugging",
+    "Project reviews and personalised feedback",
+    "Publishing and portfolio guidance",
   ],
 };
 

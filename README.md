@@ -1,7 +1,7 @@
 # AI Game Makers Academy: website
 
 The marketing site for AI Game Makers, built from `AI_Game_Makers_Claude_Master_Brief.md` (14 Nov 2026).
-Its job: send visitors to the free Skool community, explain the 1:1 mentorship ($299 a month for three months, bought on Skool),
+Its job: send visitors to the free Skool community, explain the monthly 1:1 mentorship ($299/month, cancel anytime),
 and collect interest in future Birmingham workshops. It hosts no lessons and takes no payments.
 
 Stack: Next.js 16 (App Router) · React 19 · TypeScript · plain CSS (tokens in `src/app/globals.css`, CSS modules per component).
@@ -38,7 +38,7 @@ Routes: `/` `/free-course` `/community` `/mentorship` `/games` `/about` `/worksh
 | # | Item | Status | How |
 |---|---|---|---|
 | 1 | Skool mentorship purchase link | Set (About page) | `SKOOL_MENTORSHIP_PURCHASE_URL`. Until set, every purchase button is disabled with a note. |
-| 2 | Mentorship package approved | **Draft** | Confirm the 19 deliverables (her Game Design Accelerator card, 15 Nov) in `src/config/site.ts`, then set `mentorship.approved = true`. |
+| 2 | Mentorship package | **Updated** | The monthly offer is in `src/config/site.ts`; confirm the Skool subscription and align its public offer before changing payment buttons. |
 | 3 | Refund, cancellation and start-date terms | **Missing** | Write them; they go in `/terms` and the Skool offer. Required before promoting checkout. |
 | 4 | Legal identity | **Missing** | `LEGAL_CONTROLLER_NAME`, `LEGAL_CONTROLLER_LOCATION`, `CONTACT_EMAIL`. Legal pages show "being finalised" until set. |
 | 5 | Form backend | **Missing** | `FORM_ENDPOINT` (e.g. a free Formspree form URL). Until set, forms validate but answer "sign-ups aren't open yet, nothing was saved". |

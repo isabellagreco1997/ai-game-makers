@@ -7,7 +7,7 @@ export const metadata = pageMeta("Terms of Use | AI Game Makers", "The terms for
 
 export default function Terms() {
   return (
-    <LegalPage title="Terms of Use" updated="14 November 2026">
+    <LegalPage title="Terms of Use" updated="15 November 2026">
       <h2>About these terms</h2>
       <p>
         These terms cover your use of this website, which is run by <Controller />. By using the site you agree to them.
@@ -26,25 +26,12 @@ export default function Terms() {
       </p>
 
       <h2>The mentorship</h2>
-      {mentorship.approved ? (
-        <p>
-          The mentorship costs {mentorship.price} {mentorship.currency} per month for three months, {mentorship.total} {mentorship.currency} in total, for 12 weeks of personal support as described on
-          the <Link href="/mentorship">mentorship page</Link> and the Skool offer. Isabella&apos;s promise to mentorship students is: If you&apos;re not happy with what we created together, I will refund you completely, no questions asked. This applies in addition to your statutory rights as a consumer.
-        </p>
-      ) : (
-        <div role="note">
-          <p>Isabella&apos;s promise to mentorship students is: If you&apos;re not happy with what we created together, I will refund you completely, no questions asked. This applies in addition to your statutory rights as a consumer.</p>
-          <p>
-            The mentorship costs {mentorship.price} {mentorship.currency} per month for three months, {mentorship.total} {mentorship.currency} in total, for 12 weeks of personal support. Its final
-            terms are being confirmed and will be published here and on Skool before it can be bought, covering:
-          </p>
-          <ul>
-            <li>exactly what is included and how calls are booked;</li>
-            <li>when the 12 weeks start and when the support ends;</li>
-            <li>cancellation and the remaining refund details, including your statutory rights as a consumer.</li>
-          </ul>
-        </div>
-      )}
+      <p>
+        The mentorship costs {mentorship.price} {mentorship.currency} per month and renews automatically. You can cancel anytime and continue for as many months as you need. Each payment includes four private 45-minute sessions to be booked within that billing month; unused sessions do not roll over. See the <Link href="/mentorship">mentorship page</Link> for what is included.
+      </p>
+      <p>
+        Isabella&apos;s promise to mentorship students is: If you&apos;re not happy with what we created together, I will refund you completely, no questions asked. This applies in addition to your statutory rights as a consumer.
+      </p>
       <p>
         No mentorship guarantees a finished game, a commercial release or any particular result. You remain responsible for your own project
         and for any AI tool subscriptions you choose to use.

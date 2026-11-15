@@ -11,7 +11,7 @@ import styles from "../pages.module.css";
 
 export const metadata = pageMeta(
   "1:1 AI Game Development Mentorship | $299/month | AI Game Makers",
-  "Get 12 weekly one-to-one calls over three months for $299 USD per month as you build your own game with AI.",
+  "Build games with Claude Code and Codex in four private sessions per month for $299. Cancel anytime.",
   "/mentorship",
 );
 
@@ -21,20 +21,15 @@ export default function Mentorship() {
   const ask = links.contactEmail ? `mailto:${links.contactEmail}?subject=${encodeURIComponent("Question about the mentorship")}` : "";
 
   const faq = [
-    { q: "What is the total price?", a: <p>{mentorship.price} USD per month for three months. That is {mentorship.total} USD in total.</p> },
-    { q: "Is it paid monthly?", a: <p>Yes. You pay {mentorship.price} USD each month through Skool for three months.</p> },
+    { q: "How much does mentorship cost?", a: <p>{mentorship.price} USD per month. The subscription renews automatically and you can cancel anytime.</p> },
     {
       q: "How many calls are included?",
-      a: mentorship.approved ? (
-        <p>One 45-minute one-to-one call every week for 12 weeks, 12 calls in total. You work on your own game live while I guide you.</p>
-      ) : (
-        <p>The planned package is one 45-minute one-to-one call every week for 12 weeks, 12 calls in total. You work on your own game live while I guide you. The package will be confirmed on Skool before you pay.</p>
-      ),
+      a: <p>Each monthly payment includes four private 45-minute 1:1 sessions. Book them within that billing month; unused sessions do not roll over.</p>,
     },
     { q: "Can a complete beginner join?", a: <p>Yes. We&apos;ll start from what you know and work out a small, manageable scope together.</p> },
     {
       q: "What kind of game can I make?",
-      a: <p>Most small 2D games work well: platformers, puzzle games, short story or horror adventures and simple simulations. We&apos;ll work out a scope that fits 12 weeks in the first call.</p>,
+      a: <p>Most small 2D games work well: platformers, puzzle games, short story or horror adventures and simple simulations. We&apos;ll work out a manageable scope together.</p>,
     },
     {
       q: "Will you code my game for me?",
@@ -47,17 +42,15 @@ export default function Mentorship() {
       a: <p>That depends on your project. We'll look at it together in the first call, including free options, before you spend anything on tools. Tool costs are separate from the mentorship fee.</p>,
     },
     {
-      q: "What happens after 12 weeks?",
-      a: <p>After 12 weeks, our personal mentorship ends. You keep your roadmap and everything you built, and you can stay in the free community for as long as you like. If we both want to keep working together, you can continue with monthly mentoring on Skool. If your project clearly needs longer, raise it on our free concept call.</p>,
+      q: "How long can I continue?",
+      a: <p>You can continue for as many months as you need and cancel anytime. You can also remain in the free community.</p>,
     },
-    { q: "How is payment processed?", a: <p>The button opens the AI Game Makers Club&apos;s About page on Skool. Join the free community first, then upgrade to Premium on its plans page. Skool handles the monthly payment. I recommend booking a free 30-minute concept call before you pay.</p> },
+    { q: "How do I get started?", a: <p>Visit the community&apos;s About page on Skool and book a free introductory call to discuss your project before joining the mentorship.</p> },
     {
       q: "What is the refund and cancellation policy?",
       a: (
         <p>
-          If you&apos;re not happy with what we created together, I will refund you completely, no questions asked. How to cancel the monthly
-          payment and the full terms are still being finalised. They will be shown in the <Link href="/terms">terms</Link> and on Skool before
-          anyone can buy.
+          You can cancel anytime. If you&apos;re not happy with what we created together, I will refund you completely, no questions asked. See the <Link href="/terms">terms</Link> for more information.
         </p>
       ),
     },
@@ -75,7 +68,7 @@ export default function Mentorship() {
         <p className={["lede on-sky", styles.heroCopy].join(" ")}>{mentorship.summary}</p>
         <div className={styles.priceHero}>
           <PriceTag big>
-            {mentorship.price} <small>USD per month for three months</small>
+            {mentorship.price} <small>USD per month · cancel anytime</small>
           </PriceTag>
         </div>
         <p className={styles.priceLine}>Personal guidance, focused feedback and a clear development plan.</p>
@@ -97,7 +90,7 @@ export default function Mentorship() {
       {videos.mentorship && (
 <Band tone="dusk" labelledBy="sales-video">
         <div className={styles.videoRow}>
-          <Video videoId={videos.mentorship} title="How the 12-week mentorship works" slot="mentorship_explainer" />
+          <Video videoId={videos.mentorship} title="How the mentorship works" slot="mentorship_explainer" />
           <div>
             <h2 id="sales-video" className="display display--md">
               Here&apos;s how I can <em>guide your game.</em>
@@ -124,13 +117,13 @@ export default function Mentorship() {
             <p>We&apos;ll work out a manageable scope and a development roadmap for your project.</p>
           </FeatureCard>
           <FeatureCard icon="calendar" title="Private Sessions">
-            <p>Work on your own game with my guidance in a 45-minute call every week.</p>
+            <p>Work on your game with my guidance in four private 45-minute sessions each billing month.</p>
           </FeatureCard>
           <FeatureCard icon="chat" title="Project Feedback">
-            <p>Message me on Skool between calls for feedback. Replies are not instant; reply times will be confirmed before you pay.</p>
+            <p>Get personalised project reviews and feedback during your mentoring.</p>
           </FeatureCard>
           <FeatureCard icon="chip" title="AI Development Workflows">
-            <p>Learn to use AI tools more effectively while building.</p>
+            <p>Build and debug with Claude Code and Codex while developing practical AI skills.</p>
           </FeatureCard>
           <FeatureCard icon="rocket" title="Publishing Direction">
             <p>Understand the next steps for preparing and sharing a playable game.</p>
@@ -171,14 +164,14 @@ export default function Mentorship() {
             </article>
           ))}
         </div>
-        <p className={styles.teachClose}>Learn to explain your choices, show your work and ask players for useful feedback.</p>
+        <p className={styles.teachClose}>Learn to explain your choices, build a portfolio and show your work for future opportunities.</p>
       </Band>
 
       <Band tone="dusk" labelledBy="package">
         <div className={["card", styles.package].join(" ")}>
           <div>
             <p>
-              <span className="eyebrow">{mentorship.approved ? "What's in the package" : "The planned package"}</span>
+              <span className="eyebrow">What&apos;s included</span>
             </p>
             <h2 id="package" className="title-ink">
               {mentorship.name}
@@ -190,7 +183,7 @@ export default function Mentorship() {
                 <li key={p}>{p}</li>
               ))}
             </ul>
-            <p className={styles.packFoot}>12 Weeks | 1:1 Mentorship</p>
+            <p className={styles.packFoot}>Monthly 1:1 Mentorship | Cancel anytime</p>
             {links.conceptCall && (
               <div className={styles.callBox}>
                 <h3 className="title-ink">Talk through your game idea</h3>
@@ -203,12 +196,6 @@ export default function Mentorship() {
                 </Button>
               </div>
             )}
-            {!mentorship.approved && (
-              <p className={["notice", styles.draft].join(" ")}>
-                These deliverables are being finalised. The confirmed package, start date and terms will be shown on Skool before you
-                pay.
-              </p>
-            )}
           </div>
           <div>
             <h3 className="title-ink">What each offer includes</h3>
@@ -220,8 +207,7 @@ export default function Mentorship() {
                 <strong>Course materials</strong>: the lessons in the Skool Classroom, available to community members.
               </li>
               <li>
-                <strong>The personal mentorship</strong>: 12 weekly 1:1 calls, reviews and feedback on your own game. Your {mentorship.price}{" "}
-                monthly payments cover three months of mentorship, {mentorship.total} in total.
+                <strong>The personal mentorship</strong>: four private 45-minute sessions per billing month, reviews and feedback on your own game for {mentorship.price} per month. Cancel anytime.
               </li>
             </ul>
             <h3 className="title-ink">What it isn't</h3>
@@ -239,23 +225,23 @@ export default function Mentorship() {
           id="roadmap"
           title={
             <>
-              Your 12-week <em>development journey.</em>
+              Your personalised <em>development journey.</em>
             </>
           }
         />
         <ol className={["grid grid--3", styles.roadmap].join(" ")}>
           <li>
-            <SceneCard scene="scene-mobile" level="Weeks 1–4" title="Plan & Prototype" icon="map" label="Midnight Cat, a game we made">
+            <SceneCard scene="scene-mobile" level="01" title="Plan & Prototype" icon="map" label="Midnight Cat, a game we made">
               Clarify the concept, prioritise the core mechanic and start a playable prototype.
             </SceneCard>
           </li>
           <li>
-            <SceneCard scene="scene-rhythm" level="Weeks 5–8" title="Build & Improve" icon="gamepad" label="HELLPOP MAYHEM, a game we made">
+            <SceneCard scene="scene-rhythm" level="02" title="Build & Improve" icon="gamepad" label="HELLPOP MAYHEM, a game we made">
               Develop the game, review its feel and work through technical and creative challenges.
             </SceneCard>
           </li>
           <li>
-            <SceneCard scene="scene-horror" level="Weeks 9–12" title="Refine & Prepare to Share" icon="rocket" label="HAPPY DAY, a game we released">
+            <SceneCard scene="scene-horror" level="03" title="Refine & Prepare to Share" icon="rocket" label="HAPPY DAY, a game we released">
               Polish, test and plan the next steps towards release.
             </SceneCard>
           </li>
@@ -308,15 +294,14 @@ export default function Mentorship() {
       <Band tone="sunset" labelledBy="pricing">
         <div className={["card", styles.pricing].join(" ")}>
           <PriceTag big>
-            {mentorship.price} <small>USD per month for three months</small>
+            {mentorship.price} <small>USD per month · cancel anytime</small>
           </PriceTag>
           <h2 id="pricing" className="title-ink">
-            One project. Twelve weekly calls. Your decisions.
+            Four private sessions. Your game. Your pace.
           </h2>
-          <p>{mentorship.price} USD per month for three months, paid monthly through Skool. {mentorship.total} USD in total.</p>
+          <p>{mentorship.price} USD per month, automatically renewed. Cancel anytime and continue for as many months as you need.</p>
           <p>
-            Your 12 weeks begin from your first weekly call, booked after purchase according to the onboarding terms shown on Skool. Enrolment
-            is rolling and 1:1, subject to available call times.
+            Each payment includes four private 45-minute sessions to book within that billing month. Unused sessions do not roll over. Booking is subject to available call times.
           </p>
           <p><strong>My promise:</strong> If you&apos;re not happy with what we created together, I will refund you completely, no questions asked.</p>
           <div className={styles.ctaWrap}>

@@ -8,7 +8,7 @@ import { FactsGrid, MemberQuotes, PlayerProof } from "@/components/Proof";
 import { WorldGap } from "@/components/WorldBg";
 import { Scene } from "@/components/Scene";
 import { Video } from "@/components/Video";
-import { links, site, videos } from "@/config/site";
+import { links, mentorship, site, videos } from "@/config/site";
 import { GAMES } from "@/content/games";
 import { asset } from "@/lib/asset";
 import { pageMeta } from "@/lib/meta";
@@ -36,8 +36,7 @@ const faq = [
     q: "What's the difference between the free course and the mentorship?",
     a: (
       <p>
-        The free course teaches the foundations at your own pace. The <Link href="/mentorship">$299 per month mentorship</Link> is 12 weeks of weekly 1:1
-        guidance on your own game, paid over three months.
+        The free course teaches the foundations at your own pace. The <Link href="/mentorship">$299 per month mentorship</Link> gives you four private 1:1 sessions per billing month. Cancel anytime.
       </p>
     ),
   },
@@ -280,7 +279,7 @@ export default function Home() {
 
           <article className={["card", styles.path].join(" ")}>
             <div className={styles.pathTop}>
-              <span className="badge badge--cream">1:1 mentorship</span>
+              <span className="badge badge--cream">Monthly 1:1 mentorship</span>
               <h3 className={styles.acceleratorLogo} aria-label="Game Design Accelerator">
                 <span className={styles.acceleratorMark} aria-hidden="true">
                   <svg viewBox="0 0 48 48" fill="none"><path d="M11 33 24 10l13 23h-8l-5-9-5 9h-8Z" fill="currentColor"/><path d="M16 38h16" stroke="currentColor" strokeWidth="3" strokeLinecap="square"/></svg>
@@ -289,31 +288,11 @@ export default function Home() {
               </h3>
             </div>
             <p className={styles.pathTagline}>Learn the craft. Build your game.</p>
-            <p>A personalised 12-week mentorship to master game design fundamentals while creating your own game with AI.</p>
+            <p>{mentorship.summary}</p>
             <ul className={["check-list", styles.pathList].join(" ")}>
-              <li>12 weekly 45-minute 1:1 sessions</li>
-              <li>Personalised game development roadmap</li>
-              <li>Game design principles</li>
-              <li>Gameplay mechanics and core loops</li>
-              <li>Level design and progression</li>
-              <li>Game feel and player feedback</li>
-              <li>Colour theory and composition</li>
-              <li>Visual hierarchy and art direction</li>
-              <li>Animation principles</li>
-              <li>Storytelling and narrative design</li>
-              <li>Player experience and engagement</li>
-              <li>AI tools and development workflows</li>
-              <li>Creative problem-solving</li>
-              <li>Game reviews and personalised feedback</li>
-              <li>Skool messaging between sessions</li>
-              <li>Publishing and marketing guidance</li>
-              <li>Build and present your game portfolio</li>
-              <li>Create a library of games to showcase your skills</li>
-              <li>Potential YouTube game showcase</li>
-              <li>Session recordings and learning resources</li>
-              <li>Standard community access</li>
+              {mentorship.package.map((item) => <li key={item}>{item}</li>)}
             </ul>
-            <p className={styles.pathFoot}>12 Weeks | 1:1 Mentorship</p>
+            <p className={styles.pathFoot}>Monthly 1:1 Mentorship | Cancel anytime</p>
             {links.conceptCall && (
               <p className={styles.pathNote}>
                 <a href={links.conceptCall} target="_blank" rel="noopener noreferrer" data-track="home_concept_call">
@@ -324,7 +303,7 @@ export default function Home() {
             )}
             <div className={styles.pathCta}>
               <PriceTag>
-                $299 <small>USD per month · three months · $897 total</small>
+                {mentorship.price} <small>USD per month · cancel anytime</small>
               </PriceTag>
               <Button href="/mentorship" variant="secondary" track="home_path_mentorship">
                 Explore Mentorship
