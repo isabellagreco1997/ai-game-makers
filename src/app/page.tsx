@@ -241,17 +241,32 @@ export default function Home() {
           <article className={["card", styles.path].join(" ")}>
             <div className={styles.pathTop}>
               <span className="badge badge--cream">1:1 mentorship</span>
-              <h3 className="title-ink">Work with me</h3>
+              <h3 className="title-ink">Game Design Accelerator</h3>
             </div>
-            <p>Plan and build your own game, with one-to-one guidance and structured feedback over 12 weeks.</p>
-            <ul className="check-list">
-              <li>A personal plan for your game</li>
-              <li>12 weekly 45-minute one-to-one calls to work on your game</li>
-              <li>Game design, visuals and storytelling guidance</li>
-              <li>Game reviews, feedback and Skool messages between calls</li>
-              <li>Publishing, marketing and a YouTube showcase if your finished game suits the channel and you agree</li>
-              <li>Recordings, resources and Standard community access</li>
+            <p className={styles.pathTagline}>Learn the craft. Build your game.</p>
+            <p>A personalised 12-week mentorship to master game design fundamentals while creating your own game with AI.</p>
+            <ul className={["check-list", styles.pathList].join(" ")}>
+              <li>12 weekly 45-minute 1:1 sessions</li>
+              <li>Personalised game development roadmap</li>
+              <li>Game design principles</li>
+              <li>Gameplay mechanics and core loops</li>
+              <li>Level design and progression</li>
+              <li>Game feel and player feedback</li>
+              <li>Colour theory and composition</li>
+              <li>Visual hierarchy and art direction</li>
+              <li>Animation principles</li>
+              <li>Storytelling and narrative design</li>
+              <li>Player experience and engagement</li>
+              <li>AI tools and development workflows</li>
+              <li>Creative problem-solving</li>
+              <li>Game reviews and personalised feedback</li>
+              <li>Skool messaging between sessions</li>
+              <li>Publishing and marketing guidance</li>
+              <li>Potential YouTube game showcase</li>
+              <li>Session recordings and learning resources</li>
+              <li>Standard community access</li>
             </ul>
+            <p className={styles.pathFoot}>12 Weeks | 1:1 Mentorship</p>
             {links.conceptCall && (
               <p className={styles.pathNote}>
                 <a href={links.conceptCall} target="_blank" rel="noopener noreferrer" data-track="home_concept_call">
