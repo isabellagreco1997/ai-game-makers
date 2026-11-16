@@ -872,12 +872,7 @@
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-16",
-      "workMode": "Location based",
-      "coordinates": {
-        "lat": 35.7915,
-        "lon": -78.7811,
-        "city": "Cary"
-      }
+      "workMode": "Location based"
     },
     {
       "id": "game-ai-evaluation",
@@ -1548,7 +1543,7 @@
       "category": "Game industry - AI mentioned",
       "pay": "See listing",
       "payNote": "Check source for pay",
-      "location": "Atari - US (Remote); Atari Europe; Remote",
+      "location": "Atari - US (Remote); Remote",
       "countries": [
         "United States"
       ],
@@ -1756,6 +1751,87 @@
       "employment": "See listing",
       "checkedAt": "2026-11-16",
       "workMode": "Not specified"
+    },
+    {
+      "id": "gh-insomniac-6226611004",
+      "sourceId": "gh:insomniac",
+      "title": "Gameplay Programming Intern - Undergraduate",
+      "company": "Insomniac Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/insomniac/jobs/6226611004",
+      "category": "Game industry - AI not specified",
+      "pay": "$41.50–$50/hour",
+      "payNote": "USD per hour; internship rate",
+      "location": "United States, Remote",
+      "countries": [
+        "United States"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-10-19",
+      "requirementsList": [
+        {
+          "text": "Currently pursuing a BS/BSE in Computer Science or Computer Engineering. Students majoring…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Six to twelve months of related experience and/or training is beneficial but…",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Ability to program in C++.",
+          "kind": "required",
+          "tools": [
+            "C++"
+          ]
+        },
+        {
+          "text": "Strong interest in gameplay programming and using technical skills to create engaging…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "A creative, self-motivated, and responsible approach to learning and completing assigned work.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Passion for video games and programming, with an interest in developing gameplay…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Students with expected graduation between May 2026 and December 2029 from an…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Able to work during one of the following periods: May 17th -…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Must be available for the entire 12-week internship period.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "US work authorisation required; no current or future visa sponsorship.",
+          "kind": "required",
+          "tools": []
+        }
+      ],
+      "skills": [
+        "C++"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-16",
+      "workMode": "Remote eligible"
     },
     {
       "id": "gh-rushdownstudios-4457371009",
@@ -2671,7 +2747,7 @@
       "category": "Game industry - AI not specified",
       "pay": "See listing",
       "payNote": "Check source for pay",
-      "location": "Atari - US (Remote); Implicit Conversions",
+      "location": "Atari - US (Remote)",
       "countries": [
         "United States"
       ],
@@ -3218,12 +3294,7 @@
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-16",
-      "workMode": "Location based",
-      "coordinates": {
-        "lat": 35.7915,
-        "lon": -78.7811,
-        "city": "Cary"
-      }
+      "workMode": "Location based"
     },
     {
       "id": "gh-epicgames-6200355004",
@@ -3293,12 +3364,7 @@
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-16",
-      "workMode": "Location based",
-      "coordinates": {
-        "lat": 35.7915,
-        "lon": -78.7811,
-        "city": "Cary"
-      }
+      "workMode": "Location based"
     },
     {
       "id": "gh-epicgames-6193647004",
@@ -3378,12 +3444,7 @@
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-16",
-      "workMode": "Location based",
-      "coordinates": {
-        "lat": 35.7915,
-        "lon": -78.7811,
-        "city": "Cary"
-      }
+      "workMode": "Location based"
     },
     {
       "id": "gh-tripledotstudios-4976209101",
@@ -3475,183 +3536,6 @@
       }
     },
     {
-      "id": "gh-tripledotstudios-4976251101",
-      "sourceId": "gh:tripledotstudios",
-      "title": "Animator",
-      "company": "Tripledot Studios",
-      "sourceLabel": "Official careers page",
-      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4976251101",
-      "category": "Game industry - AI not specified",
-      "pay": "See listing",
-      "payNote": "Check source for pay",
-      "location": "Jakarta",
-      "countries": [
-        "Indonesia"
-      ],
-      "regions": [
-        "Asia"
-      ],
-      "posted": "2026-09-16",
-      "requirementsList": [
-        {
-          "text": "3+ years of experience as a Game Animator.",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Strong understanding of animation principles including timing, spacing, weight, anticipation, and polish.",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Proficiency in 3D animation tools such as Blender, Maya, or equivalent software.",
-          "kind": "required",
-          "tools": [
-            "Blender",
-            "Maya"
-          ]
-        },
-        {
-          "text": "Experience with character rigging and skinning workflows.",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Familiarity with Unity animation systems, Animator Controllers, and basic state machines.",
-          "kind": "required",
-          "tools": [
-            "Unity"
-          ]
-        },
-        {
-          "text": "Understanding of optimization techniques for mobile game performance.",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Ability to collaborate effectively with Designers, Artists, Technical Artists, Engineers, and Producers.",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Strong problem-solving skills for troubleshooting animation and rigging issues in-engine.",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Ability to follow production pipelines, naming conventions, and technical constraints.",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Good communication skills and openness to feedback and iteration.",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Experience working on stylized or casual mobile games is a plus.",
-          "kind": "preferred",
-          "tools": []
-        },
-        {
-          "text": "Knowledge of Spine 2D animation is a plus.",
-          "kind": "preferred",
-          "tools": []
-        }
-      ],
-      "skills": [
-        "Unity",
-        "Blender",
-        "Maya"
-      ],
-      "summary": "The listing does not specify AI.",
-      "requirements": "See the official listing for experience, qualifications and role details.",
-      "employment": "See listing",
-      "checkedAt": "2026-11-16",
-      "workMode": "Hybrid",
-      "coordinates": {
-        "lat": -6.2088,
-        "lon": 106.8456,
-        "city": "Jakarta"
-      }
-    },
-    {
-      "id": "gh-tripledotstudios-4973861101",
-      "sourceId": "gh:tripledotstudios",
-      "title": "3D Artist",
-      "company": "Tripledot Studios",
-      "sourceLabel": "Official careers page",
-      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4973861101",
-      "category": "Game industry - AI not specified",
-      "pay": "See listing",
-      "payNote": "Check source for pay",
-      "location": "Jakarta",
-      "countries": [
-        "Indonesia"
-      ],
-      "regions": [
-        "Asia"
-      ],
-      "posted": "2026-09-15",
-      "requirementsList": [
-        {
-          "text": "Strong portfolio showing examples of 3d props and environment examples",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Excellent 3D experience in one or more software: Blender, 3D Studio Max…",
-          "kind": "required",
-          "tools": [
-            "Blender",
-            "Maya",
-            "3D Studio Max"
-          ]
-        },
-        {
-          "text": "Good knowledge of Photoshop and texture creation",
-          "kind": "required",
-          "tools": [
-            "Photoshop"
-          ]
-        },
-        {
-          "text": "Good basic art skills in art fundamentals (colour composition and form)",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Passionate about games",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Unity experience is a plus",
-          "kind": "preferred",
-          "tools": [
-            "Unity"
-          ]
-        }
-      ],
-      "skills": [
-        "Unity",
-        "Photoshop",
-        "Blender",
-        "Maya",
-        "3D Studio Max"
-      ],
-      "summary": "The listing does not specify AI.",
-      "requirements": "See the official listing for experience, qualifications and role details.",
-      "employment": "See listing",
-      "checkedAt": "2026-11-16",
-      "workMode": "Hybrid",
-      "coordinates": {
-        "lat": -6.2088,
-        "lon": 106.8456,
-        "city": "Jakarta"
-      }
-    },
-    {
       "id": "gh-epicgames-6183401004",
       "sourceId": "gh:epicgames",
       "title": "UI Programmer Intern",
@@ -3709,11 +3593,113 @@
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-16",
-      "workMode": "Location based",
+      "workMode": "Location based"
+    },
+    {
+      "id": "gh-tripledotstudios-4971839101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Game Producer (Hybrid Casual)",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4971839101",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Barcelona",
+      "countries": [
+        "Spain"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-09-09",
+      "requirementsList": [
+        {
+          "text": "3+ years of experience as a Game Producer, Product Manager, Product Owner…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Proven experience taking multiple game concepts from idea or prototype to market…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "A portfolio of Hybrid Casual projects where you can clearly explain",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "the original product hypothesis",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "how the concept was validated",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "which metrics were used",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "what results were achieved",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "what decisions were made based on those results",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Strong understanding of the Hybrid Casual mobile games market, including current genres…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Strong understanding of early-stage product and UA metrics, including CPI, CTR, retention…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Ability to identify whether a project's main issue lies in core gameplay…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Strong analytical and product thinking with the ability to make decisions based…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience managing and coordinating cross-functional development teams",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Strong communication, leadership, and prioritization skills",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "English and Russian spoken and written at B2 level and above",
+          "kind": "required",
+          "tools": []
+        }
+      ],
+      "skills": [],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-16",
+      "workMode": "Hybrid",
       "coordinates": {
-        "lat": 35.7915,
-        "lon": -78.7811,
-        "city": "Cary"
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "city": "Barcelona"
       }
     },
     {
@@ -3821,113 +3807,6 @@
         "lat": 41.7151,
         "lon": 44.8271,
         "city": "Tbilisi"
-      }
-    },
-    {
-      "id": "gh-tripledotstudios-4971839101",
-      "sourceId": "gh:tripledotstudios",
-      "title": "Game Producer (Hybrid Casual)",
-      "company": "Tripledot Studios",
-      "sourceLabel": "Official careers page",
-      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/4971839101",
-      "category": "Game industry - AI not specified",
-      "pay": "See listing",
-      "payNote": "Check source for pay",
-      "location": "Barcelona",
-      "countries": [
-        "Spain"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "posted": "2026-09-09",
-      "requirementsList": [
-        {
-          "text": "3+ years of experience as a Game Producer, Product Manager, Product Owner…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Proven experience taking multiple game concepts from idea or prototype to market…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "A portfolio of Hybrid Casual projects where you can clearly explain",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "the original product hypothesis",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "how the concept was validated",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "which metrics were used",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "what results were achieved",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "what decisions were made based on those results",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Strong understanding of the Hybrid Casual mobile games market, including current genres…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Strong understanding of early-stage product and UA metrics, including CPI, CTR, retention…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Ability to identify whether a project's main issue lies in core gameplay…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Strong analytical and product thinking with the ability to make decisions based…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Experience managing and coordinating cross-functional development teams",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Strong communication, leadership, and prioritization skills",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "English and Russian spoken and written at B2 level and above",
-          "kind": "required",
-          "tools": []
-        }
-      ],
-      "skills": [],
-      "summary": "The listing does not specify AI.",
-      "requirements": "See the official listing for experience, qualifications and role details.",
-      "employment": "See listing",
-      "checkedAt": "2026-11-16",
-      "workMode": "Hybrid",
-      "coordinates": {
-        "lat": 41.3874,
-        "lon": 2.1686,
-        "city": "Barcelona"
       }
     },
     {
@@ -4386,12 +4265,7 @@
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-16",
-      "workMode": "Location based",
-      "coordinates": {
-        "lat": 51.5072,
-        "lon": -0.1276,
-        "city": "London"
-      }
+      "workMode": "Location based"
     },
     {
       "id": "gh-tripledotstudios-4963495101",
@@ -4622,12 +4496,7 @@
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-16",
-      "workMode": "Location based",
-      "coordinates": {
-        "lat": 35.7915,
-        "lon": -78.7811,
-        "city": "Cary"
-      }
+      "workMode": "Location based"
     },
     {
       "id": "gh-tripledotstudios-4955732101",
@@ -4789,12 +4658,7 @@
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-16",
-      "workMode": "Location based",
-      "coordinates": {
-        "lat": 45.5019,
-        "lon": -73.5674,
-        "city": "Montreal"
-      }
+      "workMode": "Location based"
     },
     {
       "id": "gh-epicgames-6142418004",
@@ -4865,12 +4729,7 @@
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-16",
-      "workMode": "Location based",
-      "coordinates": {
-        "lat": -30.0346,
-        "lon": -51.2177,
-        "city": "Porto Alegre"
-      }
+      "workMode": "Location based"
     },
     {
       "id": "gh-epicgames-6141148004",
@@ -5008,12 +4867,7 @@
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-16",
-      "workMode": "Location based",
-      "coordinates": {
-        "lat": 51.5072,
-        "lon": -0.1276,
-        "city": "London"
-      }
+      "workMode": "Location based"
     },
     {
       "id": "gh-epicgames-6134271004",
@@ -5078,158 +4932,6 @@
         "Python",
         "Machine Learning",
         "PyTorch",
-        "Unreal"
-      ],
-      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
-      "requirements": "See the official listing for experience, qualifications and role details.",
-      "employment": "See listing",
-      "checkedAt": "2026-11-16",
-      "workMode": "Location based",
-      "coordinates": {
-        "lat": 35.7915,
-        "lon": -78.7811,
-        "city": "Cary"
-      }
-    },
-    {
-      "id": "gh-epicgames-5708589004",
-      "sourceId": "gh:epicgames",
-      "title": "Machine Learning Intern",
-      "company": "Epic Games",
-      "sourceLabel": "Official careers page",
-      "url": "https://epicgames.com/careers/jobs/5708589004?gh_jid=5708589004",
-      "category": "AI & machine learning in gaming",
-      "pay": "See listing",
-      "payNote": "Check source for pay",
-      "location": "London,England,United Kingdom",
-      "countries": [
-        "United Kingdom"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "posted": "2026-08-07",
-      "requirementsList": [
-        {
-          "text": "An ongoing or recently completed (within the last 12 months) PhD in…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "A record of publication in top conferences/journals",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Experience implementing deep learning algorithms for problems in computer vision, natural language…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Hands-on knowledge of state-of-the-art ML methods, such as Transformers, diffusion models, and…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Experience with post-training foundation models, including SFT, preference training, and reinforcement learning",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Excellent AI coding and experimental engineering skills",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Desirable: game development experience in either C++ or C#",
-          "kind": "preferred",
-          "tools": [
-            "C++",
-            "C#"
-          ]
-        }
-      ],
-      "skills": [
-        "Unreal Engine",
-        "C++",
-        "C#",
-        "Machine Learning",
-        "Deep Learning",
-        "LLMs",
-        "Unreal"
-      ],
-      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
-      "requirements": "See the official listing for experience, qualifications and role details.",
-      "employment": "See listing",
-      "checkedAt": "2026-11-16",
-      "workMode": "Location based",
-      "coordinates": {
-        "lat": 51.5072,
-        "lon": -0.1276,
-        "city": "London"
-      }
-    },
-    {
-      "id": "gh-epicgames-6138134004",
-      "sourceId": "gh:epicgames",
-      "title": "Machine Learning Intern",
-      "company": "Epic Games",
-      "sourceLabel": "Official careers page",
-      "url": "https://epicgames.com/careers/jobs/6138134004?gh_jid=6138134004",
-      "category": "AI & machine learning in gaming",
-      "pay": "See listing",
-      "payNote": "Check source for pay",
-      "location": "Multiple Locations",
-      "countries": [],
-      "regions": [],
-      "posted": "2026-08-07",
-      "requirementsList": [
-        {
-          "text": "An ongoing or recently completed (within the last 12 months) PhD in…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "A record of publication in top conferences/journals",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Experience implementing deep learning algorithms for problems in computer vision, natural language…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Hands-on knowledge of state-of-the-art ML methods, such as Transformers, diffusion models, and…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Experience with post-training foundation models, including SFT, preference training, and reinforcement learning",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Excellent AI coding and experimental engineering skills",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Desirable: game development experience in either C++ or C#",
-          "kind": "preferred",
-          "tools": [
-            "C++",
-            "C#"
-          ]
-        }
-      ],
-      "skills": [
-        "Unreal Engine",
-        "C++",
-        "C#",
-        "Machine Learning",
-        "Deep Learning",
-        "LLMs",
         "Unreal"
       ],
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
@@ -5309,12 +5011,149 @@
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
       "checkedAt": "2026-11-16",
-      "workMode": "Location based",
-      "coordinates": {
-        "lat": 45.5019,
-        "lon": -73.5674,
-        "city": "Montreal"
-      }
+      "workMode": "Location based"
+    },
+    {
+      "id": "gh-epicgames-5708589004",
+      "sourceId": "gh:epicgames",
+      "title": "Machine Learning Intern",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/5708589004?gh_jid=5708589004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "London,England,United Kingdom",
+      "countries": [
+        "United Kingdom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-08-07",
+      "requirementsList": [
+        {
+          "text": "An ongoing or recently completed (within the last 12 months) PhD in…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "A record of publication in top conferences/journals",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience implementing deep learning algorithms for problems in computer vision, natural language…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Hands-on knowledge of state-of-the-art ML methods, such as Transformers, diffusion models, and…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience with post-training foundation models, including SFT, preference training, and reinforcement learning",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Excellent AI coding and experimental engineering skills",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Desirable: game development experience in either C++ or C#",
+          "kind": "preferred",
+          "tools": [
+            "C++",
+            "C#"
+          ]
+        }
+      ],
+      "skills": [
+        "Unreal Engine",
+        "C++",
+        "C#",
+        "Machine Learning",
+        "Deep Learning",
+        "LLMs",
+        "Unreal"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-16",
+      "workMode": "Location based"
+    },
+    {
+      "id": "gh-epicgames-6138134004",
+      "sourceId": "gh:epicgames",
+      "title": "Machine Learning Intern",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6138134004?gh_jid=6138134004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Multiple Locations",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-08-07",
+      "requirementsList": [
+        {
+          "text": "An ongoing or recently completed (within the last 12 months) PhD in…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "A record of publication in top conferences/journals",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience implementing deep learning algorithms for problems in computer vision, natural language…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Hands-on knowledge of state-of-the-art ML methods, such as Transformers, diffusion models, and…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience with post-training foundation models, including SFT, preference training, and reinforcement learning",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Excellent AI coding and experimental engineering skills",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Desirable: game development experience in either C++ or C#",
+          "kind": "preferred",
+          "tools": [
+            "C++",
+            "C#"
+          ]
+        }
+      ],
+      "skills": [
+        "Unreal Engine",
+        "C++",
+        "C#",
+        "Machine Learning",
+        "Deep Learning",
+        "LLMs",
+        "Unreal"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-16",
+      "workMode": "Location based"
     },
     {
       "id": "gh-scopely-5342840008",
@@ -6091,7 +5930,7 @@
       "category": "Game industry - AI not specified",
       "pay": "See listing",
       "payNote": "Check source for pay",
-      "location": "Canada-Remote; United Kingdom - Guildford Onsite; United States-Remote",
+      "location": "Canada-Remote; United States-Remote",
       "countries": [
         "United States",
         "Canada"

@@ -61,6 +61,11 @@ class RequirementTests(unittest.TestCase):
   result=bot.extract_requirements(markup);self.assertEqual([x['text'] for x in result],['Experience with Python'])
  def test_no_requirements_section_returns_no_fabricated_bullets(self):
   self.assertEqual(bot.extract_requirements('<h2>About us</h2><ul><li>We love games</li></ul>'),[])
+ def test_eligibility_and_optional_internship_experience(self):
+  markup='<h2>Requirements</h2><li>Experience is beneficial but not required.</li><p>Eligibility:</p><li>Currently enrolled student.</li><p>Applicants must be authorized to work for any employer in the United States and will not require work visa sponsorship.</p>'
+  result=bot.extract_requirements(markup)
+  self.assertEqual([x['kind'] for x in result],['preferred','required','required'])
+  self.assertIn('no current or future visa sponsorship',result[-1]['text'])
  def test_long_requirement_is_short(self):
   result=bot.extract_requirements('<h2>Requirements</h2><li>One two three four five six seven eight nine ten eleven twelve thirteen fourteen</li>')
   self.assertLessEqual(len(result[0]['text'].split()),12)
@@ -86,6 +91,6 @@ class RemoteTests(unittest.TestCase):
   self.assertTrue(bot.is_remote_listing('Artist','Canada',{'Careers Page Remote Eligible':'Yes'}))
  def test_remote_country_excludes_separate_onsite_office(self):
   text='Canada-Remote; United Kingdom - Guildford Onsite; United States-Remote'
-  self.assertEqual(bot.remote_locations(text,'Remote eligible'),'Canada-Remote;  United States-Remote')
+  self.assertEqual(bot.remote_locations(text,'Remote eligible'),'Canada-Remote; United States-Remote')
 
 if __name__=='__main__':unittest.main()
