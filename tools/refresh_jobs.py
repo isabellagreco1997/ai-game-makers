@@ -139,12 +139,40 @@ def is_hybrid_listing(title, text, raw_location):
   return False
  return explicit
 
+def superspline_junior_requirements(markup):
+ """Return the junior role's requirements, None if removed, or raise for an ambiguous page."""
+ body=html.unescape(markup)
+ if not re.search(r'Open Positions',body,re.I): raise ValueError('Unrecognised careers page')
+ headings=list(re.finditer(r'<h3\b[^>]*>.*?</h3>',body,re.I|re.S))
+ junior=next((i for i,m in enumerate(headings) if re.search(r'Junior\s+3D\s+Games\s+Animator',re.sub(r'<[^>]+>',' ',m.group()),re.I)),None)
+ if junior is None: return None
+ start=headings[junior].end();end=headings[junior+1].start() if junior+1<len(headings) else len(body)
+ section=body[start:end]
+ plain=re.sub(r'<[^>]+>',' ',section)
+ if not re.search(r'UK\s+Remote',plain,re.I) or not re.search(r'APPLY\s+HERE',plain,re.I): raise ValueError('Junior role availability or location is unclear')
+ parser=ListingBlocks();parser.feed(section);result=[];in_list=False
+ for _,kind,value in sorted(parser.blocks):
+  if kind=='li':
+   in_list=True;optional=bool(re.search(r'\b(?:a plus|preferred|bonus)\b',value,re.I))
+   result.append({'text':short_requirement(value),'kind':'preferred' if optional else 'required','tools':mentioned_tools(value)})
+  elif in_list and kind=='p': break
+ if not result: raise ValueError('Junior requirements not found')
+ return result
+
 def refresh():
  old=json.loads(FILE.read_text(encoding='utf-8')); today=datetime.date.today().isoformat()
  out=[]; failures=[]
  # Existing curated third-party listings: 200 alone is not proof of availability.
  for j in old['jobs']:
   if j.get('sourceId','').startswith(('gh:','sr:')): continue
+  if j.get('sourceId')=='custom:superspline-junior':
+   try:
+    found=superspline_junior_requirements(request(j['url']))
+    if found is None: continue
+    if senior_role(j['title'],found): continue
+    j['requirementsList']=found;j['skills']=list(dict.fromkeys(tool for item in found for tool in item['tools']));j['checkedAt']=today
+   except Exception as e: failures.append(f"{j['url']}: {e}")
+   out.append(j);continue
   try:
    body=request(j['url'])
    if 'apply now' in body.lower() and j['title'].lower() in html.unescape(body).lower():

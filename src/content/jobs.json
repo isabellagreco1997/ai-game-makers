@@ -6762,6 +6762,87 @@
         "lon": 28.9784,
         "city": "Istanbul"
       }
+    },
+    {
+      "id": "superspline-junior-3d-animator-uk",
+      "sourceId": "custom:superspline-junior",
+      "title": "Junior 3D Games Animator",
+      "company": "Super Spline Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://supersplinestudios.com/jobs/#JNR",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Salary not disclosed",
+      "location": "United Kingdom (Remote)",
+      "countries": [
+        "United Kingdom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "",
+      "requirementsList": [
+        {
+          "text": "Demonstrate with a reel your understand of pose, timing, appeal and all…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Create high quality, hand keyed character animation.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Strong self management skills.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Be pleasant to work with, communicate well, understand briefs, meet deadlines.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Be accountable & responsible, a clear communicator and problem solver",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Working knowledge of Maya.",
+          "kind": "required",
+          "tools": [
+            "Maya"
+          ]
+        },
+        {
+          "text": "Having dabbled with game engines a plus.",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Be a team player, open to take and offer feedback.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Constantly strive to learn new / improved tools, techniques and processes all…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Have the desire to help make awesome games with a small people…",
+          "kind": "required",
+          "tools": []
+        }
+      ],
+      "skills": [
+        "Maya"
+      ],
+      "summary": "Junior animation role; remote in the UK or office in Leamington Spa.",
+      "requirements": "See the official listing for full requirements.",
+      "employment": "Permanent",
+      "checkedAt": "2026-11-17",
+      "workMode": "Remote eligible"
     }
   ]
 }

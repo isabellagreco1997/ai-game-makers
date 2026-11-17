@@ -30,6 +30,14 @@ class RefreshTests(unittest.TestCase):
   before=self.file.read_text(encoding='utf-8')
   with self.assertRaises(SystemExit): self.run_bot(lambda url: (_ for _ in ()).throw(OSError('unavailable')))
   self.assertEqual(self.file.read_text(encoding='utf-8'),before)
+ def test_custom_listing_keeps_check_date_when_source_is_unavailable(self):
+  self.file.write_text(json.dumps({'lastUpdated':'2026-01-01','jobs':[{'id':'junior','sourceId':'custom:superspline-junior','title':'Junior Animator','url':'https://example.com/jobs','checkedAt':'2026-01-01'}]}),encoding='utf-8')
+  def fetch(url):
+   if 'example.com' in url: raise OSError('unavailable')
+   if 'greenhouse' in url: return json.dumps({'jobs':[]})
+   return json.dumps({'content':[],'totalFound':0})
+  self.run_bot(fetch)
+  jobs=json.loads(self.file.read_text(encoding='utf-8'))['jobs'];self.assertEqual(jobs[0]['checkedAt'],'2026-01-01')
 class HybridTests(unittest.TestCase):
  def test_work_arrangement_is_not_confused_with_game_genre(self):
   self.assertFalse(bot.is_hybrid_listing('Game Designer (Hybrid Casual)','Build a hybrid casual mobile game.','Barcelona, Spain'))
@@ -92,5 +100,16 @@ class RemoteTests(unittest.TestCase):
  def test_remote_country_excludes_separate_onsite_office(self):
   text='Canada-Remote; United Kingdom - Guildford Onsite; United States-Remote'
   self.assertEqual(bot.remote_locations(text,'Remote eligible'),'Canada-Remote; United States-Remote')
+
+class SuperSplineTests(unittest.TestCase):
+ def test_reads_only_junior_role_and_distinguishes_preferred(self):
+  markup='<h1>Open Positions</h1><h3>Junior 3D Games Animator</h3><h4>UK Remote</h4><ul><li>Working knowledge of Maya</li><li>Game engine experience is a plus</li></ul><p>Benefits</p><ul><li>Paid holiday</li></ul><p>APPLY HERE</p><h3>Senior Animator</h3><li>5 years experience</li>'
+  result=bot.superspline_junior_requirements(markup)
+  self.assertEqual([x['kind'] for x in result],['required','preferred'])
+  self.assertEqual(result[0]['tools'],['Maya'])
+ def test_removal_and_uncertain_layout(self):
+  self.assertIsNone(bot.superspline_junior_requirements('<h1>Open Positions</h1><h3>Senior Animator</h3>'))
+  with self.assertRaises(ValueError): bot.superspline_junior_requirements('<h1>Access denied</h1>')
+  with self.assertRaises(ValueError): bot.superspline_junior_requirements('<h1>Open Positions</h1><h3>Junior 3D Games Animator</h3><p>On-site only</p>')
 
 if __name__=='__main__':unittest.main()
