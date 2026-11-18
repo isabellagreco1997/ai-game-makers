@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 FILE = ROOT / 'src/content/jobs.json'
 BOARDS = {'epicgames':'Epic Games','riotgames':'Riot Games','roblox':'Roblox','scopely':'Scopely','2k':'2K','escapevelocityentertainmentinc':'Escape Velocity Entertainment','neteasegames':'NetEase Games','gsgcareers':'Ghost Story Games','studiokraftonboard':'KRAFTON Montréal Studio','tripledotstudios':'Tripledot Studios','rushdownstudios':'Rushdown Studios','digitalextremes':'Digital Extremes','wooga':'Wooga','goodjobgames':'Good Job Games','atariinc':'Atari'}
 BOARDS['insomniac'] = 'Insomniac Games'
+WORKABLE_BOARDS = {'storytoys': 'StoryToys'}
 CITIES = {
  'cary':('United States','North America',35.7915,-78.7811),'montreal':('Canada','North America',45.5019,-73.5674),
  'montréal':('Canada','North America',45.5019,-73.5674),'vancouver':('Canada','North America',49.2827,-123.1207),
@@ -159,12 +160,28 @@ def superspline_junior_requirements(markup):
  if not result: raise ValueError('Junior requirements not found')
  return result
 
+def workable_requirements(markup, abbreviated=True):
+ """Read the explicit Essential and Desirable lists, leaving duties out."""
+ parser=ListingBlocks();parser.feed(html.unescape(markup or ''));mode=None;out=[]
+ for _,kind,value in sorted(parser.blocks):
+  if kind in ('p','h2','h3','h4'):
+   if re.fullmatch(r'Essential\s*:?',value,re.I): mode='required';continue
+   if re.fullmatch(r'Desirables?\s*:?',value,re.I): mode='preferred';continue
+   if mode and value and not re.search(r'^\s*$',value): mode=None
+  if kind=='li' and mode:
+   is_mixed=mode=='required' and bool(re.search(r'\brequired\b.*\bpreferred\b',value,re.I))
+   sentences=re.split(r'(?<=[.!?])\s+',value) if is_mixed else [value]
+   for sentence in sentences:
+    label='preferred' if is_mixed and re.search(r'\bpreferred\b',sentence,re.I) and not re.search(r'\brequired\b',sentence,re.I) else 'required' if is_mixed and re.search(r'\brequired\b',sentence,re.I) and not re.search(r'\bpreferred\b',sentence,re.I) else 'mixed' if is_mixed else mode
+    out.append({'text':short_requirement(sentence) if abbreviated else sentence,'kind':label,'tools':mentioned_tools(sentence)})
+ return out
+
 def refresh():
  old=json.loads(FILE.read_text(encoding='utf-8')); today=datetime.date.today().isoformat()
  out=[]; failures=[]
  # Existing curated third-party listings: 200 alone is not proof of availability.
  for j in old['jobs']:
-  if j.get('sourceId','').startswith(('gh:','sr:')): continue
+  if j.get('sourceId','').startswith(('gh:','sr:','workable:')): continue
   if j.get('sourceId')=='custom:superspline-junior':
    try:
     found=superspline_junior_requirements(request(j['url']))
@@ -185,6 +202,37 @@ def refresh():
    failures.append(f"{j['url']}: {e}")
   except Exception as e: failures.append(f"{j['url']}: {e}")
   if not senior_role(j['title'],j.get('requirementsList',[])): out.append(j)
+ for slug,company in WORKABLE_BOARDS.items():
+  source='workable:'+slug; previous={j['id']:j for j in old['jobs'] if j.get('sourceId')==source}
+  try:
+   payload=json.loads(request(f'https://apply.workable.com/api/v1/widget/accounts/{slug}?details=true'))
+   if not isinstance(payload.get('jobs'),list): raise ValueError('Missing jobs list')
+  except Exception as e:
+   failures.append(f'{company}: {e}');out.extend(previous.values());continue
+  grouped={}
+  for item in payload['jobs']:
+   if item.get('shortcode'): grouped.setdefault(item['shortcode'],[]).append(item)
+  for code,items in grouped.items():
+   item=items[0];title=item.get('title','').strip();id=f'workable-{slug}-{code}'
+   if not EARLY_TITLE.search(title) or not CREATIVE.search(title) or not all(i.get('telecommuting') is True for i in items): continue
+   full=workable_requirements(item.get('description',''),False)
+   if not full:
+    failures.append(f'{company} {code}: requirement section missing')
+    if id in previous: out.append(previous[id])
+    continue
+   if senior_role(title,full): continue
+   countries=list(dict.fromkeys(i.get('country','') for i in items if i.get('country')))
+   if not countries:
+    failures.append(f'{company} {code}: remote countries missing')
+    if id in previous: out.append(previous[id])
+    continue
+   requirements=workable_requirements(item.get('description',''))
+   out.append({'id':id,'sourceId':source,'title':title,'company':company,'sourceLabel':'Official careers page',
+    'url':item['url'],'category':'Game industry - AI not specified','pay':'See listing','payNote':'Salary not disclosed',
+    'location':' / '.join(countries)+' (Remote)','countries':countries,'regions':list(dict.fromkeys('Europe' for c in countries if c in ('Ireland','United Kingdom'))),
+    'posted':item.get('published_on',''),'requirementsList':requirements,'skills':list(dict.fromkeys(t for x in full for t in x['tools']))[:8],
+    'summary':'Remote game art role. Check the source for eligibility and full details.','requirements':'See the official listing for full requirements.',
+    'employment':'See listing','checkedAt':today,'workMode':'Remote eligible'})
  for slug,company in BOARDS.items():
   try:
    payload=json.loads(request(f'https://boards-api.greenhouse.io/v1/boards/{slug}/jobs?content=true'))
@@ -289,7 +337,7 @@ def refresh():
      job['coordinates']={'lat':float(loc['latitude']),'lon':float(loc['longitude']),'city':loc['city']}
    except (TypeError,ValueError): pass
    out.append(job)
- if len(failures)>=len(BOARDS)+1+len([j for j in old['jobs'] if not j.get('sourceId','').startswith(('gh:','sr:'))]): raise SystemExit('Every source failed; data was not changed')
+ if len(failures)>=len(BOARDS)+len(WORKABLE_BOARDS)+1+len([j for j in old['jobs'] if not j.get('sourceId','').startswith(('gh:','sr:','workable:'))]): raise SystemExit('Every source failed; data was not changed')
  out=[j for j in out if not senior_role(j.get('title',''),j.get('requirementsList',[]))]
  out.sort(key=lambda j:(j.get('posted',''),j.get('title','')),reverse=True)
  FILE.write_text(json.dumps({'lastUpdated':today,'jobs':out},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

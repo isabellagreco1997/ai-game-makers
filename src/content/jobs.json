@@ -2,6 +2,80 @@
   "lastUpdated": "2026-11-18",
   "jobs": [
     {
+      "id": "sr-gameloft-744000162228144",
+      "sourceId": "sr:Gameloft",
+      "title": "Sound Designer Intern",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000162228144-sound-designer-intern-",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Ho Chi Minh City, , Vietnam",
+      "countries": [
+        "Vietnam"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-11-18",
+      "requirementsList": [
+        {
+          "text": "Currently studying Audio Production, Sound Design, Music Technology, Game Development, or a…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Basic proficiency with DAWs such as Reaper, Pro Tools, Audition, or similar…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Understanding of sound design fundamentals, audio editing, and asset management.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Passion for video games, interactive audio, and emerging technologies.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Familiarity with Unity, Unreal Engine, Wwise, or FMOD is a plus.",
+          "kind": "preferred",
+          "tools": [
+            "Unreal Engine",
+            "Unity"
+          ]
+        },
+        {
+          "text": "Portfolio or demo reel showcasing audio-related work is encouraged.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Creative, curious, detail-oriented, and eager to learn.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Good communication, teamwork, and openness to feedback.",
+          "kind": "required",
+          "tools": []
+        }
+      ],
+      "skills": [
+        "Unreal Engine",
+        "Unity",
+        "Unreal"
+      ],
+      "summary": "Explore this role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-18",
+      "workMode": "Hybrid"
+    },
+    {
       "id": "gh-tripledotstudios-5036440101",
       "sourceId": "gh:tripledotstudios",
       "title": "Software Quality and Automation Engineer",
@@ -105,6 +179,109 @@
         "lon": 106.8456,
         "city": "Jakarta"
       }
+    },
+    {
+      "id": "workable-storytoys-001B8ABEF4",
+      "sourceId": "workable:storytoys",
+      "title": "Junior Level 2D Artist - FTC 12 months",
+      "company": "StoryToys",
+      "sourceLabel": "Official careers page",
+      "url": "https://apply.workable.com/j/001B8ABEF4",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Salary not disclosed",
+      "location": "Ireland / United Kingdom (Remote)",
+      "countries": [
+        "Ireland",
+        "United Kingdom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-11-12",
+      "requirementsList": [
+        {
+          "text": "Education/Portfolio: A portfolio showcasing relevant 2D work (characters, environments, UI designs) is…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Coursework or a degree in Fine Arts, Graphic Design, Game Design, or…",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Software Proficiency: Strong foundational skills in the Adobe Creative Suite (Photoshop, Illustrator)…",
+          "kind": "required",
+          "tools": [
+            "Photoshop",
+            "Illustrator"
+          ]
+        },
+        {
+          "text": "Artistic Fundamentals: Solid understanding of basic artistic principles, including composition, color theory…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Versatility: Ability to adapt and create diverse styles of 2D artwork, ranging…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Optimisation Basics: Basic knowledge of art optimisation principles for mobile games.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Soft Skills: Strong time management, organisational skills, and the capacity to handle…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Audience Alignment: A genuine interest in designing games tailored for younger audiences.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience: Previous internship experience or up to 1–2 years of experience in…",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Animation Skills: Familiarity with animation tools or techniques (e.g., basic knowledge of…",
+          "kind": "preferred",
+          "tools": [
+            "After Effects"
+          ]
+        },
+        {
+          "text": "Technical Knowledge: Basic understanding of Unity for asset integration.",
+          "kind": "preferred",
+          "tools": [
+            "Unity"
+          ]
+        },
+        {
+          "text": "Collaboration Tools: Familiarity with Agile environments and communication/management tools (Jira, Slack, Float…",
+          "kind": "preferred",
+          "tools": [
+            "Jira"
+          ]
+        }
+      ],
+      "skills": [
+        "Photoshop",
+        "Illustrator",
+        "After Effects",
+        "Unity",
+        "Jira"
+      ],
+      "summary": "Remote game art role. Check the source for eligibility and full details.",
+      "requirements": "See the official listing for full requirements.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-18",
+      "workMode": "Remote eligible"
     },
     {
       "id": "gh-riotgames-8356525",

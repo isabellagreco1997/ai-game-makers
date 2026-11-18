@@ -10,6 +10,7 @@ class RefreshTests(unittest.TestCase):
   self.file.write_text(json.dumps({'lastUpdated':'2026-01-01','jobs':[{'id':'old','sourceId':'gh:studio','title':'Old AI role','checkedAt':'2026-01-01','posted':'2026-01-01'}, {'id':'external','title':'External Role','url':'https://example.com/job','checkedAt':'2026-01-01','posted':'2026-01-01'}]}),encoding='utf-8')
   self.filepatch=patch.object(bot,'FILE',self.file); self.filepatch.start(); self.addCleanup(self.filepatch.stop)
   self.boardpatch=patch.object(bot,'BOARDS',{'studio':'Studio'});self.boardpatch.start();self.addCleanup(self.boardpatch.stop)
+  self.workablepatch=patch.object(bot,'WORKABLE_BOARDS',{});self.workablepatch.start();self.addCleanup(self.workablepatch.stop)
  def run_bot(self, fn):
   with patch.object(bot,'request',side_effect=fn), contextlib.redirect_stdout(io.StringIO()): bot.refresh()
  def test_closed_job_removed_when_successful_feed_omits_it(self):
@@ -37,6 +38,14 @@ class RefreshTests(unittest.TestCase):
    if 'greenhouse' in url: return json.dumps({'jobs':[]})
    return json.dumps({'content':[],'totalFound':0})
   self.run_bot(fetch)
+  jobs=json.loads(self.file.read_text(encoding='utf-8'))['jobs'];self.assertEqual(jobs[0]['checkedAt'],'2026-01-01')
+ def test_unavailable_workable_feed_preserves_previous_check(self):
+  self.file.write_text(json.dumps({'lastUpdated':'2026-01-01','jobs':[{'id':'workable-storytoys-old','sourceId':'workable:storytoys','title':'Junior Artist','checkedAt':'2026-01-01'}]}),encoding='utf-8')
+  def fetch(url):
+   if 'workable' in url: raise OSError('unavailable')
+   if 'greenhouse' in url: return json.dumps({'jobs':[]})
+   return json.dumps({'content':[],'totalFound':0})
+  with patch.object(bot,'WORKABLE_BOARDS',{'storytoys':'StoryToys'}): self.run_bot(fetch)
   jobs=json.loads(self.file.read_text(encoding='utf-8'))['jobs'];self.assertEqual(jobs[0]['checkedAt'],'2026-01-01')
 class HybridTests(unittest.TestCase):
  def test_work_arrangement_is_not_confused_with_game_genre(self):
@@ -111,5 +120,12 @@ class SuperSplineTests(unittest.TestCase):
   self.assertIsNone(bot.superspline_junior_requirements('<h1>Open Positions</h1><h3>Senior Animator</h3>'))
   with self.assertRaises(ValueError): bot.superspline_junior_requirements('<h1>Access denied</h1>')
   with self.assertRaises(ValueError): bot.superspline_junior_requirements('<h1>Open Positions</h1><h3>Junior 3D Games Animator</h3><p>On-site only</p>')
+
+class WorkableTests(unittest.TestCase):
+ def test_extracts_essential_and_desirable_without_duties(self):
+  markup='<p>Responsibilities</p><ul><li>Create game art</li></ul><p>Essential</p><ul><li>Portfolio is required. A degree is preferred.</li><li>Photoshop skills</li></ul><p>Desirable</p><ul><li>Unity experience</li></ul>'
+  found=bot.workable_requirements(markup)
+  self.assertEqual([x['kind'] for x in found],['required','preferred','required','preferred'])
+  self.assertEqual(found[2]['tools'],['Photoshop'])
 
 if __name__=='__main__':unittest.main()
