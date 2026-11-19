@@ -1208,6 +1208,123 @@
       "workMode": "Remote eligible"
     },
     {
+      "id": "lever-frontier-d81e0934-8f97-4f45-b89f-e6d7c3916b35",
+      "sourceId": "lever:frontier",
+      "title": "Graduate Character Artist",
+      "company": "Frontier Developments",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.eu.lever.co/frontier/d81e0934-8f97-4f45-b89f-e6d7c3916b35",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Salary not disclosed",
+      "location": "Cambridge, United Kingdom",
+      "countries": [
+        "United Kingdom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-11-04",
+      "requirementsList": [
+        {
+          "text": "Demonstrated expertise in anatomical and organic sculpting from reference, with a portfolio…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Ability to work collaboratively and take on feedback and guidance from the…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience with translating 2D concepts or reference into 3D Character models. Making…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Ability to adapt to and work within established art styles, ensuring consistency…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "An exceptional level of character modelling in ZBrush.",
+          "kind": "required",
+          "tools": [
+            "ZBrush"
+          ]
+        },
+        {
+          "text": "Extensive knowledge of preferred 3D packages such as Maya.",
+          "kind": "required",
+          "tools": [
+            "Maya"
+          ]
+        },
+        {
+          "text": "Excellent Substance Painter texturing skills and hand painting.",
+          "kind": "required",
+          "tools": [
+            "Substance Painter"
+          ]
+        },
+        {
+          "text": "Familiarity with the entire real-time character pipeline from high-poly sculpting, retopology, UV…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "An awareness of the importance of efficient UV layouts and mesh topology…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "An understanding of development pipelines, including how your work will be used…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Excellent communication skills are essential.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Solid foundational art skills such as 2D drawing.",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "An Art degree or relevant game art course.",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Genuine passion for sculpting creatures.",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Role is not eligible for a visa.",
+          "kind": "required",
+          "tools": []
+        }
+      ],
+      "skills": [
+        "ZBrush",
+        "Maya",
+        "Substance Painter"
+      ],
+      "summary": "Hybrid: at least three days a week in the Cambridge studio.",
+      "requirements": "See the official listing for full requirements.",
+      "employment": "Permanent",
+      "checkedAt": "2026-11-19",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 52.2053,
+        "lon": 0.1218,
+        "city": "Cambridge"
+      }
+    },
+    {
       "id": "gh-rushdownstudios-4475669009",
       "sourceId": "gh:rushdownstudios",
       "title": "Game Build Engineer",

@@ -8,6 +8,7 @@ FILE = ROOT / 'src/content/jobs.json'
 BOARDS = {'epicgames':'Epic Games','riotgames':'Riot Games','roblox':'Roblox','scopely':'Scopely','2k':'2K','escapevelocityentertainmentinc':'Escape Velocity Entertainment','neteasegames':'NetEase Games','gsgcareers':'Ghost Story Games','studiokraftonboard':'KRAFTON Montréal Studio','tripledotstudios':'Tripledot Studios','rushdownstudios':'Rushdown Studios','digitalextremes':'Digital Extremes','wooga':'Wooga','goodjobgames':'Good Job Games','atariinc':'Atari'}
 BOARDS['insomniac'] = 'Insomniac Games'
 WORKABLE_BOARDS = {'storytoys': 'StoryToys'}
+LEVER_BOARDS = {'frontier': 'Frontier Developments'}
 CITIES = {
  'cary':('United States','North America',35.7915,-78.7811),'montreal':('Canada','North America',45.5019,-73.5674),
  'montréal':('Canada','North America',45.5019,-73.5674),'vancouver':('Canada','North America',49.2827,-123.1207),
@@ -181,7 +182,7 @@ def refresh():
  out=[]; failures=[]
  # Existing curated third-party listings: 200 alone is not proof of availability.
  for j in old['jobs']:
-  if j.get('sourceId','').startswith(('gh:','sr:','workable:')): continue
+  if j.get('sourceId','').startswith(('gh:','sr:','workable:','lever:')): continue
   if j.get('sourceId')=='custom:superspline-junior':
    try:
     found=superspline_junior_requirements(request(j['url']))
@@ -202,6 +203,37 @@ def refresh():
    failures.append(f"{j['url']}: {e}")
   except Exception as e: failures.append(f"{j['url']}: {e}")
   if not senior_role(j['title'],j.get('requirementsList',[])): out.append(j)
+ for slug,company in LEVER_BOARDS.items():
+  source='lever:'+slug;previous={j['id']:j for j in old['jobs'] if j.get('sourceId')==source}
+  try:
+   entries=json.loads(request(f'https://api.eu.lever.co/v0/postings/{slug}?mode=json'))
+   if not isinstance(entries,list): raise ValueError('Missing Lever jobs list')
+  except Exception as e:
+   failures.append(f'{company}: {e}');out.extend(previous.values());continue
+  for item in entries:
+   title=item.get('text','').strip();loc=item.get('categories',{}).get('location','');id=f'lever-{slug}-{item.get("id","")}'
+   if not EARLY_TITLE.search(title) or not CREATIVE.search(title) or item.get('workplaceType')!='hybrid' or not re.search(r'\bCambridge\b',loc,re.I): continue
+   full=[]
+   for section in item.get('lists',[]):
+    heading=section.get('text','')
+    mode='preferred' if re.search(r'\b(?:bonus|desirable|nice.to.have)\b',heading,re.I) else 'required' if re.search(r'what you.ll bring|requirements|qualifications',heading,re.I) else None
+    if mode:
+     parser=ListingBlocks();parser.feed(html.unescape(section.get('content','')))
+     full.extend({'text':v,'kind':mode,'tools':mentioned_tools(v)} for _,k,v in sorted(parser.blocks) if k=='li')
+   if not full:
+    failures.append(f'{company} {id}: requirement section missing')
+    if id in previous: out.append(previous[id])
+    continue
+   if senior_role(title,full): continue
+   description=item.get('descriptionPlain','');requirements=[dict(x,text=short_requirement(x['text'])) for x in full]
+   if re.search(r'not eligible for visa',description,re.I): requirements.append({'text':'Role is not eligible for a visa.','kind':'required','tools':[]})
+   posted=datetime.datetime.fromtimestamp(item.get('createdAt',0)/1000,datetime.timezone.utc).date().isoformat() if item.get('createdAt') else ''
+   out.append({'id':id,'sourceId':source,'title':title,'company':company,'sourceLabel':'Official careers page','url':item['hostedUrl'],
+    'category':'Game industry - AI not specified','pay':'See listing','payNote':'Salary not disclosed','location':'Cambridge, United Kingdom',
+    'countries':['United Kingdom'],'regions':['Europe'],'posted':posted,'requirementsList':requirements,
+    'skills':list(dict.fromkeys(t for x in full for t in x['tools']))[:8],'summary':'Hybrid: at least three days a week in the Cambridge studio.' if re.search(r'minimum\s+3\s+days\s+per\s+week\s+in\s+the\s+studio',description,re.I) else 'Hybrid role in Cambridge. Check the source for the working pattern.',
+    'requirements':'See the official listing for full requirements.','employment':item.get('categories',{}).get('commitment') or 'See listing',
+    'checkedAt':today,'workMode':'Hybrid','coordinates':{'lat':52.2053,'lon':0.1218,'city':'Cambridge'}})
  for slug,company in WORKABLE_BOARDS.items():
   source='workable:'+slug; previous={j['id']:j for j in old['jobs'] if j.get('sourceId')==source}
   try:
@@ -337,7 +369,7 @@ def refresh():
      job['coordinates']={'lat':float(loc['latitude']),'lon':float(loc['longitude']),'city':loc['city']}
    except (TypeError,ValueError): pass
    out.append(job)
- if len(failures)>=len(BOARDS)+len(WORKABLE_BOARDS)+1+len([j for j in old['jobs'] if not j.get('sourceId','').startswith(('gh:','sr:','workable:'))]): raise SystemExit('Every source failed; data was not changed')
+ if len(failures)>=len(BOARDS)+len(WORKABLE_BOARDS)+len(LEVER_BOARDS)+1+len([j for j in old['jobs'] if not j.get('sourceId','').startswith(('gh:','sr:','workable:','lever:'))]): raise SystemExit('Every source failed; data was not changed')
  out=[j for j in out if not senior_role(j.get('title',''),j.get('requirementsList',[]))]
  out.sort(key=lambda j:(j.get('posted',''),j.get('title','')),reverse=True)
  FILE.write_text(json.dumps({'lastUpdated':today,'jobs':out},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

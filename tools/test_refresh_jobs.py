@@ -11,6 +11,7 @@ class RefreshTests(unittest.TestCase):
   self.filepatch=patch.object(bot,'FILE',self.file); self.filepatch.start(); self.addCleanup(self.filepatch.stop)
   self.boardpatch=patch.object(bot,'BOARDS',{'studio':'Studio'});self.boardpatch.start();self.addCleanup(self.boardpatch.stop)
   self.workablepatch=patch.object(bot,'WORKABLE_BOARDS',{});self.workablepatch.start();self.addCleanup(self.workablepatch.stop)
+  self.leverpatch=patch.object(bot,'LEVER_BOARDS',{});self.leverpatch.start();self.addCleanup(self.leverpatch.stop)
  def run_bot(self, fn):
   with patch.object(bot,'request',side_effect=fn), contextlib.redirect_stdout(io.StringIO()): bot.refresh()
  def test_closed_job_removed_when_successful_feed_omits_it(self):
@@ -46,6 +47,14 @@ class RefreshTests(unittest.TestCase):
    if 'greenhouse' in url: return json.dumps({'jobs':[]})
    return json.dumps({'content':[],'totalFound':0})
   with patch.object(bot,'WORKABLE_BOARDS',{'storytoys':'StoryToys'}): self.run_bot(fetch)
+  jobs=json.loads(self.file.read_text(encoding='utf-8'))['jobs'];self.assertEqual(jobs[0]['checkedAt'],'2026-01-01')
+ def test_unavailable_lever_feed_preserves_previous_check(self):
+  self.file.write_text(json.dumps({'lastUpdated':'2026-01-01','jobs':[{'id':'lever-frontier-old','sourceId':'lever:frontier','title':'Graduate Artist','checkedAt':'2026-01-01'}]}),encoding='utf-8')
+  def fetch(url):
+   if 'lever' in url: raise OSError('unavailable')
+   if 'greenhouse' in url: return json.dumps({'jobs':[]})
+   return json.dumps({'content':[],'totalFound':0})
+  with patch.object(bot,'LEVER_BOARDS',{'frontier':'Frontier Developments'}): self.run_bot(fetch)
   jobs=json.loads(self.file.read_text(encoding='utf-8'))['jobs'];self.assertEqual(jobs[0]['checkedAt'],'2026-01-01')
 class HybridTests(unittest.TestCase):
  def test_work_arrangement_is_not_confused_with_game_genre(self):
