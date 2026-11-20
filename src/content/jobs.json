@@ -1988,6 +1988,92 @@
       "workMode": "Not specified"
     },
     {
+      "id": "gh-gramgamescareers-6231861004",
+      "sourceId": "gh:gramgamescareers",
+      "title": "Production Intern",
+      "company": "Gram Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.greenhouse.io/gramgamescareers/jobs/6231861004",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "London, UK",
+      "countries": [
+        "United Kingdom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-10-22",
+      "requirementsList": [
+        {
+          "text": "Recent relevant degree completed within the past 12 months.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Effective at driving order out of uncertainty, with excellent prioritization and decision-making…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Influential across both in-person and written communication channels.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Effective in one-to-one as well as one-to-many communication.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Effective team collaborator and meeting facilitator.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience with development methodologies such as Agile, Scrum, or Kanban.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience with project status and risk reporting.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Basic understanding of planning tools (such as Atlassian Jira, Airtable, Smartsheet, AI…",
+          "kind": "required",
+          "tools": [
+            "Jira"
+          ]
+        },
+        {
+          "text": "A real passion for games.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Hybrid: at least two days a week in the London office.",
+          "kind": "required",
+          "tools": []
+        }
+      ],
+      "skills": [
+        "Jira"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-20",
+      "workMode": "Hybrid",
+      "coordinates": {
+        "lat": 51.5072,
+        "lon": -0.1276,
+        "city": "London"
+      }
+    },
+    {
       "id": "gh-studiokraftonboard-8906044002",
       "sourceId": "gh:studiokraftonboard",
       "title": "Concepteur.trice de jeux AI / Game Designer AI",
@@ -4174,6 +4260,77 @@
       "workMode": "Location based"
     },
     {
+      "id": "gh-epicgames-6141143004",
+      "sourceId": "gh:epicgames",
+      "title": "Machine Learning Engineer, Memory",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6141143004?gh_jid=6141143004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "London,England,United Kingdom",
+      "countries": [
+        "United Kingdom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "2026-08-11",
+      "requirementsList": [
+        {
+          "text": "PhD in Computer Science, Mathematics or related field, or 3+ years of…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience creating machine learning algorithms for vision and/or language problems and deploying…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Expert, hands-on knowledge of",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Foundational models and vision and/or language, incl. local deployment and model post-training…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Memory, state, or long-horizon behaviour in foundation models: your experience may come…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Python and associated ML tools/frameworks (numpy, scipy, sklearn, pytorch)",
+          "kind": "required",
+          "tools": [
+            "Python",
+            "PyTorch"
+          ]
+        },
+        {
+          "text": "Experience with working collaboratively with other developers, following a flexible and agile…",
+          "kind": "required",
+          "tools": []
+        }
+      ],
+      "skills": [
+        "Unreal Engine",
+        "Python",
+        "Machine Learning",
+        "PyTorch",
+        "Unreal"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-20",
+      "workMode": "Location based"
+    },
+    {
       "id": "gh-epicgames-6134271004",
       "sourceId": "gh:epicgames",
       "title": "Machine Learning Engineer, Memory",
@@ -4245,68 +4402,70 @@
       "workMode": "Location based"
     },
     {
-      "id": "gh-epicgames-6141143004",
+      "id": "gh-epicgames-6138140004",
       "sourceId": "gh:epicgames",
-      "title": "Machine Learning Engineer, Memory",
+      "title": "Machine Learning Intern",
       "company": "Epic Games",
       "sourceLabel": "Official careers page",
-      "url": "https://epicgames.com/careers/jobs/6141143004?gh_jid=6141143004",
+      "url": "https://epicgames.com/careers/jobs/6138140004?gh_jid=6138140004",
       "category": "AI & machine learning in gaming",
       "pay": "See listing",
       "payNote": "Check source for pay",
-      "location": "London,England,United Kingdom",
+      "location": "Montreal,Quebec,Canada",
       "countries": [
-        "United Kingdom"
+        "Canada"
       ],
       "regions": [
-        "Europe"
+        "North America"
       ],
-      "posted": "2026-08-11",
+      "posted": "2026-08-07",
       "requirementsList": [
         {
-          "text": "PhD in Computer Science, Mathematics or related field, or 3+ years of…",
+          "text": "An ongoing or recently completed (within the last 12 months) PhD in…",
           "kind": "required",
           "tools": []
         },
         {
-          "text": "Experience creating machine learning algorithms for vision and/or language problems and deploying…",
+          "text": "A record of publication in top conferences/journals",
           "kind": "required",
           "tools": []
         },
         {
-          "text": "Expert, hands-on knowledge of",
+          "text": "Experience implementing deep learning algorithms for problems in computer vision, natural language…",
           "kind": "required",
           "tools": []
         },
         {
-          "text": "Foundational models and vision and/or language, incl. local deployment and model post-training…",
+          "text": "Hands-on knowledge of state-of-the-art ML methods, such as Transformers, diffusion models, and…",
           "kind": "required",
           "tools": []
         },
         {
-          "text": "Memory, state, or long-horizon behaviour in foundation models: your experience may come…",
+          "text": "Experience with post-training foundation models, including SFT, preference training, and reinforcement learning",
           "kind": "required",
           "tools": []
         },
         {
-          "text": "Python and associated ML tools/frameworks (numpy, scipy, sklearn, pytorch)",
+          "text": "Excellent AI coding and experimental programming skills",
           "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Desirable: game development experience in either C++ or C#",
+          "kind": "preferred",
           "tools": [
-            "Python",
-            "PyTorch"
+            "C++",
+            "C#"
           ]
-        },
-        {
-          "text": "Experience with working collaboratively with other developers, following a flexible and agile…",
-          "kind": "required",
-          "tools": []
         }
       ],
       "skills": [
         "Unreal Engine",
-        "Python",
+        "C++",
+        "C#",
         "Machine Learning",
-        "PyTorch",
+        "Deep Learning",
+        "LLMs",
         "Unreal"
       ],
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
@@ -4430,79 +4589,6 @@
         },
         {
           "text": "Excellent AI coding and experimental engineering skills",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Desirable: game development experience in either C++ or C#",
-          "kind": "preferred",
-          "tools": [
-            "C++",
-            "C#"
-          ]
-        }
-      ],
-      "skills": [
-        "Unreal Engine",
-        "C++",
-        "C#",
-        "Machine Learning",
-        "Deep Learning",
-        "LLMs",
-        "Unreal"
-      ],
-      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
-      "requirements": "See the official listing for experience, qualifications and role details.",
-      "employment": "See listing",
-      "checkedAt": "2026-11-20",
-      "workMode": "Location based"
-    },
-    {
-      "id": "gh-epicgames-6138140004",
-      "sourceId": "gh:epicgames",
-      "title": "Machine Learning Intern",
-      "company": "Epic Games",
-      "sourceLabel": "Official careers page",
-      "url": "https://epicgames.com/careers/jobs/6138140004?gh_jid=6138140004",
-      "category": "AI & machine learning in gaming",
-      "pay": "See listing",
-      "payNote": "Check source for pay",
-      "location": "Montreal,Quebec,Canada",
-      "countries": [
-        "Canada"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "posted": "2026-08-07",
-      "requirementsList": [
-        {
-          "text": "An ongoing or recently completed (within the last 12 months) PhD in…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "A record of publication in top conferences/journals",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Experience implementing deep learning algorithms for problems in computer vision, natural language…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Hands-on knowledge of state-of-the-art ML methods, such as Transformers, diffusion models, and…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Experience with post-training foundation models, including SFT, preference training, and reinforcement learning",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Excellent AI coding and experimental programming skills",
           "kind": "required",
           "tools": []
         },

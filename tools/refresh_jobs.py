@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 FILE = ROOT / 'src/content/jobs.json'
 BOARDS = {'epicgames':'Epic Games','riotgames':'Riot Games','roblox':'Roblox','scopely':'Scopely','2k':'2K','escapevelocityentertainmentinc':'Escape Velocity Entertainment','neteasegames':'NetEase Games','gsgcareers':'Ghost Story Games','studiokraftonboard':'KRAFTON Montréal Studio','tripledotstudios':'Tripledot Studios','rushdownstudios':'Rushdown Studios','digitalextremes':'Digital Extremes','wooga':'Wooga','goodjobgames':'Good Job Games','atariinc':'Atari'}
 BOARDS['insomniac'] = 'Insomniac Games'
+BOARDS['gramgamescareers'] = 'Gram Games'
 WORKABLE_BOARDS = {'storytoys': 'StoryToys'}
 LEVER_BOARDS = {'frontier': 'Frontier Developments'}
 CITIES = {
@@ -35,7 +36,7 @@ CITIES = {
  'newcastle':('United Kingdom','Europe',54.9783,-1.6178),'manchester':('United Kingdom','Europe',53.4808,-2.2426),
 }
 PATTERN = re.compile(r'\b(?:AI|artificial intelligence|machine learning|generative AI|genAI)\b', re.I)
-HYBRID = re.compile(r'\b(?:on (?:a )?hybrid basis|hybrid\s+(?:working|work(?:ing)? model|work schedule|schedule|arrangement|basis|with|[0-9])|work(?:ing)?\s+(?:in\s+)?(?:a\s+)?hybrid)\b', re.I)
+HYBRID = re.compile(r'\b(?:on (?:a )?hybrid basis|hybrid\s+(?:working|work(?:ing)? model|work schedule|schedule|arrangement|basis|with|from|[0-9])|work(?:ing)?\s+(?:in\s+)?(?:a\s+)?hybrid)\b', re.I)
 CREATIVE = re.compile(r'\b(?:game|gameplay|developer|programmer|engineer|designer|artist|animator|animation|quality|tools)\b', re.I)
 SKILLS = ['Unreal Engine','Unity','Godot','Python','C++','C#','Java','Lua','GDScript','Machine Learning','Generative AI','LLM','Deep Learning','PyTorch','TensorFlow','Photoshop','Illustrator','Figma','Blender','Maya','Houdini','ZBrush','Substance Painter','After Effects','Premiere Pro','Stable Diffusion','ComfyUI','Flux','Midjourney','GitHub','Git','Jira','Confluence','SQL','TypeScript','JavaScript','Docker','Kubernetes','AWS','Google Cloud','Azure','CMake','Perforce','Blueprints','3D Studio Max','3ds Max','Aseprite','LibreSprite','Solar2D','Defold','Panda3D','LLMs','Claude Code','Codex','GitHub Copilot','ChatGPT','Cinema 4D','Octane Render','Premiere Pro','Visual Studio','Terraform','Datadog','Kibana','Miro','Excel','PowerPoint','Shader Graph','HLSL','Ruby','Unreal','CryEngine','Cinema4D','Fiddler','Firebug','Charles Proxy','MySQL','PostgreSQL','Prometheus','Grafana','K6','Locust','NATS','A1111']
 
@@ -61,6 +62,10 @@ def short_requirement(value):
  # Keep factual requirements in short, source-linked fragments; the original
  # listing remains the authority for context and the full wording.
  value=re.sub(r'\s+',' ',value).strip(' •–—:-')
+ if re.search(r'recent graduate.*(?:within|in) the past 12 months',value,re.I):
+  return 'Recent relevant degree completed within the past 12 months.'
+ if re.search(r'work hybrid from the Gram Games London office at least two days a week',value,re.I):
+  return 'Hybrid: at least two days a week in the London office.'
  words=value.split()
  return value if len(words)<=12 else ' '.join(words[:12]).rstrip(',;:')+'…'
 
@@ -285,11 +290,12 @@ def refresh():
    meta={x.get('name',''):x.get('value') for x in (item.get('metadata') or []) if isinstance(x,dict)}
    explicit_onsite=bool(re.search(r'\b(?:on[ -]site|in[ -]office)\b',title,re.I))
    explicit_remote=is_remote_listing(title,location,meta)
+   if slug=='gramgamescareers' and not (EARLY_TITLE.search(title) and (explicit_remote or explicit_hybrid)): continue
    # This studio's board contains many onsite-only internships; add only
    # explicitly remote early-career roles to the remote-focused collection.
    if slug=='insomniac' and not (explicit_remote and EARLY_TITLE.search(title)): continue
    ai_role=bool(PATTERN.search(title) or (workflow and creative))
-   if not ai_role and not ((explicit_remote or explicit_hybrid or EARLY_TITLE.search(title)) and CREATIVE.search(title)): continue
+   if not ai_role and not ((explicit_remote or explicit_hybrid or EARLY_TITLE.search(title)) and (CREATIVE.search(title) or (slug=='gramgamescareers' and re.search(r'\bproduction\b',title,re.I)))): continue
    if re.search(r'\b(?:HR systems|enterprise security|enterprise data|enterprise AI|advertis|ads |ad platform)\b',title,re.I): continue
    if not ai_role: category='Game industry - AI mentioned' if PATTERN.search(text) else 'Game industry - AI not specified'
    elif re.search(r'\b(?:NPC|behaviou?r trees?|enemy behaviors?|gameplay AI)\b',text,re.I) and not re.search(r'\b(?:generative AI|LLM|large language model)\b',text,re.I): category='Gameplay AI & NPCs'

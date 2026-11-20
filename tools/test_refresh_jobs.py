@@ -60,6 +60,7 @@ class HybridTests(unittest.TestCase):
  def test_work_arrangement_is_not_confused_with_game_genre(self):
   self.assertFalse(bot.is_hybrid_listing('Game Designer (Hybrid Casual)','Build a hybrid casual mobile game.','Barcelona, Spain'))
   self.assertTrue(bot.is_hybrid_listing('Game Designer','Join our Barcelona team on a hybrid basis.','Barcelona, Spain'))
+  self.assertTrue(bot.is_hybrid_listing('Production Intern','Ability to work hybrid from our London office at least two days a week.','London, UK'))
  def test_remote_location_is_not_mislabelled_by_other_office(self):
   self.assertFalse(bot.is_hybrid_listing('Game Engineer','Hybrid work in Barcelona or remotely in the UK.','United Kingdom'))
   self.assertFalse(bot.is_hybrid_listing('Platform Engineer','Our company has a hybrid work model.','United States (Remote)'))
@@ -95,6 +96,10 @@ class RequirementTests(unittest.TestCase):
  def test_long_requirement_is_short(self):
   result=bot.extract_requirements('<h2>Requirements</h2><li>One two three four five six seven eight nine ten eleven twelve thirteen fourteen</li>')
   self.assertLessEqual(len(result[0]['text'].split()),12)
+ def test_recent_graduate_requirement_keeps_timing(self):
+  text='Recent graduate (having completed an undergraduate or postgraduate degree within the past 12 months) in Game Development or a related field.'
+  self.assertEqual(bot.short_requirement(text),'Recent relevant degree completed within the past 12 months.')
+  self.assertEqual(bot.short_requirement('Ability to work hybrid from the Gram Games London office at least two days a week.'),'Hybrid: at least two days a week in the London office.')
 
 class SeniorityTests(unittest.TestCase):
  def test_rejects_senior_and_lead_titles(self):
