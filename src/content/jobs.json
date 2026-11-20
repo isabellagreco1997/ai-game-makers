@@ -1,52 +1,24 @@
 {
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-20",
   "jobs": [
     {
-      "id": "gh-roblox-8386080",
-      "sourceId": "gh:roblox",
-      "title": "[Summer 2027 Canada] Software Engineer Intern, Engine",
-      "company": "Roblox",
-      "sourceLabel": "Official careers page",
-      "url": "https://careers.roblox.com/jobs/8386080?gh_jid=8386080",
-      "category": "Game industry - AI not specified",
-      "pay": "See listing",
-      "payNote": "Check source for pay",
-      "location": "Vancouver, British Columbia, Canada",
-      "countries": [
-        "Canada"
-      ],
-      "regions": [
-        "North America"
-      ],
-      "posted": "2026-11-18",
-      "requirementsList": [],
-      "skills": [
-        "C++"
-      ],
-      "summary": "The listing does not specify AI.",
-      "requirements": "See the official listing for experience, qualifications and role details.",
-      "employment": "See listing",
-      "checkedAt": "2026-11-19",
-      "workMode": "Not specified"
-    },
-    {
-      "id": "sr-gameloft-744000162265219",
+      "id": "sr-gameloft-744000162478759",
       "sourceId": "sr:Gameloft",
       "title": "Sound Designer Intern",
       "company": "Gameloft",
       "sourceLabel": "Official careers page",
-      "url": "https://jobs.smartrecruiters.com/Gameloft/744000162265219-sound-designer-intern-",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000162478759-sound-designer-intern-",
       "category": "Game industry - AI mentioned",
       "pay": "See listing",
       "payNote": "Check source for pay",
-      "location": "Ho Chi Minh City, , Vietnam",
+      "location": "Hanoi, , Vietnam",
       "countries": [
         "Vietnam"
       ],
       "regions": [
         "Asia"
       ],
-      "posted": "2026-11-18",
+      "posted": "2026-11-19",
       "requirementsList": [
         {
           "text": "Currently studying Audio Production, Sound Design, Music Technology, Game Development, or a…",
@@ -100,8 +72,222 @@
       "summary": "Explore this role at a games company. Check the listing for its requirements.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "Full-time",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid"
+    },
+    {
+      "id": "sr-gameloft-744000162476551",
+      "sourceId": "sr:Gameloft",
+      "title": "Sound Designer Intern",
+      "company": "Gameloft",
+      "sourceLabel": "Official careers page",
+      "url": "https://jobs.smartrecruiters.com/Gameloft/744000162476551-sound-designer-intern-",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Ho Chi Minh City, , Vietnam",
+      "countries": [
+        "Vietnam"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "posted": "2026-11-19",
+      "requirementsList": [
+        {
+          "text": "Currently studying Audio Production, Sound Design, Music Technology, Game Development, or a…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Basic proficiency with DAWs such as Reaper, Pro Tools, Audition, or similar…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Understanding of sound design fundamentals, audio editing, and asset management.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Passion for video games, interactive audio, and emerging technologies.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Familiarity with Unity, Unreal Engine, Wwise, or FMOD is a plus.",
+          "kind": "preferred",
+          "tools": [
+            "Unreal Engine",
+            "Unity"
+          ]
+        },
+        {
+          "text": "Portfolio or demo reel showcasing audio-related work is encouraged.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Creative, curious, detail-oriented, and eager to learn.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Good communication, teamwork, and openness to feedback.",
+          "kind": "required",
+          "tools": []
+        }
+      ],
+      "skills": [
+        "Unreal Engine",
+        "Unity",
+        "Unreal"
+      ],
+      "summary": "Explore this role at a games company. Check the listing for its requirements.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "Full-time",
+      "checkedAt": "2026-11-20",
+      "workMode": "Hybrid"
+    },
+    {
+      "id": "gh-tripledotstudios-5042795101",
+      "sourceId": "gh:tripledotstudios",
+      "title": "Casual Mobile Level Designer - Peoplefun",
+      "company": "Tripledot Studios",
+      "sourceLabel": "Official careers page",
+      "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/5042795101",
+      "category": "Game industry - AI mentioned",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "USA",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-11-19",
+      "requirementsList": [
+        {
+          "text": "2+ years of professional level design experience on casual games, OR 3+…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Hands-on experience building levels using level editors.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Comfort with Unity and the basic tools of game development (like source…",
+          "kind": "required",
+          "tools": [
+            "Unity"
+          ]
+        },
+        {
+          "text": "Working knowledge of level design fundamentals: progression, pacing, difficulty curves, and onboarding…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Demonstrated experience revising your own designs based on playtest feedback.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Clear written and verbal communication of design intent, to collaborate with artists…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Ability to work on a hybrid schedule from our Dallas office.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Shipped levels in a puzzle, word, block, or match game, with samples…",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Experience reading level funnels and tuning from data; familiarity with tools like…",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Experience prototyping new mechanics with AI (or on paper or in whitebox)…",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Fluency with spreadsheets for authoring and tuning content (formulas, ramp tables, parameter…",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Experience taking a game from prototype through soft launch, or working on…",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Scripting experience (C# or Python), or experience with procedural or AI-assisted content…",
+          "kind": "preferred",
+          "tools": [
+            "Python",
+            "C#"
+          ]
+        },
+        {
+          "text": "Experience designing or evaluating A/B tests on level content.",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "Recent examples of silly-little-prototypes or actually-useful-tools you’ve built prompted AI to create…",
+          "kind": "preferred",
+          "tools": []
+        },
+        {
+          "text": "A habit of playing current top-grossing casual games, explaining why they work…",
+          "kind": "preferred",
+          "tools": []
+        }
+      ],
+      "skills": [
+        "Unity",
+        "Python",
+        "C#"
+      ],
+      "summary": "AI is mentioned; check the listing for context.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-20",
+      "workMode": "Hybrid"
+    },
+    {
+      "id": "gh-roblox-8386080",
+      "sourceId": "gh:roblox",
+      "title": "[Summer 2027 Canada] Software Engineer Intern, Engine",
+      "company": "Roblox",
+      "sourceLabel": "Official careers page",
+      "url": "https://careers.roblox.com/jobs/8386080?gh_jid=8386080",
+      "category": "Game industry - AI not specified",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Vancouver, British Columbia, Canada",
+      "countries": [
+        "Canada"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "posted": "2026-11-18",
+      "requirementsList": [],
+      "skills": [
+        "C++"
+      ],
+      "summary": "The listing does not specify AI.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-20",
+      "workMode": "Not specified"
     },
     {
       "id": "gh-scopely-5486875008",
@@ -203,7 +389,7 @@
       "summary": "AI is mentioned; check the listing for context.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": 34.0211,
@@ -308,7 +494,7 @@
       "summary": "AI is mentioned; check the listing for context.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": -6.2088,
@@ -418,7 +604,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Not specified"
     },
     {
@@ -546,7 +732,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Remote eligible"
     },
     {
@@ -679,7 +865,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Not specified"
     },
     {
@@ -751,7 +937,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Not specified"
     },
     {
@@ -809,7 +995,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Not specified"
     },
     {
@@ -881,7 +1067,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Not specified"
     },
     {
@@ -983,7 +1169,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": -6.2088,
@@ -1081,7 +1267,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Location based"
     },
     {
@@ -1109,7 +1295,7 @@
       "requirements": "Bachelor’s degree or higher and at least two years with relevant tools.",
       "company": "OpenTrain AI",
       "employment": "Contract",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "requirementsList": [
         {
           "text": "Schedule: Part-time, with no set schedule or minimum hour requirement.",
@@ -1204,7 +1390,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Remote eligible"
     },
     {
@@ -1316,7 +1502,7 @@
       "summary": "Hybrid: at least three days a week in the Cambridge studio.",
       "requirements": "See the official listing for full requirements.",
       "employment": "Permanent",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": 52.2053,
@@ -1447,7 +1633,7 @@
       "summary": "AI is mentioned; check the listing for context.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Remote eligible"
     },
     {
@@ -1519,7 +1705,7 @@
       "summary": "AI is mentioned; check the listing for context.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": 52.52,
@@ -1594,17 +1780,17 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Location based"
     },
     {
       "id": "gh-tripledotstudios-5015075101",
       "sourceId": "gh:tripledotstudios",
-      "title": "Game Level Designer - Peoplefun",
+      "title": "Casual Mobile Level Designer - Peoplefun",
       "company": "Tripledot Studios",
       "sourceLabel": "Official careers page",
       "url": "https://job-boards.eu.greenhouse.io/tripledotstudios/jobs/5015075101",
-      "category": "AI tools in game work",
+      "category": "Game industry - AI mentioned",
       "pay": "See listing",
       "payNote": "Check source for pay",
       "location": "Dallas",
@@ -1707,10 +1893,10 @@
         "Python",
         "C#"
       ],
-      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "summary": "AI is mentioned; check the listing for context.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": 32.7767,
@@ -1798,7 +1984,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Not specified"
     },
     {
@@ -1827,7 +2013,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Not specified"
     },
     {
@@ -1931,7 +2117,7 @@
       "summary": "AI is mentioned; check the listing for context.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Remote eligible"
     },
     {
@@ -2010,7 +2196,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": -6.2088,
@@ -2046,7 +2232,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Not specified"
     },
     {
@@ -2127,7 +2313,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Remote eligible"
     },
     {
@@ -2255,7 +2441,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Remote eligible"
     },
     {
@@ -2337,7 +2523,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": 19.4326,
@@ -2415,7 +2601,7 @@
       "summary": "AI is mentioned; check the listing for context.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": -6.2088,
@@ -2487,7 +2673,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": -6.2088,
@@ -2554,7 +2740,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": -6.2088,
@@ -2654,7 +2840,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Remote eligible"
     },
     {
@@ -2717,79 +2903,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
-      "workMode": "Hybrid",
-      "coordinates": {
-        "lat": 41.3874,
-        "lon": 2.1686,
-        "city": "Barcelona"
-      }
-    },
-    {
-      "id": "gh-scopely-5442573008",
-      "sourceId": "gh:scopely",
-      "title": "Associate Economy Game Designer",
-      "company": "Scopely",
-      "sourceLabel": "Official careers page",
-      "url": "https://job-boards.greenhouse.io/scopely/jobs/5442573008?gh_jid=5442573008",
-      "category": "Game industry - AI not specified",
-      "pay": "See listing",
-      "payNote": "Check source for pay",
-      "location": "ES - Barcelona, Spain",
-      "countries": [
-        "Spain"
-      ],
-      "regions": [
-        "Europe"
-      ],
-      "posted": "2026-10-07",
-      "requirementsList": [
-        {
-          "text": "A deep passion for game systems and mechanics across mobile and PC",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "0-2 years of experience designing game systems or balancing game economies",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Excellent communication skills, with the ability to gather feedback, align stakeholders, and…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Passion for playing and analyzing games across multiple genres and platforms",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Comfortable working independently while thriving in a highly collaborative environment",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Basic understanding of free-to-play monetization mechanics including game balancing and virtual economy…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Love for strategy games such as 4X or RTS games",
-          "kind": "preferred",
-          "tools": []
-        },
-        {
-          "text": "Experience with mobile game systems and design sensibilities",
-          "kind": "preferred",
-          "tools": []
-        }
-      ],
-      "skills": [],
-      "summary": "The listing does not specify AI.",
-      "requirements": "See the official listing for experience, qualifications and role details.",
-      "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": 41.3874,
@@ -2859,7 +2973,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Not specified"
     },
     {
@@ -2945,7 +3059,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Remote eligible"
     },
     {
@@ -3036,7 +3150,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Remote eligible"
     },
     {
@@ -3112,7 +3226,7 @@
       "summary": "AI is mentioned; check the listing for context.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": -6.2088,
@@ -3190,7 +3304,7 @@
       "summary": "AI is mentioned; check the listing for context.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Location based"
     },
     {
@@ -3274,7 +3388,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": -6.2088,
@@ -3339,7 +3453,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Location based"
     },
     {
@@ -3367,7 +3481,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Not specified"
     },
     {
@@ -3456,7 +3570,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Remote eligible"
     },
     {
@@ -3530,7 +3644,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Not specified"
     },
     {
@@ -3612,7 +3726,7 @@
       "summary": "AI is mentioned; check the listing for context.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Location based"
     },
     {
@@ -3690,7 +3804,7 @@
       "summary": "AI is mentioned; check the listing for context.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Location based"
     },
     {
@@ -3756,7 +3870,7 @@
       "summary": "AI is mentioned; check the listing for context.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Location based"
     },
     {
@@ -3847,7 +3961,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Not specified"
     },
     {
@@ -3918,7 +4032,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Location based"
     },
     {
@@ -3989,7 +4103,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Location based"
     },
     {
@@ -4056,7 +4170,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Location based"
     },
     {
@@ -4127,7 +4241,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Location based"
     },
     {
@@ -4198,7 +4312,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Location based"
     },
     {
@@ -4271,7 +4385,76 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
+      "workMode": "Location based"
+    },
+    {
+      "id": "gh-epicgames-6138134004",
+      "sourceId": "gh:epicgames",
+      "title": "Machine Learning Intern",
+      "company": "Epic Games",
+      "sourceLabel": "Official careers page",
+      "url": "https://epicgames.com/careers/jobs/6138134004?gh_jid=6138134004",
+      "category": "AI & machine learning in gaming",
+      "pay": "See listing",
+      "payNote": "Check source for pay",
+      "location": "Multiple Locations",
+      "countries": [],
+      "regions": [],
+      "posted": "2026-08-07",
+      "requirementsList": [
+        {
+          "text": "An ongoing or recently completed (within the last 12 months) PhD in…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "A record of publication in top conferences/journals",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience implementing deep learning algorithms for problems in computer vision, natural language…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Hands-on knowledge of state-of-the-art ML methods, such as Transformers, diffusion models, and…",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Experience with post-training foundation models, including SFT, preference training, and reinforcement learning",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Excellent AI coding and experimental engineering skills",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Desirable: game development experience in either C++ or C#",
+          "kind": "preferred",
+          "tools": [
+            "C++",
+            "C#"
+          ]
+        }
+      ],
+      "skills": [
+        "Unreal Engine",
+        "C++",
+        "C#",
+        "Machine Learning",
+        "Deep Learning",
+        "LLMs",
+        "Unreal"
+      ],
+      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
+      "requirements": "See the official listing for experience, qualifications and role details.",
+      "employment": "See listing",
+      "checkedAt": "2026-11-20",
       "workMode": "Location based"
     },
     {
@@ -4344,76 +4527,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
-      "workMode": "Location based"
-    },
-    {
-      "id": "gh-epicgames-6138134004",
-      "sourceId": "gh:epicgames",
-      "title": "Machine Learning Intern",
-      "company": "Epic Games",
-      "sourceLabel": "Official careers page",
-      "url": "https://epicgames.com/careers/jobs/6138134004?gh_jid=6138134004",
-      "category": "AI & machine learning in gaming",
-      "pay": "See listing",
-      "payNote": "Check source for pay",
-      "location": "Multiple Locations",
-      "countries": [],
-      "regions": [],
-      "posted": "2026-08-07",
-      "requirementsList": [
-        {
-          "text": "An ongoing or recently completed (within the last 12 months) PhD in…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "A record of publication in top conferences/journals",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Experience implementing deep learning algorithms for problems in computer vision, natural language…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Hands-on knowledge of state-of-the-art ML methods, such as Transformers, diffusion models, and…",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Experience with post-training foundation models, including SFT, preference training, and reinforcement learning",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Excellent AI coding and experimental engineering skills",
-          "kind": "required",
-          "tools": []
-        },
-        {
-          "text": "Desirable: game development experience in either C++ or C#",
-          "kind": "preferred",
-          "tools": [
-            "C++",
-            "C#"
-          ]
-        }
-      ],
-      "skills": [
-        "Unreal Engine",
-        "C++",
-        "C#",
-        "Machine Learning",
-        "Deep Learning",
-        "LLMs",
-        "Unreal"
-      ],
-      "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
-      "requirements": "See the official listing for experience, qualifications and role details.",
-      "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Location based"
     },
     {
@@ -4515,7 +4629,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": 41.3874,
@@ -4634,7 +4748,7 @@
       "summary": "Explore this AI-related role at a games company. Check the source for the role’s focus.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": 12.9716,
@@ -4674,7 +4788,7 @@
       "summary": "AI is mentioned; check the listing for context.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Not specified"
     },
     {
@@ -4813,7 +4927,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": 12.9716,
@@ -5057,7 +5171,7 @@
       "summary": "Explore this role at a games company. Check the listing for its requirements.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "Full-time",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": 45.5018869,
@@ -5153,7 +5267,7 @@
       "summary": "AI is mentioned; check the listing for context.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": 19.4326,
@@ -5221,7 +5335,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Remote eligible"
     },
     {
@@ -5311,7 +5425,7 @@
       "summary": "AI is mentioned; check the listing for context.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": 41.3874,
@@ -5543,7 +5657,7 @@
       "summary": "AI is mentioned; check the listing for context.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": 41.3874,
@@ -5580,7 +5694,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": -6.2088,
@@ -5638,7 +5752,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Remote eligible"
     },
     {
@@ -5701,7 +5815,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Remote eligible"
     },
     {
@@ -5967,7 +6081,7 @@
       "summary": "The listing does not specify AI.",
       "requirements": "See the official listing for experience, qualifications and role details.",
       "employment": "See listing",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Hybrid",
       "coordinates": {
         "lat": 41.3874,
@@ -6144,7 +6258,7 @@
       "summary": "Junior animation role; remote in the UK or office in Leamington Spa.",
       "requirements": "See the official listing for full requirements.",
       "employment": "Permanent",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "workMode": "Remote eligible"
     }
   ]
