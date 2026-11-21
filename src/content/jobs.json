@@ -6098,6 +6098,77 @@
       }
     },
     {
+      "id": "flix-junior-tools-creator",
+      "sourceId": "custom:flix-junior-tools",
+      "title": "Junior Tools Creator",
+      "company": "Flix Interactive",
+      "sourceLabel": "Official careers page",
+      "url": "https://www.flixinteractive.com/vacancies/junior-tools-creator/",
+      "category": "AI tools in game work",
+      "pay": "See listing",
+      "payNote": "Salary not disclosed",
+      "location": "United Kingdom (Remote)",
+      "countries": [
+        "United Kingdom"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "posted": "",
+      "requirementsList": [
+        {
+          "text": "Show examples of improving processes with tools.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Good UI and tool design judgement.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Familiarity with AI-assisted tools such as Replit.",
+          "kind": "required",
+          "tools": [
+            "Replit"
+          ]
+        },
+        {
+          "text": "Experience building personal, academic or other software projects.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Collaborate, accept feedback and experiment.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "No prior professional programming experience or technical degree required.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Portfolio and cover letter requested.",
+          "kind": "required",
+          "tools": []
+        },
+        {
+          "text": "Visa sponsorship is not available.",
+          "kind": "required",
+          "tools": []
+        }
+      ],
+      "skills": [
+        "Replit"
+      ],
+      "summary": "Junior game studio tools role, fully remote in the UK.",
+      "requirements": "See the official listing for complete requirements.",
+      "employment": "Full-time / permanent",
+      "checkedAt": "2026-11-21",
+      "workMode": "Remote eligible"
+    },
+    {
       "id": "superspline-junior-3d-animator-uk",
       "sourceId": "custom:superspline-junior",
       "title": "Junior 3D Games Animator",

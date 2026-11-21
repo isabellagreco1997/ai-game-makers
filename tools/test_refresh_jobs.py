@@ -40,6 +40,14 @@ class RefreshTests(unittest.TestCase):
    return json.dumps({'content':[],'totalFound':0})
   self.run_bot(fetch)
   jobs=json.loads(self.file.read_text(encoding='utf-8'))['jobs'];self.assertEqual(jobs[0]['checkedAt'],'2026-01-01')
+ def test_flix_listing_checks_remote_eligibility_and_required_tools(self):
+  self.file.write_text(json.dumps({'lastUpdated':'2026-01-01','jobs':[{'id':'flix','sourceId':'custom:flix-junior-tools','title':'Junior Tools Creator','url':'https://example.com/job','checkedAt':'2026-01-01'}]}),encoding='utf-8')
+  def fetch(url):
+   if 'example.com' in url:return '<h1>Junior Tools Creator</h1><h2>UK Remote</h2><p>careers@flixinteractive.com. We cannot offer visa sponsorship.</p><h3>Essential skills:</h3><ul><li>Familiarity with Replit.</li></ul><h3>Desirable skills:</h3><ul><li>Games experience</li></ul>'
+   if 'greenhouse' in url:return json.dumps({'jobs':[]})
+   return json.dumps({'content':[],'totalFound':0})
+  self.run_bot(fetch);job=json.loads(self.file.read_text(encoding='utf-8'))['jobs'][0]
+  self.assertNotEqual(job['checkedAt'],'2026-01-01');self.assertIn('Replit',job['skills']);self.assertEqual([x['kind'] for x in job['requirementsList']],['required','preferred','required'])
  def test_unavailable_workable_feed_preserves_previous_check(self):
   self.file.write_text(json.dumps({'lastUpdated':'2026-01-01','jobs':[{'id':'workable-storytoys-old','sourceId':'workable:storytoys','title':'Junior Artist','checkedAt':'2026-01-01'}]}),encoding='utf-8')
   def fetch(url):

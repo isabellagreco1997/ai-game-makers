@@ -39,6 +39,7 @@ PATTERN = re.compile(r'\b(?:AI|artificial intelligence|machine learning|generati
 HYBRID = re.compile(r'\b(?:on (?:a )?hybrid basis|hybrid\s+(?:working|work(?:ing)? model|work schedule|schedule|arrangement|basis|with|from|[0-9])|work(?:ing)?\s+(?:in\s+)?(?:a\s+)?hybrid)\b', re.I)
 CREATIVE = re.compile(r'\b(?:game|gameplay|developer|programmer|engineer|designer|artist|animator|animation|quality|tools)\b', re.I)
 SKILLS = ['Unreal Engine','Unity','Godot','Python','C++','C#','Java','Lua','GDScript','Machine Learning','Generative AI','LLM','Deep Learning','PyTorch','TensorFlow','Photoshop','Illustrator','Figma','Blender','Maya','Houdini','ZBrush','Substance Painter','After Effects','Premiere Pro','Stable Diffusion','ComfyUI','Flux','Midjourney','GitHub','Git','Jira','Confluence','SQL','TypeScript','JavaScript','Docker','Kubernetes','AWS','Google Cloud','Azure','CMake','Perforce','Blueprints','3D Studio Max','3ds Max','Aseprite','LibreSprite','Solar2D','Defold','Panda3D','LLMs','Claude Code','Codex','GitHub Copilot','ChatGPT','Cinema 4D','Octane Render','Premiere Pro','Visual Studio','Terraform','Datadog','Kibana','Miro','Excel','PowerPoint','Shader Graph','HLSL','Ruby','Unreal','CryEngine','Cinema4D','Fiddler','Firebug','Charles Proxy','MySQL','PostgreSQL','Prometheus','Grafana','K6','Locust','NATS','A1111']
+SKILLS.append('Replit')
 
 class ListingBlocks(HTMLParser):
  def __init__(self):
@@ -54,7 +55,7 @@ class ListingBlocks(HTMLParser):
    kind,order,parts=self.stack.pop();value=re.sub(r'\s+',' ',''.join(parts)).strip()
    if value:self.blocks.append((order,kind,value))
 
-REQUIRED_HEADING=re.compile(r"(?:requirements?|qualifications?|eligibility|required skills|what (?:we|you).{0,25}(?:looking for|bring|need)|what you.ll (?:need|bring)|who you are|your (?:profile|skills|experience)|about you|must.have|what you have|you have|you should have|your background|your expertise|your toolkit|your player profile|votre profil|knowledge and experience|knowledge/skills|connaissances/compétences)",re.I)
+REQUIRED_HEADING=re.compile(r"(?:requirements?|qualifications?|eligibility|required skills|essential skills|what (?:we|you).{0,25}(?:looking for|bring|need)|what you.ll (?:need|bring)|who you are|your (?:profile|skills|experience)|about you|must.have|what you have|you have|you should have|your background|your expertise|your toolkit|your player profile|votre profil|knowledge and experience|knowledge/skills|connaissances/compétences)",re.I)
 PREFERRED_HEADING=re.compile(r"(?:nice.to.have|bonus|preferred|desirable|desired skills|extra credit|would be a plus|additional (?:skills|qualifications))",re.I)
 END_HEADING=re.compile(r"(?:benefits|perks|what we offer|working at|about (?:us|the company|scopely)|equal opportunity|compensation|salary|how to apply|responsibilities|what you.ll do|what you will do|why join|why krafton|pourquoi krafton|our benefits|open to applicants|open in [0-9]+ countries|job expectations|fair employment)",re.I)
 
@@ -104,7 +105,7 @@ def extract_requirements(markup, qualifications_only=False, abbreviated=True):
    short='US work authorisation required; no current or future visa sponsorship.';key=short.casefold()
   if len(clean)<4 or key in seen:continue
   optional=re.search(r'\b(?:a bonus|a plus|nice to have|preferred|is a plus|desirable|beneficial but not required)\b',clean,re.I)
-  item_mode=('mixed' if optional and re.search(r'[.!?]\s+\S',clean[:optional.start()]) else 'preferred') if optional else mode
+  item_mode=('mixed' if mode!='preferred' and optional and re.search(r'[.!?]\s+\S',clean[:optional.start()]) else 'preferred') if optional else mode
   seen.add(key);result.append({'text':short,'kind':item_mode,'tools':mentioned_tools(clean)})
  return result
 
@@ -188,6 +189,22 @@ def refresh():
  # Existing curated third-party listings: 200 alone is not proof of availability.
  for j in old['jobs']:
   if j.get('sourceId','').startswith(('gh:','sr:','workable:','lever:')): continue
+  if j.get('sourceId')=='custom:flix-junior-tools':
+   try:
+    body=request(j['url']);plain=re.sub(r'<[^>]+>',' ',html.unescape(body));plain=re.sub(r'\s+',' ',plain)
+    if not re.search(r'Junior Tools Creator',plain,re.I) or not re.search(r'UK Remote',plain,re.I) or not re.search(r'careers@flixinteractive\.com',plain,re.I): raise ValueError('Job status or UK remote location could not be confirmed')
+    found=extract_requirements(body);full=extract_requirements(body,abbreviated=False)
+    if not found: raise ValueError('Job requirements missing')
+    if senior_role(j['title'],full): continue
+    if re.search(r'cannot offer visa sponsorship',plain,re.I): found.append({'text':'Visa sponsorship is not available.','kind':'required','tools':[]})
+    if re.search(r'No programming experience or technical degree is required',plain,re.I): found.append({'text':'No programming experience or technical degree required.','kind':'required','tools':[]})
+    if re.search(r'Please send through your portfolio and cover letter',plain,re.I): found.append({'text':'Portfolio and cover letter requested.','kind':'required','tools':[]})
+    j['requirementsList']=found;j['skills']=list(dict.fromkeys(t for x in found for t in x['tools']));j['checkedAt']=today
+   except urllib.error.HTTPError as e:
+    if e.code in (404,410): continue
+    failures.append(f"{j['url']}: {e}")
+   except Exception as e: failures.append(f"{j['url']}: {e}")
+   out.append(j);continue
   if j.get('sourceId')=='custom:superspline-junior':
    try:
     found=superspline_junior_requirements(request(j['url']))
